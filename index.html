@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="./assets/favicon.png">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Ateliê Moema Odontologia — Odontologia especializada em Moema, São Paulo</title>
+<meta name="description" content="Ateliê Moema Odontologia: atendimento odontológico particular em Moema, São Paulo, com cuidado, tecnologia e planejamento personalizado. Agende sua avaliação.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://ateliemoemaodontologia.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Ateliê Moema Odontologia">
+<meta property="og:title" content="Ateliê Moema Odontologia — Odontologia especializada em Moema">
+<meta property="og:description" content="Atendimento odontológico particular em Moema, São Paulo, com cuidado, tecnologia e planejamento personalizado.">
+<meta property="og:url" content="https://ateliemoemaodontologia.com.br/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Dentist","name":"Ateliê Moema Odontologia","url":"https://ateliemoemaodontologia.com.br/","email":"contato@ateliemoemaodontologia.com.br","address":{"@type":"PostalAddress","streetAddress":"Alameda dos Maracatins, 508, Conjunto 24, 2º andar","addressLocality":"São Paulo","addressRegion":"SP","addressCountry":"BR"},"areaServed":"Moema, São Paulo","sameAs":["https://www.instagram.com/dra.elisdrocha/"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&amp;family=Dancing+Script:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+@keyframes amFloat{0%,100%{transform:translate(0,0)}50%{transform:translate(-18px,22px)}}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:#FAF6F3;color:#675C59;font-family:Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+*{box-sizing:border-box}
+a{color:#A2646A;text-decoration:none}
+a:hover{color:#352D2D}
+:focus-visible{outline:2px solid #A2646A;outline-offset:4px}
+@keyframes amRise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes amLine{from{transform:translateY(108%)}to{transform:none}}
+@keyframes amFade{from{opacity:0}to{opacity:1}}
+@keyframes amDown{from{opacity:0;transform:translateY(-14px)}to{opacity:1;transform:none}}
+@keyframes amReveal{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes amBlock{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes amZoom{from{transform:scale(1.12)}to{transform:scale(1)}}
+@keyframes amSpin{to{transform:rotate(360deg)}}
+@keyframes amScroll{0%{transform:translateY(-100%)}60%,100%{transform:translateY(220%)}}
+@keyframes amScan{from{top:0;opacity:0}12%{opacity:1}88%{opacity:1}to{top:100%;opacity:0}}
+@keyframes amPar{from{transform:scale(1.14) translateY(5%)}to{transform:scale(1.14) translateY(-5%)}}
+@keyframes amRing{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes amDraw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes depMarq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.dep-row{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%)}
+.dep-track{display:flex;width:max-content;animation:depMarq var(--d,60s) linear infinite;will-change:transform}
+.dep-rev{animation-direction:reverse}
+.dep-row:hover .dep-track,.dep-row:focus-within .dep-track{animation-play-state:paused}
+.dep-card{margin:0 24px 0 0;flex-shrink:0;display:flex;flex-direction:column;padding:clamp(24px,2.4vw,34px);background:#FAF6F3;border:1px solid rgba(106,91,88,.16);transition:transform .6s cubic-bezier(.2,.7,.1,1),box-shadow .6s ease,border-color .6s ease}
+.dep-card:hover{transform:translateY(-6px);border-color:rgba(162,100,106,.45);box-shadow:0 22px 44px -24px rgba(53,45,45,.3)}
+.dep-quote{flex:1;margin:22px 0 28px;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:clamp(21px,1.7vw,24px);line-height:1.38;color:#352D2D;text-wrap:pretty}
+.dep-cap{display:flex;align-items:center;gap:14px;padding-top:20px;border-top:1px solid rgba(106,91,88,.16)}
+.dep-avatar{width:40px;height:40px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#EBD3D1;color:#A2646A;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;line-height:1}
+.dep-badge{transition:border-color .4s ease,box-shadow .4s ease}
+.dep-badge:hover{border-color:rgba(162,100,106,.5);box-shadow:0 18px 40px -22px rgba(53,45,45,.3);color:#352D2D}
+.pay-ico{border:1px solid rgba(162,100,106,.45);color:#A2646A}
+.pay-item:hover .pay-ico{background:#A2646A;border-color:#A2646A;color:#FAF6F3;transform:translateY(-6px)}
+@media (prefers-reduced-motion:reduce){.dep-row{overflow-x:auto;-webkit-mask-image:none;mask-image:none}.dep-track{animation:none!important}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.01ms!important;animation-timeline:auto!important}html{scroll-behavior:auto}}
+</style>
+</helmet>
+
+<header role="banner" style="position:fixed;top:0;left:0;right:0;z-index:50;transition:background-color .5s ease,box-shadow .5s ease,backdrop-filter .5s ease;background-color:{{ hdrBg }};box-shadow:{{ hdrShadow }};backdrop-filter:{{ hdrBlur }};-webkit-backdrop-filter:{{ hdrBlur }};animation:amDown 1s cubic-bezier(.2,.7,.1,1) .1s both">
+  <div style="max-width:1320px;margin:0 auto;padding:0 clamp(20px,4vw,56px);height:{{ hdrH }};display:flex;align-items:center;justify-content:space-between;gap:32px;transition:height .5s cubic-bezier(.2,.7,.1,1)">
+    <a href="#inicio" onClick="{{ goHome }}" aria-label="Ateliê Moema Odontologia — Início" style="display:flex;align-items:center;flex-shrink:0">
+      <img src="assets/logo/logo-horizontal.webp" alt="Ateliê Moema Odontologia" width="1024" height="239" style="height:{{ logoH }};width:auto;display:block;transition:height .5s cubic-bezier(.2,.7,.1,1)">
+    </a>
+
+    <sc-if value="{{ desktopNav }}" hint-placeholder-val="{{ true }}">
+      <nav aria-label="Navegação principal" style="display:flex;align-items:center;gap:clamp(18px,2.2vw,34px)">
+        <sc-for list="{{ nav }}" as="item" hint-placeholder-count="7">
+          <a href="{{ item.href }}" target="{{ item.target }}" rel="{{ item.rel }}" onClick="{{ item.onClick }}" onMouseEnter="{{ item.onEnter }}" onMouseLeave="{{ item.onLeave }}" aria-current="{{ item.current }}" style="position:relative;display:block;padding:10px 0;font-family:Manrope,sans-serif;font-size:13px;font-weight:500;letter-spacing:.02em;color:{{ item.color }};transition:color .3s ease;white-space:nowrap">
+            {{ item.label }}
+            <span aria-hidden="true" style="position:absolute;left:0;right:0;bottom:4px;height:1px;background:#A2646A;transform:{{ item.lineT }};transform-origin:{{ item.lineO }};transition:transform .45s cubic-bezier(.2,.7,.1,1)"></span>
+          </a>
+        </sc-for>
+      </nav>
+      <div style="display:flex;align-items:center;gap:10px;flex-shrink:0">
+        <a href="https://www.instagram.com/dra.elisdrocha/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Dra. Elis (abre em nova aba)" style="display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid rgba(53,45,45,.35);border-radius:50%;color:#352D2D;flex-shrink:0;transition:background-color .35s ease,color .35s ease,border-color .35s ease" style-hover="background-color:#352D2D;border-color:#352D2D;color:#FAF6F3"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"></circle></svg></a>
+        <a href="https://www.waze.com/pt-BR/live-map/directions/br/sp/alameda-dos-maracatins,-508?to=place.ChIJMVhIaxBazpQRogo9cCYW36U" target="_blank" rel="noopener noreferrer" aria-label="Rota no Waze até o Ateliê Moema (abre em nova aba)" style="display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid rgba(53,45,45,.35);border-radius:50%;color:#352D2D;flex-shrink:0;transition:background-color .35s ease,color .35s ease,border-color .35s ease" style-hover="background-color:#352D2D;border-color:#352D2D;color:#FAF6F3"><svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2c-4.6 0-8.2 3.4-8.2 7.6 0 1.900.7 3.600 1.900 4.900L5 19.800l3.300-1.500c1.200.5 2.400.7 3.700.7 4.600 0 8.200-3.400 8.200-7.600S16.600 3.200 12 3.200z"></path><circle cx="9.200" cy="10.300" r=".6" fill="currentColor"></circle><circle cx="14.800" cy="10.300" r=".6" fill="currentColor"></circle><path d="M9 13.200c.8 1.200 1.800 1.700 3 1.700s2.200-.5 3-1.700"></path></svg></a>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ mobileNav }}" hint-placeholder-val="{{ false }}">
+      <button type="button" onClick="{{ toggleMenu }}" aria-expanded="{{ menuExpanded }}" aria-controls="menu-mobile" aria-label="{{ menuLabel }}" style="width:48px;height:48px;margin-right:-10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;background:none;border:0;cursor:pointer;padding:0">
+        <span aria-hidden="true" style="display:block;width:24px;height:1px;background:#352D2D;transform:{{ bar1 }};transition:transform .45s cubic-bezier(.2,.7,.1,1)"></span>
+        <span aria-hidden="true" style="display:block;width:24px;height:1px;background:#352D2D;transform:{{ bar2 }};transition:transform .45s cubic-bezier(.2,.7,.1,1)"></span>
+      </button>
+    </sc-if>
+  </div>
+</header>
+
+<sc-if value="{{ mobileNav }}" hint-placeholder-val="{{ false }}">
+  <div id="menu-mobile" role="dialog" aria-modal="true" aria-label="Menu" aria-hidden="{{ menuHidden }}" style="position:fixed;inset:0;z-index:40;background:#FAF6F3;display:flex;flex-direction:column;padding:calc(110px + env(safe-area-inset-top)) clamp(24px,7vw,56px) calc(32px + env(safe-area-inset-bottom));overflow-y:auto;opacity:{{ menuOpacity }};visibility:{{ menuVis }};transition:opacity .5s ease,visibility .5s ease">
+    <div aria-hidden="true" style="position:absolute;top:0;right:0;width:42%;height:100%;background:#F1E8E3;z-index:-1"></div>
+    <nav aria-label="Navegação mobile" style="display:flex;flex-direction:column">
+      <sc-for list="{{ nav }}" as="item" hint-placeholder-count="7">
+        <a href="{{ item.href }}" target="{{ item.target }}" rel="{{ item.rel }}" onClick="{{ item.onClick }}" tabindex="{{ item.mTab }}" style="display:flex;align-items:baseline;gap:18px;padding:10px 0;border-bottom:1px solid rgba(106,91,88,.14);opacity:{{ item.mOpacity }};transform:{{ item.mT }};transition:opacity .6s ease {{ item.mDelay }},transform .7s cubic-bezier(.2,.7,.1,1) {{ item.mDelay }}">
+          <span style="font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.16em;color:#A2646A;min-width:22px">{{ item.num }}</span>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:clamp(24px,6.6vw,34px);line-height:1.1;color:{{ item.mColor }}">{{ item.label }}</span>
+        </a>
+      </sc-for>
+    </nav>
+    <div style="margin-top:auto;padding-top:40px;display:flex;flex-direction:column;gap:18px;opacity:{{ menuFootOpacity }};transition:opacity .6s ease .5s">
+      <div style="display:flex;justify-content:center;gap:14px">
+        <a href="https://www.instagram.com/dra.elisdrocha/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Dra. Elis (abre em nova aba)" style="display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border:1px solid rgba(53,45,45,.35);border-radius:50%;color:#352D2D;flex-shrink:0;transition:background-color .35s ease,color .35s ease,border-color .35s ease" style-hover="background-color:#352D2D;border-color:#352D2D;color:#FAF6F3"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"></circle></svg></a>
+        <a href="https://www.waze.com/pt-BR/live-map/directions/br/sp/alameda-dos-maracatins,-508?to=place.ChIJMVhIaxBazpQRogo9cCYW36U" target="_blank" rel="noopener noreferrer" aria-label="Rota no Waze até o Ateliê Moema (abre em nova aba)" style="display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border:1px solid rgba(53,45,45,.35);border-radius:50%;color:#352D2D;flex-shrink:0;transition:background-color .35s ease,color .35s ease,border-color .35s ease" style-hover="background-color:#352D2D;border-color:#352D2D;color:#FAF6F3"><svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2c-4.6 0-8.2 3.4-8.2 7.6 0 1.900.7 3.600 1.900 4.900L5 19.800l3.300-1.500c1.200.5 2.400.7 3.700.7 4.600 0 8.200-3.400 8.200-7.600S16.600 3.200 12 3.200z"></path><circle cx="9.200" cy="10.300" r=".6" fill="currentColor"></circle><circle cx="14.800" cy="10.300" r=".6" fill="currentColor"></circle><path d="M9 13.200c.8 1.200 1.800 1.700 3 1.700s2.200-.5 3-1.700"></path></svg></a>
+      </div>
+      <p style="margin:0;font-family:Manrope,sans-serif;font-size:11px;font-weight:500;letter-spacing:.18em;line-height:1.8;color:#7A6E6B;text-align:center">ALAMEDA DOS MARACATINS, 508 — MOEMA</p>
+    </div>
+  </div>
+</sc-if>
+
+<main>
+<section id="inicio" data-screen-label="01 Hero" aria-labelledby="hero-title" style="position:relative;min-height:{{ heroMinH }};overflow:hidden;display:flex;align-items:center">
+  <div aria-hidden="true" style="position:absolute;right:0;top:{{ blockTop }};bottom:{{ blockBottom }};width:{{ blockW }};background:#F1E8E3;animation:amBlock 1.4s cubic-bezier(.77,0,.18,1) .15s both"></div>
+
+  <div style="position:relative;width:100%;max-width:1320px;margin:0 auto;padding:{{ heroPad }};display:grid;grid-template-columns:{{ heroCols }};gap:{{ heroGap }};align-items:center">
+
+    <div style="position:relative;max-width:660px">
+      <p style="margin:0 0 clamp(14px,1.8vw,22px);display:flex;align-items:center;gap:16px;font-family:Manrope,sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.3em;color:#A2646A;animation:amRise .9s cubic-bezier(.2,.7,.1,1) .3s both">
+        <span aria-hidden="true" style="display:block;width:40px;height:1px;background:#A2646A;transform-origin:left;animation:amDraw 1s cubic-bezier(.2,.7,.1,1) .4s both"></span>
+        ATELIÊ MOEMA ODONTOLOGIA
+      </p>
+
+      <h1 id="hero-title" style="margin:0;font-family:'Dancing Script',cursive;font-weight:400;font-size:clamp(36px,4.6vw,72px);line-height:.9;letter-spacing:0;color:#352D2D">
+        <span style="display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.1em"><span style="display:block;animation:amLine 1.2s cubic-bezier(.19,1,.22,1) .4s both">Odontologia especializada</span></span>
+        <span style="display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.1em"><span style="display:block;animation:amLine 1.2s cubic-bezier(.19,1,.22,1) .64s both">em <em style="font-style:italic;font-weight:400;color:#A2646A">Moema</em><span style="color:#352D2D">, São Paulo.</span></span></span>
+      </h1>
+
+      <div style="margin-top:clamp(28px,3.6vw,48px);display:grid;grid-template-columns:{{ copyCols }};gap:clamp(16px,2.4vw,36px);align-items:start">
+        <p style="margin:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(22px,1.9vw,27px);line-height:1.3;color:#352D2D;text-wrap:pretty;animation:amRise 1s cubic-bezier(.2,.7,.1,1) .85s both">Cuidado, tecnologia e planejamento personalizado para o seu sorriso.</p>
+        <p style="margin:0;padding-top:4px;font-family:Manrope,sans-serif;font-size:15px;line-height:1.75;color:#675C59;text-wrap:pretty;animation:amRise 1s cubic-bezier(.2,.7,.1,1) .95s both">Atendimento odontológico particular, com diferentes possibilidades de tratamento avaliadas de forma individualizada.</p>
+      </div>
+
+      <div style="margin-top:clamp(32px,4vw,52px);display:flex;flex-wrap:wrap;align-items:center;gap:20px 32px;animation:amRise 1s cubic-bezier(.2,.7,.1,1) 1.05s both">
+        <a href="{{ waHero }}" target="_blank" rel="noopener noreferrer" onMouseEnter="{{ ctaIn }}" onMouseLeave="{{ ctaOut }}" onFocus="{{ ctaIn }}" onBlur="{{ ctaOut }}" style="display:inline-flex;align-items:center;justify-content:space-between;gap:22px;height:58px;padding:0 10px 0 30px;width:{{ ctaW }};background:#A2646A;color:#fff;border-radius:2px;font-family:Manrope,sans-serif;font-size:12px;font-weight:600;letter-spacing:.2em;transition:background-color .45s ease" style-hover="background-color:#352D2D;color:#fff">
+          AGENDE SUA AVALIAÇÃO
+          <span aria-hidden="true" style="position:relative;width:38px;height:38px;overflow:hidden;background:rgba(255,255,255,.14);border-radius:1px;flex-shrink:0">
+            <span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transform:{{ arrowA }};transition:transform .55s cubic-bezier(.7,0,.2,1)"><svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="#fff" stroke-width="1.2"></path></svg></span>
+            <span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transform:{{ arrowB }};transition:transform .55s cubic-bezier(.7,0,.2,1)"><svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="#fff" stroke-width="1.2"></path></svg></span>
+          </span>
+        </a>
+        <p style="margin:0;font-family:Manrope,sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.22em;line-height:1.8;color:#7A6E6B">ATENDIMENTO PARTICULAR <span aria-hidden="true" style="color:#D99B9D;padding:0 6px">•</span> MOEMA, SÃO PAULO</p>
+      </div>
+    </div>
+
+    <figure style="position:relative;margin:0;width:{{ figW }};max-width:480px;justify-self:end">
+      <div aria-hidden="true" style="position:absolute;inset:0;transform:translate(18px,-18px);border:1px solid rgba(183,120,125,.5);border-radius:999px 999px 0 0;animation:amFade 1.4s ease 1.2s both"></div>
+      <div style="position:relative;aspect-ratio:4/5;border-radius:999px 999px 0 0;overflow:hidden;background:#EAE0DA;animation:amReveal 1.5s cubic-bezier(.77,0,.18,1) .45s both">
+        <div style="position:absolute;inset:0;animation:amZoom 2.2s cubic-bezier(.2,.7,.1,1) .45s both">
+          <sc-if value="{{ hasImage }}" hint-placeholder-val="{{ false }}">
+            {{ heroImg }}
+          </sc-if>
+          <sc-if value="{{ noImage }}" hint-placeholder-val="{{ true }}">
+            <div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,rgba(106,91,88,.07) 0 1px,transparent 1px 25%);background-size:100% 100%"></div>
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:24px 14%;text-align:center">
+              <div aria-hidden="true" style="width:92px;height:98px;overflow:hidden;opacity:.32;mix-blend-mode:multiply">
+                <img src="assets/logo/logo-horizontal.webp" alt="" style="height:98px;width:auto;display:block;max-width:none">
+              </div>
+              <div style="display:flex;flex-direction:column;gap:8px;align-items:center">
+                <span style="font-family:Manrope,sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.22em;line-height:1.7;color:#6A5B58;text-wrap:balance">FOTO HERO — DRA. ELIS OU CLÍNICA</span>
+                <span style="font-family:Manrope,sans-serif;font-size:10px;letter-spacing:.06em;color:#8A7E7B;overflow-wrap:anywhere;max-width:100%;line-height:1.6">assets/images/hero/hero-principal.webp · 4:5</span>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+      <figcaption style="margin-top:22px;padding-top:14px;border-top:1px solid rgba(106,91,88,.18);display:flex;justify-content:space-between;gap:12px;font-family:Manrope,sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:#7A6E6B;animation:amFade 1.2s ease 1.4s both">
+        <span>ALAMEDA DOS MARACATINS, 508</span>
+        <span>MOEMA — SP</span>
+      </figcaption>
+
+      <sc-if value="{{ showBadge }}" hint-placeholder-val="{{ true }}">
+        <div aria-hidden="true" style="position:absolute;left:{{ badgeL }};bottom:{{ badgeB }};width:{{ badgeS }};height:{{ badgeS }};border-radius:50%;background:#FAF6F3;box-shadow:0 0 0 1px rgba(183,120,125,.28);animation:amFade 1.2s ease 1.5s both">
+          <svg viewBox="0 0 140 140" width="100%" height="100%" style="position:absolute;inset:0;animation:amSpin 48s linear infinite">
+            <defs><path id="am-ring" d="M70,70 m-52,0 a52,52 0 1,1 104,0 a52,52 0 1,1 -104,0"></path></defs>
+            <text style="font-family:Manrope,sans-serif;font-size:9.6px;font-weight:600;letter-spacing:3px;fill:#6A5B58"><textPath href="#am-ring" textLength="322">ATENDIMENTO PARTICULAR · MOEMA · SÃO PAULO ·</textPath></text>
+          </svg>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
+            <div style="width:36px;height:38px;overflow:hidden"><img src="assets/logo/logo-horizontal.webp" alt="" style="height:38px;width:auto;display:block;max-width:none"></div>
+          </div>
+        </div>
+      </sc-if>
+    </figure>
+  </div>
+
+  <sc-if value="{{ showScroll }}" hint-placeholder-val="{{ true }}">
+    <button type="button" onClick="{{ scrollNext }}" aria-label="Rolar para a próxima seção" style="position:absolute;left:max(clamp(20px,4vw,56px), calc((100% - 1320px) / 2 + clamp(20px,4vw,56px)));bottom:32px;display:flex;align-items:center;gap:16px;background:none;border:0;padding:8px 0;cursor:pointer;font-family:Manrope,sans-serif;font-size:10px;font-weight:600;letter-spacing:.26em;color:#7A6E6B;animation:amFade 1.2s ease 1.6s both" style-hover="color:#352D2D">
+      <span aria-hidden="true" style="position:relative;display:block;width:1px;height:48px;background:rgba(106,91,88,.2);overflow:hidden"><span style="position:absolute;left:0;top:0;width:1px;height:40%;background:#A2646A;animation:amScroll 2.6s cubic-bezier(.6,0,.3,1) infinite"></span></span>
+      DESCUBRA O ATELIÊ
+    </button>
+  </sc-if>
+</section>
+
+<section id="atelie" data-screen-label="02 Essência" aria-labelledby="atelie-title" style="position:relative;background:#F1E8E3;overflow:hidden">
+  <span aria-hidden="true" style="position:absolute;top:-120px;right:-120px;width:420px;height:420px;border:1px solid rgba(162,100,106,.22);border-radius:50%;animation:amFloat 14s ease-in-out infinite"></span>
+  <span aria-hidden="true" style="position:absolute;top:-70px;right:-70px;width:320px;height:320px;border:1px solid rgba(162,100,106,.14);border-radius:50%;animation:amFloat 18s ease-in-out infinite reverse"></span>
+  <div style="position:relative;max-width:1320px;margin:0 auto;padding:{{ s2Pad }}">
+    <div style="display:grid;grid-template-columns:{{ s2HeadCols }};gap:{{ s2HeadGap }};align-items:end">
+      <div>
+        <div data-rv="s2label" style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(18px,2vw,28px);animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+          <span aria-hidden="true" style="display:block;width:28px;height:1px;background:rgba(162,100,106,.6)"></span>
+          <span style="font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.28em;color:#6A5B58">O ATELIÊ</span>
+        </div>
+        <h2 id="atelie-title" data-rv="s2title" style="margin:0;font-family:'Dancing Script',cursive;font-weight:400;font-size:clamp(38px,4.3vw,64px);line-height:1;letter-spacing:0;color:#352D2D">
+          <span style="display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.1em"><span style="display:block;animation:amLine linear both;animation-timeline:view();animation-range:entry 5% entry 55%">Cada sorriso merece</span></span>
+          <span style="display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.1em"><span style="display:block;animation:amLine linear both;animation-timeline:view();animation-range:entry 5% entry 55%">um <em style="font-style:italic;color:#A2646A">olhar único.</em></span></span>
+        </h2>
+      </div>
+      <div data-rv="s2text" style="display:flex;gap:20px;align-items:flex-start;max-width:440px;padding-bottom:{{ s2TextPb }};animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+        <span aria-hidden="true" style="flex-shrink:0;display:block;width:40px;height:1px;margin-top:14px;background:#A2646A"></span>
+        <p style="margin:0;font-family:Manrope,sans-serif;font-size:16.5px;line-height:1.75;color:#5E5350;text-wrap:pretty">No Ateliê Moema, saúde, estética e bem-estar fazem parte de um cuidado planejado em cada detalhe.</p>
+      </div>
+    </div>
+
+    <ol aria-label="Pilares do Ateliê Moema" style="list-style:none;margin:clamp(40px,5vw,72px) 0 0;padding:0;display:grid;grid-template-columns:{{ s2CardCols }};gap:clamp(16px,1.8vw,24px)">
+      <sc-for list="{{ pillars }}" as="p" hint-placeholder-count="3">
+        <li data-rv="{{ p.key }}" onMouseEnter="{{ p.onEnter }}" onMouseLeave="{{ p.onLeave }}" style="position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;padding:clamp(26px,2.6vw,36px);background:rgba(250,246,243,.7);border:1px solid rgba(106,91,88,.14);border-radius:20px;transform:{{ p.liftT }};box-shadow:{{ p.shadow }};transition:transform .6s cubic-bezier(.2,.7,.1,1),box-shadow .6s ease;animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+          <span aria-hidden="true" style="position:absolute;top:0;left:0;right:0;height:2px;background:#A2646A;transform:{{ p.lineT }};transform-origin:left;transition:transform .9s cubic-bezier(.2,.7,.1,1)"></span>
+          <img src="{{ p.icon }}" alt="" aria-hidden="true" width="40" height="40" style="display:block;width:40px;height:40px;transform:{{ p.numT }};transition:transform .7s cubic-bezier(.2,.7,.1,1)">
+          <h3 style="margin:0;font-family:Manrope,system-ui,sans-serif;font-weight:600;font-size:clamp(18px,1.5vw,21px);line-height:1.3;letter-spacing:-.005em;color:#352D2D">{{ p.title }}</h3>
+          <p style="margin:0;font-family:Manrope,sans-serif;font-size:15px;line-height:1.7;color:#5E5350;text-wrap:pretty">{{ p.text }}</p>
+        </li>
+      </sc-for>
+    </ol>
+  </div>
+</section>
+
+<section id="tratamentos" data-screen-label="03 Tratamentos" aria-labelledby="trat-title" style="position:relative;background:#FAF6F3">
+  <div style="max-width:1320px;margin:0 auto;padding:{{ s2Pad }}">
+    <div style="display:grid;grid-template-columns:{{ s3HeadCols }};gap:{{ s3HeadGap }};align-items:end">
+      <div>
+        <div data-rv="s3label" style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(24px,3vw,40px);animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+          <span aria-hidden="true" style="display:block;width:28px;height:1px;background:rgba(162,100,106,.6)"></span>
+          <span style="font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.28em;color:#6A5B58">TRATAMENTOS</span>
+        </div>
+        <h2 id="trat-title" data-rv="s3title" style="margin:0;font-family:'Dancing Script',cursive;font-weight:400;font-size:clamp(38px,4.3vw,64px);line-height:1;letter-spacing:0;color:#352D2D">
+          <span style="display:block;overflow:hidden;padding-bottom:.06em"><span style="display:block;animation:amLine linear both;animation-timeline:view();animation-range:entry 5% entry 55%">Cuidado especializado</span></span>
+          <span style="display:block;overflow:hidden;padding-bottom:.08em"><span style="display:block;animation:amLine linear both;animation-timeline:view();animation-range:entry 5% entry 55%">para cada <em style="font-style:italic;color:#A2646A">necessidade.</em></span></span>
+        </h2>
+      </div>
+      <p data-rv="s3sub" style="margin:0;max-width:420px;padding-bottom:8px;font-family:Manrope,sans-serif;font-size:16px;line-height:1.75;color:#5E5350;text-wrap:pretty;animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">Diferentes áreas da odontologia reunidas em um atendimento que considera as particularidades de cada sorriso.</p>
+    </div>
+
+    <sc-if value="{{ s3Desktop }}" hint-placeholder-val="{{ true }}">
+      <div data-rv="s3list" style="margin-top:clamp(64px,7vw,112px);display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(48px,6vw,112px);align-items:start;animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+        <div>
+          <ul aria-label="Lista de tratamentos" style="list-style:none;margin:0;padding:0;border-top:1px solid rgba(106,91,88,.2)">
+            <sc-for list="{{ treatments }}" as="t" hint-placeholder-count="8">
+              <li style="position:relative;border-bottom:1px solid rgba(106,91,88,.2)">
+                <button type="button" onClick="{{ t.select }}" onMouseEnter="{{ t.select }}" onFocus="{{ t.select }}" aria-controls="trat-panel" aria-current="{{ t.current }}" style="width:100%;display:grid;grid-template-columns:56px minmax(0,1fr) 40px;align-items:center;gap:12px;padding:clamp(16px,1.6vw,22px) 0;background:none;border:0;cursor:pointer;text-align:left">
+                  <span style="font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.18em;color:{{ t.numColor }};transition:color .4s ease">{{ t.num }}</span>
+                  <span style="font-family:'Cormorant Garamond',serif;font-size:clamp(22px,2.1vw,32px);line-height:1.12;letter-spacing:-.01em;color:{{ t.nameColor }};font-style:{{ t.nameStyle }};transform:{{ t.nameT }};transition:color .45s ease,transform .6s cubic-bezier(.2,.7,.1,1)">{{ t.name }}</span>
+                  <span aria-hidden="true" style="display:flex;justify-content:flex-end;opacity:{{ t.arrowO }};transform:{{ t.arrowT }};transition:opacity .45s ease,transform .6s cubic-bezier(.2,.7,.1,1)"><svg width="22" height="12" viewBox="0 0 22 12" fill="none"><path d="M0 6h20.5M15.5 1l5 5-5 5" stroke="#A2646A" stroke-width="1.2"></path></svg></span>
+                </button>
+                <span aria-hidden="true" style="position:absolute;left:0;right:0;bottom:-1px;height:1px;background:#A2646A;transform:{{ t.lineT }};transform-origin:left;transition:transform .7s cubic-bezier(.2,.7,.1,1)"></span>
+              </li>
+            </sc-for>
+          </ul>
+          <p style="margin:28px 0 0;font-family:Manrope,sans-serif;font-size:12.5px;line-height:1.7;color:#7A6E6B">A indicação de cada tratamento é definida após avaliação clínica individual.</p>
+        </div>
+
+        <aside id="trat-panel" aria-live="polite" style="position:sticky;top:112px">
+          <div style="position:relative;aspect-ratio:4/5;background:#EAE0DA;overflow:hidden">
+            <sc-for list="{{ treatments }}" as="t" hint-placeholder-count="1">
+              <div aria-hidden="{{ t.hidden }}" style="position:absolute;inset:0;opacity:{{ t.layerO }};transform:{{ t.layerT }};transition:opacity .8s ease,transform 1.4s cubic-bezier(.2,.7,.1,1)">
+                <img src="{{ t.img }}" alt="{{ t.imgAlt }}" loading="lazy" draggable="false" style="display:{{ t.imgDisp }};position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+                <div style="display:{{ t.phDisp }};position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,rgba(106,91,88,.07) 0 1px,transparent 1px 25%)"></div>
+                <div style="display:{{ t.phFlex }};position:absolute;inset:0;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:24px 14%;text-align:center">
+                  <span style="font-family:Manrope,sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.22em;line-height:1.7;color:#6A5B58;text-wrap:balance">{{ t.photoLabel }}</span>
+                  <span style="font-family:Manrope,sans-serif;font-size:10px;letter-spacing:.06em;line-height:1.6;color:#8A7E7B;overflow-wrap:anywhere">{{ t.photoFile }}</span>
+                </div>
+              </div>
+            </sc-for>
+            <div aria-hidden="true" style="position:absolute;inset:14px;border:1px solid rgba(255,255,255,.7);pointer-events:none"></div>
+          </div>
+          <div style="margin-top:28px;display:flex;flex-direction:column;gap:14px">
+            <span style="font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.2em;color:#A2646A">{{ activeT.num }} <span style="color:#8A7E7B">/ {{ tTotal }}</span></span>
+            <h3 style="margin:0;font-family:'Dancing Script',cursive;font-weight:400;font-size:clamp(28px,2.4vw,36px);line-height:1.1;color:#352D2D">{{ activeT.name }}</h3>
+            <p style="margin:0;max-width:44ch;font-family:Manrope,sans-serif;font-size:15px;line-height:1.75;color:#5E5350;text-wrap:pretty">{{ activeT.desc }}</p>
+            <a href="{{ activeT.href }}" target="{{ activeT.target }}" rel="noopener noreferrer" onClick="{{ activeT.onCta }}" style="align-self:flex-start;margin-top:10px;display:inline-flex;align-items:center;gap:14px;padding-bottom:8px;border-bottom:1px solid #352D2D;font-family:Manrope,sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.2em;color:#352D2D;transition:color .35s ease,border-color .35s ease" style-hover="color:#A2646A;border-color:#A2646A">{{ activeT.cta }}<svg aria-hidden="true" width="18" height="10" viewBox="0 0 18 10" fill="none"><path d="M0 5h16.5M12.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"></path></svg></a>
+          </div>
+        </aside>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ s3Mobile }}" hint-placeholder-val="{{ false }}">
+      <ul aria-label="Lista de tratamentos" style="list-style:none;margin:56px 0 0;padding:0;border-bottom:1px solid rgba(106,91,88,.2)">
+        <sc-for list="{{ treatments }}" as="t" hint-placeholder-count="8">
+          <li data-rv="{{ t.key }}" style="display:grid;grid-template-columns:40px minmax(0,1fr);gap:10px 14px;padding:28px 0 30px;border-top:1px solid rgba(106,91,88,.2);animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+            <span style="padding-top:9px;font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.16em;color:#A2646A">{{ t.num }}</span>
+            <h3 style="margin:0;font-family:'Dancing Script',cursive;font-weight:400;font-size:clamp(28px,7.4vw,34px);line-height:1.1;color:#352D2D">{{ t.name }}</h3>
+            <p style="grid-column:2;margin:0;font-family:Manrope,sans-serif;font-size:15px;line-height:1.7;color:#5E5350;text-wrap:pretty">{{ t.desc }}</p>
+            <a href="{{ t.href }}" target="{{ t.target }}" rel="noopener noreferrer" onClick="{{ t.onCta }}" style="grid-column:2;justify-self:start;margin-top:8px;display:inline-flex;align-items:center;gap:12px;min-height:44px;font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.18em;color:#352D2D;border-bottom:1px solid rgba(53,45,45,.5)">{{ t.ctaShort }}<svg aria-hidden="true" width="18" height="10" viewBox="0 0 18 10" fill="none"><path d="M0 5h16.5M12.5 1l4 4-4 4" stroke="#A2646A" stroke-width="1.2"></path></svg></a>
+          </li>
+        </sc-for>
+      </ul>
+      <p style="margin:24px 0 0;font-family:Manrope,sans-serif;font-size:12.5px;line-height:1.7;color:#7A6E6B">A indicação de cada tratamento é definida após avaliação clínica individual.</p>
+    </sc-if>
+  </div>
+</section>
+
+<section id="tecnologia" data-screen-label="04 Tecnologia" aria-labelledby="tec-title" style="position:relative;background:#3A3130;color:#D9CCC6;overflow:hidden">
+  <div style="max-width:1320px;margin:0 auto;padding:{{ s4Pad }};display:grid;grid-template-columns:{{ s4Cols }};gap:{{ s4Gap }};align-items:center">
+    <figure style="position:relative;margin:0 {{ s4BleedR }} 0 {{ s4Bleed }};animation:amFade linear both;animation-timeline:view();animation-range:entry 0% entry 40%">
+      <div style="position:relative;aspect-ratio:{{ s4Ratio }};background:#4A3F3D;overflow:hidden">
+        <img src="assets/escaneamento-intraoral.png" alt="Escaneamento intraoral" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+        <div aria-hidden="true" style="position:absolute;left:0;right:0;top:0;height:1px;background:#E3AEB0;box-shadow:0 0 18px 2px rgba(227,174,176,.35);animation:amScan linear both;animation-timeline:view();animation-range:cover 15% cover 85%"></div>
+        <span aria-hidden="true" style="position:absolute;top:18px;left:18px;width:20px;height:20px;border-top:1px solid rgba(250,246,243,.6);border-left:1px solid rgba(250,246,243,.6)"></span>
+        <span aria-hidden="true" style="position:absolute;top:18px;right:18px;width:20px;height:20px;border-top:1px solid rgba(250,246,243,.6);border-right:1px solid rgba(250,246,243,.6)"></span>
+        <span aria-hidden="true" style="position:absolute;bottom:18px;left:18px;width:20px;height:20px;border-bottom:1px solid rgba(250,246,243,.6);border-left:1px solid rgba(250,246,243,.6)"></span>
+        <span aria-hidden="true" style="position:absolute;bottom:18px;right:18px;width:20px;height:20px;border-bottom:1px solid rgba(250,246,243,.6);border-right:1px solid rgba(250,246,243,.6)"></span>
+      </div>
+      <div aria-hidden="true" style="margin-top:16px;height:12px;background-image:repeating-linear-gradient(90deg,rgba(250,246,243,.42) 0 1px,transparent 1px 60px),repeating-linear-gradient(90deg,rgba(250,246,243,.2) 0 1px,transparent 1px 12px);background-size:100% 12px,100% 6px;background-repeat:no-repeat;background-position:0 0,0 0"></div>
+    </figure>
+
+    <div style="position:relative;max-width:520px">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(24px,3vw,40px);animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+        <span aria-hidden="true" style="display:block;width:28px;height:1px;background:rgba(227,174,176,.6)"></span>
+        <span style="font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.28em;color:#E3AEB0">TECNOLOGIA E PRECISÃO</span>
+      </div>
+      <h2 id="tec-title" style="margin:0;font-family:'Dancing Script',cursive;font-weight:400;font-size:clamp(38px,4.3vw,64px);line-height:1;letter-spacing:0;color:#FAF6F3">
+        <span style="display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.1em"><span style="display:block;animation:amLine linear both;animation-timeline:view();animation-range:entry 5% entry 55%">Tecnologia que faz</span></span>
+        <span style="display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.1em"><span style="display:block;animation:amLine linear both;animation-timeline:view();animation-range:entry 5% entry 55%">parte do seu <em style="font-style:italic;color:#E3AEB0">cuidado.</em></span></span>
+      </h2>
+      <p style="margin:clamp(24px,2.6vw,36px) 0 0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(21px,1.8vw,26px);line-height:1.3;color:#FAF6F3;text-wrap:pretty;animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">Escaneamento intraoral, diagnóstico e planejamento personalizado.</p>
+      <div style="margin-top:24px;display:flex;flex-direction:column;gap:16px;font-family:Manrope,sans-serif;font-size:15px;line-height:1.75;color:#D9CCC6;animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+        <p style="margin:0;text-wrap:pretty">O scanner intraoral permite obter registros digitais do sorriso que auxiliam na avaliação e no planejamento dos tratamentos.</p>
+        <p style="margin:0;text-wrap:pretty">Além de contribuir para o diagnóstico, essa tecnologia permite apresentar determinadas informações de maneira mais visual ao paciente, ajudando na compreensão das etapas do tratamento.</p>
+      </div>
+      <ul aria-label="Destaques" style="list-style:none;margin:clamp(32px,3.4vw,44px) 0 0;padding:0;border-bottom:1px solid rgba(250,246,243,.16)">
+        <sc-for list="{{ techItems }}" as="h" hint-placeholder-count="3">
+          <li style="display:grid;grid-template-columns:44px minmax(0,1fr);align-items:baseline;padding:16px 0;border-top:1px solid rgba(250,246,243,.16);animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 60%">
+            <span style="font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.16em;color:#E3AEB0">{{ h.num }}</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:clamp(22px,1.9vw,26px);line-height:1.2;color:#FAF6F3">{{ h.label }}</span>
+          </li>
+        </sc-for>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="invisalign" data-screen-label="05 Invisalign" aria-labelledby="inv-title" style="position:relative;background:#FFFFFF;overflow:hidden">
+  <div style="max-width:1320px;margin:0 auto;padding:{{ s2Pad }}">
+    <div style="display:grid;grid-template-columns:{{ s5Cols }};gap:{{ s5Gap }};align-items:center">
+      <div style="max-width:560px">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(24px,3vw,40px);animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+          <span aria-hidden="true" style="display:block;width:28px;height:1px;background:rgba(162,100,106,.6)"></span>
+          <span style="font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.28em;color:#6A5B58">ORTODONTIA DIGITAL</span>
+        </div>
+        <h2 id="inv-title" style="margin:0;font-family:'Dancing Script',cursive;font-weight:400;font-size:clamp(38px,4.3vw,64px);line-height:1;letter-spacing:0;color:#352D2D">
+          <span style="display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.1em"><span style="display:block;animation:amLine linear both;animation-timeline:view();animation-range:entry 5% entry 55%">Invisalign em <em style="font-style:italic;color:#A2646A">Moema</em></span></span>
+        </h2>
+        <p style="margin:clamp(24px,2.6vw,36px) 0 0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(21px,1.8vw,26px);line-height:1.3;color:#352D2D;text-wrap:pretty;animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">Alinhadores transparentes com planejamento digital e acompanhamento personalizado.</p>
+        <div style="margin-top:24px;display:flex;flex-direction:column;gap:16px;font-family:Manrope,sans-serif;font-size:15px;line-height:1.75;color:#5E5350;animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+          <p style="margin:0;text-wrap:pretty">O tratamento com Invisalign® utiliza alinhadores transparentes e removíveis desenvolvidos a partir de um planejamento individualizado.</p>
+          <p style="margin:0;text-wrap:pretty">No Ateliê Moema, a avaliação pode contar com o escaneamento intraoral iTero, auxiliando no registro digital do sorriso e no planejamento do tratamento.</p>
+        </div>
+        <ul aria-label="Benefícios" style="list-style:none;margin:clamp(32px,3.4vw,44px) 0 0;padding:0;display:grid;grid-template-columns:{{ s5BenCols }};column-gap:32px">
+          <sc-for list="{{ invBenefits }}" as="b" hint-placeholder-count="4">
+            <li style="display:flex;gap:14px;align-items:baseline;padding:16px 0;border-top:1px solid rgba(106,91,88,.2);font-family:Manrope,sans-serif;font-size:14.5px;line-height:1.55;color:#352D2D;animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 60%">
+              <span aria-hidden="true" style="flex-shrink:0;width:6px;height:6px;border-radius:50%;background:#D99B9D;transform:translateY(-2px)"></span>
+              {{ b }}
+            </li>
+          </sc-for>
+        </ul>
+        <a href="{{ waInv }}" target="_blank" rel="noopener noreferrer" onMouseEnter="{{ cta5In }}" onMouseLeave="{{ cta5Out }}" onFocus="{{ cta5In }}" onBlur="{{ cta5Out }}" style="margin-top:clamp(32px,3.6vw,48px);display:inline-flex;align-items:center;justify-content:space-between;gap:22px;min-height:58px;padding:10px 10px 10px 30px;width:{{ ctaW }};background:#A2646A;color:#fff;border-radius:2px;font-family:Manrope,sans-serif;font-size:12px;font-weight:600;letter-spacing:.2em;line-height:1.5;transition:background-color .45s ease" style-hover="background-color:#352D2D;color:#fff">
+          CONHEÇA O TRATAMENTO COM INVISALIGN®
+          <span aria-hidden="true" style="position:relative;width:38px;height:38px;overflow:hidden;background:rgba(255,255,255,.14);border-radius:1px;flex-shrink:0">
+            <span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transform:{{ arrow5A }};transition:transform .55s cubic-bezier(.7,0,.2,1)"><svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="#fff" stroke-width="1.2"></path></svg></span>
+            <span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transform:{{ arrow5B }};transition:transform .55s cubic-bezier(.7,0,.2,1)"><svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="#fff" stroke-width="1.2"></path></svg></span>
+          </span>
+        </a>
+      </div>
+
+      <div style="position:relative;padding-bottom:{{ s5CollagePb }}">
+        <div style="position:relative;width:78%;margin-left:auto;aspect-ratio:3/4;background:#EAE0DA;overflow:hidden;border-radius:2px;animation:amReveal linear both;animation-timeline:view();animation-range:entry 0% entry 60%">
+          <img src="assets/invisalign_1.webp" alt="Atendimento com Invisalign no Ateliê Moema" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+        </div>
+        <div style="position:absolute;left:0;bottom:0;width:46%;aspect-ratio:1/1;background:#F1E8E3;border:10px solid #FFFFFF;overflow:hidden;animation:amRise linear both;animation-timeline:view();animation-range:entry 10% entry 70%">
+          <img src="assets/box.jpg" alt="Planejamento digital do tratamento com Invisalign no Ateliê Moema" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+        </div>
+        <div aria-hidden="true" style="position:absolute;right:-6%;top:-6%;width:34%;aspect-ratio:1/1;border:1px solid rgba(183,120,125,.45);border-radius:50%;z-index:-0;pointer-events:none"></div>
+      </div>
+    </div>
+
+    <div style="margin-top:clamp(96px,11vw,168px);padding-top:clamp(48px,5vw,72px);border-top:1px solid rgba(106,91,88,.2)">
+      <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:28px 48px">
+        <h3 style="margin:0;max-width:640px;font-family:'Dancing Script',cursive;font-weight:400;font-size:clamp(32px,3.4vw,52px);line-height:1.05;letter-spacing:-.015em;color:#352D2D;text-wrap:balance;animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">Conheça alguns casos de tratamento com <em style="font-style:italic;color:#A2646A">Invisalign®.</em></h3>
+        <div style="display:flex;align-items:center;gap:20px">
+          <span aria-live="polite" style="font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.2em;color:#352D2D;min-width:64px">{{ cPos }} <span style="color:#8A7E7B">/ {{ cTotal }}</span></span>
+          <button type="button" onClick="{{ cPrev }}" disabled="{{ cPrevDis }}" aria-label="Caso anterior" aria-controls="inv-track" style="width:52px;height:52px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(53,45,45,.35);border-radius:50%;background:transparent;color:#352D2D;cursor:pointer;opacity:{{ cPrevO }};transition:background-color .35s ease,border-color .35s ease,opacity .35s ease" style-hover="background-color:#352D2D;border-color:#352D2D;color:#fff"><svg aria-hidden="true" width="18" height="10" viewBox="0 0 18 10" fill="none" style="transform:rotate(180deg)"><path d="M0 5h16.5M12.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"></path></svg></button>
+          <button type="button" onClick="{{ cNext }}" disabled="{{ cNextDis }}" aria-label="Próximo caso" aria-controls="inv-track" style="width:52px;height:52px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(53,45,45,.35);border-radius:50%;background:transparent;color:#352D2D;cursor:pointer;opacity:{{ cNextO }};transition:background-color .35s ease,border-color .35s ease,opacity .35s ease" style-hover="background-color:#352D2D;border-color:#352D2D;color:#fff"><svg aria-hidden="true" width="18" height="10" viewBox="0 0 18 10" fill="none"><path d="M0 5h16.5M12.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"></path></svg></button>
+        </div>
+      </div>
+
+      <div role="region" aria-roledescription="carrossel" aria-label="Casos de tratamento com Invisalign®" tabindex="0" onKeyDown="{{ cKey }}" style="margin-top:clamp(36px,4vw,56px);overflow:hidden;outline-offset:6px">
+        <div id="inv-track" onPointerDown="{{ cDown }}" onPointerMove="{{ cMove }}" onPointerUp="{{ cUp }}" onPointerCancel="{{ cUp }}" onPointerLeave="{{ cUp }}" style="display:flex;gap:{{ cGapPx }};touch-action:pan-y;user-select:none;cursor:grab;transform:{{ cTrackT }};transition:{{ cTrackTr }}">
+          <sc-for list="{{ invCases }}" as="c" hint-placeholder-count="2">
+            <article role="group" aria-roledescription="slide" aria-label="{{ c.aria }}" style="flex:0 0 {{ cSlideW }};min-width:0">
+              <div style="display:grid;grid-template-columns:{{ cPairCols }};gap:8px">
+                <div style="position:relative;aspect-ratio:4/3;background:#F1E8E3;overflow:hidden">
+                  <span style="position:absolute;top:14px;left:14px;z-index:1;padding:6px 10px;background:#FFFFFF;font-family:Manrope,sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:#352D2D">ANTES</span>
+                  <img src="{{ c.srcA }}" alt="{{ c.altA }}" loading="lazy" draggable="false" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+                </div>
+                <div style="position:relative;aspect-ratio:4/3;background:#EAE0DA;overflow:hidden">
+                  <span style="position:absolute;top:14px;left:14px;z-index:1;padding:6px 10px;background:#352D2D;font-family:Manrope,sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:#FFFFFF">DEPOIS</span>
+                  <img src="{{ c.srcB }}" alt="{{ c.altB }}" loading="lazy" draggable="false" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+                </div>
+              </div>
+            </article>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="margin-top:32px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px">
+        <div role="tablist" aria-label="Selecionar posição" style="display:flex;gap:6px">
+          <sc-for list="{{ cDots }}" as="d" hint-placeholder-count="3">
+            <button type="button" role="tab" aria-selected="{{ d.sel }}" aria-label="{{ d.aria }}" onClick="{{ d.go }}" style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:none;border:0;cursor:pointer;padding:0">
+              <span aria-hidden="true" style="display:block;height:2px;width:{{ d.w }};background:{{ d.bg }};transition:width .5s cubic-bezier(.2,.7,.1,1),background-color .4s ease"></span>
+            </button>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="dra-elis" data-screen-label="06 Dra. Elis" aria-label="Responsável técnica" style="position:relative;background:#F1E8E3;overflow-x:clip">
+  <div style="max-width:1320px;margin:0 auto;padding:{{ s2Pad }};display:grid;grid-template-columns:{{ s6Cols }};grid-template-areas:{{ s6Areas }};grid-template-rows:{{ s6Rows }};column-gap:clamp(48px,7vw,128px);row-gap:{{ s6RowGap }};align-items:start">
+    <div style="grid-area:head;align-self:end">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:0;animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+        <span aria-hidden="true" style="display:block;width:28px;height:1px;background:rgba(162,100,106,.6)"></span>
+        <span style="font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.28em;color:#6A5B58">RESPONSÁVEL TÉCNICA</span>
+      </div>
+    </div>
+
+    <figure style="grid-area:portrait;position:{{ s6FigPos }};top:{{ s6FigTop }};margin:0;width:{{ s6FigW }};justify-self:{{ s6FigJustify }};align-self:{{ s6FigAlign }}">
+      <div aria-hidden="true" style="position:absolute;inset:0;transform:translate(-18px,18px);border:1px solid rgba(183,120,125,.5);pointer-events:none"></div>
+      <div style="position:relative;aspect-ratio:{{ s6ImgRatio }};width:100%;height:{{ s6ImgH }};background:#EAE0DA;overflow:hidden;animation:amReveal linear both;animation-timeline:view();animation-range:entry 0% entry 60%">
+        <img src="assets/dra-elis-rocha.jpg" alt="Dra. Elis Rocha" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block">
+      </div>
+      <figcaption style="position:absolute;top:0;left:-34px;height:100%;display:flex;align-items:flex-end;writing-mode:vertical-rl;transform:rotate(180deg);font-family:Manrope,sans-serif;font-size:10px;font-weight:600;letter-spacing:.26em;color:#6A5B58;white-space:nowrap">DRA. ELIS ROCHA · CRO/SP 127.773</figcaption>
+    </figure>
+
+    <div style="grid-area:body;max-width:560px">
+      <div style="padding-bottom:28px;border-bottom:1px solid rgba(106,91,88,.22);animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+        <p style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(40px,4.2vw,64px);line-height:1;letter-spacing:-.015em;color:#352D2D"><em style="font-style:italic;color:#A2646A;font-size:.62em">Dra.</em> Elis Rocha</p>
+        <p style="margin:14px 0 0;font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.22em;color:#6A5B58">CIRURGIÃ-DENTISTA — CRO/SP 127.773</p>
+      </div>
+      <div style="margin-top:28px;display:flex;flex-direction:column;gap:16px;font-family:Manrope,sans-serif;font-size:15.5px;line-height:1.75;color:#5E5350;animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+        <p style="margin:0;text-wrap:pretty">A atuação da Dra. Elis combina atenção individualizada, planejamento e uma abordagem que considera saúde, função e estética.</p>
+        <p style="margin:0;text-wrap:pretty">Seu trabalho valoriza uma comunicação próxima, ajudando cada paciente a compreender as possibilidades de tratamento e as etapas do cuidado.</p>
+      </div>
+      <dl style="margin:clamp(32px,3.4vw,44px) 0 0;padding:0">
+        <sc-for list="{{ elisEdu }}" as="e" hint-placeholder-count="4">
+          <div style="display:grid;grid-template-columns:{{ s6EduCols }};gap:4px 24px;padding:15px 0;border-top:1px solid rgba(106,91,88,.22);animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 60%">
+            <dt style="padding-top:3px;font-family:Manrope,sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.2em;color:#A2646A">{{ e.k }}</dt>
+            <dd style="margin:0;font-family:'Cormorant Garamond',serif;font-size:clamp(20px,1.7vw,23px);line-height:1.3;color:#352D2D">{{ e.v }}</dd>
+          </div>
+        </sc-for>
+      </dl>
+      <a href="{{ waHero }}" target="_blank" rel="noopener noreferrer" onMouseEnter="{{ cta6In }}" onMouseLeave="{{ cta6Out }}" onFocus="{{ cta6In }}" onBlur="{{ cta6Out }}" style="margin-top:clamp(32px,3.6vw,48px);display:inline-flex;align-items:center;justify-content:space-between;gap:22px;height:58px;padding:0 10px 0 30px;width:{{ ctaW }};background:#A2646A;color:#fff;border-radius:2px;font-family:Manrope,sans-serif;font-size:12px;font-weight:600;letter-spacing:.2em;transition:background-color .45s ease" style-hover="background-color:#352D2D;color:#fff">
+        AGENDE SUA AVALIAÇÃO
+        <span aria-hidden="true" style="position:relative;width:38px;height:38px;overflow:hidden;background:rgba(255,255,255,.14);border-radius:1px;flex-shrink:0">
+          <span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transform:{{ arrow6A }};transition:transform .55s cubic-bezier(.7,0,.2,1)"><svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="#fff" stroke-width="1.2"></path></svg></span>
+          <span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transform:{{ arrow6B }};transition:transform .55s cubic-bezier(.7,0,.2,1)"><svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="#fff" stroke-width="1.2"></path></svg></span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="resultados" data-screen-label="07 Casos reais" aria-labelledby="casos-title" style="position:relative;background:#FAF6F3">
+  <div style="max-width:1320px;margin:0 auto;padding:{{ s2Pad }}">
+    <div style="display:grid;grid-template-columns:{{ s3HeadCols }};gap:{{ s3HeadGap }};align-items:end">
+      <div>
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(24px,3vw,40px);animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+          <span aria-hidden="true" style="display:block;width:28px;height:1px;background:rgba(162,100,106,.6)"></span>
+          <span style="font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.28em;color:#6A5B58">RESULTADOS</span>
+        </div>
+        <h2 id="casos-title" style="margin:0;font-family:'Dancing Script',cursive;font-weight:400;font-size:clamp(38px,4.3vw,64px);line-height:1;letter-spacing:0;color:#352D2D">
+          <span style="display:block;overflow:hidden;padding-bottom:.06em"><span style="display:block;animation:amLine linear both;animation-timeline:view();animation-range:entry 5% entry 55%">Histórias reais,</span></span>
+          <span style="display:block;overflow:hidden;padding-bottom:.08em;padding-left:clamp(20px,5vw,88px)"><span style="display:block;animation:amLine linear both;animation-timeline:view();animation-range:entry 5% entry 55%"><em style="font-style:italic;color:#A2646A">cuidados individuais.</em></span></span>
+        </h2>
+      </div>
+      <p style="margin:0;max-width:420px;padding-bottom:8px;font-family:Manrope,sans-serif;font-size:16px;line-height:1.75;color:#5E5350;text-wrap:pretty;animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">Conheça alguns casos clínicos e diferentes possibilidades de tratamento realizadas no Ateliê Moema.</p>
+    </div>
+
+    <div role="toolbar" aria-label="Filtrar casos por categoria" style="margin-top:clamp(48px,5.4vw,80px);display:flex;flex-wrap:wrap;gap:4px clamp(20px,2.6vw,40px);padding-bottom:4px;border-bottom:1px solid rgba(106,91,88,.2)">
+      <sc-for list="{{ caseFilters }}" as="f" hint-placeholder-count="6">
+        <button type="button" onClick="{{ f.pick }}" aria-pressed="{{ f.pressed }}" aria-controls="casos-grid" style="position:relative;min-height:48px;padding:0;background:none;border:0;cursor:pointer;font-family:Manrope,sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.18em;color:{{ f.color }};transition:color .35s ease" style-hover="color:#352D2D">
+          {{ f.label }}
+          <span aria-hidden="true" style="position:absolute;left:0;right:0;bottom:-5px;height:2px;background:#A2646A;transform:{{ f.lineT }};transform-origin:left;transition:transform .5s cubic-bezier(.2,.7,.1,1)"></span>
+        </button>
+      </sc-for>
+    </div>
+
+    <div id="casos-grid" aria-live="polite" style="margin-top:clamp(40px,4.4vw,64px);display:grid;grid-template-columns:{{ caseGridCols }};gap:{{ caseGap }};align-items:start;opacity:{{ caseGridO }};transform:{{ caseGridT }};transition:opacity .3s ease,transform .5s cubic-bezier(.2,.7,.1,1)">
+      <sc-for list="{{ caseCols }}" as="col" hint-placeholder-count="3">
+        <div style="display:flex;flex-direction:column;gap:{{ caseGap }};padding-top:{{ col.pt }}">
+          <sc-for list="{{ col.items }}" as="c" hint-placeholder-count="2">
+            <button type="button" onClick="{{ c.open }}" onMouseEnter="{{ c.enter }}" onMouseLeave="{{ c.leave }}" aria-haspopup="dialog" aria-label="{{ c.aria }}" style="display:block;width:100%;padding:0;background:none;border:0;cursor:pointer;text-align:left">
+              <div style="position:relative;aspect-ratio:{{ c.ratio }};overflow:hidden;background:#EAE0DA">
+                <div style="position:absolute;inset:0;transform:{{ c.scale }};transition:transform 1.1s cubic-bezier(.2,.7,.1,1)">
+                  <div style="display:{{ c.pairDisp }};position:absolute;inset:0;background:#FFFFFF">
+                    <img src="{{ c.imgA }}" alt="{{ c.alt }}: antes" loading="lazy" draggable="false" style="position:absolute;left:0;top:0;width:100%;height:calc(50% - 2px);object-fit:cover">
+                    <img src="{{ c.imgB }}" alt="{{ c.alt }}: evolução" loading="lazy" draggable="false" style="position:absolute;left:0;bottom:0;width:100%;height:calc(50% - 2px);object-fit:cover">
+                  </div>
+                  <img src="{{ c.img }}" alt="{{ c.alt }}" loading="lazy" draggable="false" style="display:{{ c.imgDisp }};position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+                  <div style="display:{{ c.phDisp }};position:absolute;top:0;bottom:0;left:0;width:50%;background:#F1E8E3"></div>
+                  <div style="display:{{ c.phDisp }};position:absolute;top:0;bottom:0;right:0;width:50%;background:#EAE0DA;background-image:repeating-linear-gradient(90deg,rgba(106,91,88,.06) 0 1px,transparent 1px 25%)"></div>
+                </div>
+                <span aria-hidden="true" style="display:{{ c.phDisp }};position:absolute;top:0;bottom:0;left:50%;width:1px;background:#FFFFFF"></span>
+                <span style="display:{{ c.pairDisp }};position:absolute;left:14px;padding:6px 10px;font-family:Manrope,sans-serif;font-size:9.5px;font-weight:600;letter-spacing:.22em;bottom:calc(50% + 12px);background:#FFFFFF;color:#352D2D">ANTES</span>
+                <span style="display:{{ c.pairDisp }};position:absolute;left:14px;padding:6px 10px;font-family:Manrope,sans-serif;font-size:9.5px;font-weight:600;letter-spacing:.22em;bottom:14px;background:#352D2D;color:#FFFFFF">EVOLUÇÃO</span>
+                <span style="display:{{ c.tagDisp }};position:absolute;left:14px;bottom:14px;padding:6px 10px;background:#FFFFFF;font-family:Manrope,sans-serif;font-size:9.5px;font-weight:600;letter-spacing:.22em;color:#352D2D">ANTES</span>
+                <span style="display:{{ c.tagDisp }};position:absolute;right:14px;bottom:14px;padding:6px 10px;background:#352D2D;font-family:Manrope,sans-serif;font-size:9.5px;font-weight:600;letter-spacing:.22em;color:#FFFFFF">DEPOIS</span>
+                <span style="display:{{ c.phDisp }};position:absolute;left:14px;bottom:14px;font-family:Manrope,sans-serif;font-size:9.5px;font-weight:600;letter-spacing:.22em;color:#6A5B58">ANTES</span>
+                <span style="display:{{ c.phDisp }};position:absolute;right:14px;bottom:14px;font-family:Manrope,sans-serif;font-size:9.5px;font-weight:600;letter-spacing:.22em;color:#6A5B58">DEPOIS</span>
+                <span style="display:{{ c.phDisp }};position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);padding:0 12%;text-align:center;font-family:Manrope,sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;line-height:1.7;color:#6A5B58;text-wrap:balance">CASO CLÍNICO — IMAGEM ANTES / DEPOIS</span>
+                <span aria-hidden="true" style="position:absolute;top:14px;right:14px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#FAF6F3;border-radius:50%;opacity:{{ c.plusO }};transform:{{ c.plusT }};transition:opacity .4s ease,transform .5s cubic-bezier(.2,.7,.1,1)"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 0v12M0 6h12" stroke="#352D2D" stroke-width="1.2"></path></svg></span>
+              </div>
+              <span style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-top:16px">
+                <span style="font-family:Manrope,sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.2em;color:#A2646A">{{ c.catLabel }}</span>
+                <span style="font-family:Manrope,sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.16em;color:#7A6E6B">{{ c.num }}</span>
+              </span>
+              <span style="display:block;margin-top:6px;font-family:'Cormorant Garamond',serif;font-size:clamp(22px,1.9vw,26px);line-height:1.2;color:#352D2D">{{ c.title }}</span>
+            </button>
+          </sc-for>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="margin-top:clamp(56px,6vw,88px);padding-top:32px;border-top:1px solid rgba(106,91,88,.2);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px 48px">
+      <p style="margin:0;max-width:560px;font-family:Manrope,sans-serif;font-size:12.5px;line-height:1.7;color:#7A6E6B">Imagens clínicas exibidas somente após fornecimento e autorização da clínica e dos pacientes. Cada tratamento depende de avaliação individual.</p>
+      <a href="{{ waCasos }}" target="_blank" rel="noopener noreferrer" onMouseEnter="{{ cta7In }}" onMouseLeave="{{ cta7Out }}" onFocus="{{ cta7In }}" onBlur="{{ cta7Out }}" style="display:inline-flex;align-items:center;justify-content:space-between;gap:22px;height:58px;padding:0 10px 0 30px;width:{{ ctaW }};background:#352D2D;color:#fff;border-radius:2px;font-family:Manrope,sans-serif;font-size:12px;font-weight:600;letter-spacing:.2em;transition:background-color .45s ease" style-hover="background-color:#A2646A;color:#fff">
+        CONVERSE COM NOSSA EQUIPE
+        <span aria-hidden="true" style="position:relative;width:38px;height:38px;overflow:hidden;background:rgba(255,255,255,.12);border-radius:1px;flex-shrink:0">
+          <span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transform:{{ arrow7A }};transition:transform .55s cubic-bezier(.7,0,.2,1)"><svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="#fff" stroke-width="1.2"></path></svg></span>
+          <span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transform:{{ arrow7B }};transition:transform .55s cubic-bezier(.7,0,.2,1)"><svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="#fff" stroke-width="1.2"></path></svg></span>
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <sc-if value="{{ modalOpen }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ modalBackdrop }}" style="position:fixed;inset:0;z-index:80;background:rgba(53,45,45,.62);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:clamp(12px,3vw,40px);animation:amFade .35s ease both">
+      <div id="case-modal" role="dialog" aria-modal="true" aria-labelledby="case-modal-title" onKeyDown="{{ modalKey }}" onClick="{{ stop }}" style="position:relative;width:100%;max-width:1080px;max-height:calc(100svh - 24px);overflow-y:auto;background:#FAF6F3;padding:clamp(24px,3.4vw,48px);animation:amRise .5s cubic-bezier(.2,.7,.1,1) both">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:24px">
+          <div>
+            <p style="margin:0;font-family:Manrope,sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.2em;color:#A2646A">{{ mCase.catLabel }} · {{ mCase.num }}</p>
+            <h3 id="case-modal-title" style="margin:8px 0 0;font-family:'Dancing Script',cursive;font-weight:400;font-size:clamp(28px,3vw,42px);line-height:1.1;color:#352D2D">{{ mCase.title }}</h3>
+          </div>
+          <button type="button" id="case-modal-close" onClick="{{ closeCase }}" aria-label="Fechar caso" style="flex-shrink:0;width:48px;height:48px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(53,45,45,.3);border-radius:50%;background:transparent;color:#352D2D;cursor:pointer;transition:background-color .3s ease,color .3s ease" style-hover="background-color:#352D2D;color:#FAF6F3"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.2"></path></svg></button>
+        </div>
+        <div style="display:{{ mCase.imgDisp }};margin-top:clamp(20px,2.4vw,32px);justify-content:center">
+          <img src="{{ mCase.img }}" alt="{{ mCase.alt }}" draggable="false" style="display:block;margin:0 auto;width:100%;max-width:min(640px,calc(100svh - 300px));aspect-ratio:1/1;object-fit:cover">
+        </div>
+        <div style="display:{{ mCase.pairGrid }};margin-top:clamp(20px,2.4vw,32px);grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px">
+          <div style="position:relative;aspect-ratio:4/3;background:#F1E8E3">
+            <img src="{{ mCase.imgA }}" alt="{{ mCase.alt }}: antes" draggable="false" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            <span style="position:absolute;top:14px;left:14px;padding:6px 10px;background:#FFFFFF;font-family:Manrope,sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:#352D2D">ANTES</span>
+          </div>
+          <div style="position:relative;aspect-ratio:4/3;background:#EAE0DA">
+            <img src="{{ mCase.imgB }}" alt="{{ mCase.alt }}: evolução" draggable="false" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            <span style="position:absolute;top:14px;left:14px;padding:6px 10px;background:#352D2D;font-family:Manrope,sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:#FFFFFF">EVOLUÇÃO</span>
+          </div>
+        </div>
+        <div style="margin-top:clamp(20px,2.4vw,32px);display:{{ mCase.gridDisp }};grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px">
+          <div style="position:relative;aspect-ratio:4/5;background:#F1E8E3">
+            <span style="position:absolute;top:14px;left:14px;padding:6px 10px;background:#FFFFFF;font-family:Manrope,sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:#352D2D">ANTES</span>
+            <span style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:16px 12%;text-align:center;font-family:Manrope,sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;line-height:1.7;color:#6A5B58">CASO CLÍNICO — IMAGEM ANTES<span style="font-weight:400;letter-spacing:.05em;color:#8A7E7B;overflow-wrap:anywhere">{{ mCase.fileA }}</span></span>
+          </div>
+          <div style="position:relative;aspect-ratio:4/5;background:#EAE0DA">
+            <span style="position:absolute;top:14px;left:14px;padding:6px 10px;background:#352D2D;font-family:Manrope,sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:#FFFFFF">DEPOIS</span>
+            <span style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:16px 12%;text-align:center;font-family:Manrope,sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;line-height:1.7;color:#6A5B58">CASO CLÍNICO — IMAGEM DEPOIS<span style="font-weight:400;letter-spacing:.05em;color:#8A7E7B;overflow-wrap:anywhere">{{ mCase.fileB }}</span></span>
+          </div>
+        </div>
+        <div style="margin-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px 32px">
+          <div style="display:flex;align-items:center;gap:12px;margin-left:auto">
+            <span style="font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.2em;color:#352D2D;min-width:60px">{{ mPos }}</span>
+            <button type="button" onClick="{{ mPrev }}" aria-label="Caso anterior" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(53,45,45,.3);border-radius:50%;background:transparent;color:#352D2D;cursor:pointer" style-hover="background-color:#352D2D;color:#FAF6F3"><svg aria-hidden="true" width="18" height="10" viewBox="0 0 18 10" fill="none" style="transform:rotate(180deg)"><path d="M0 5h16.5M12.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"></path></svg></button>
+            <button type="button" onClick="{{ mNext }}" aria-label="Próximo caso" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(53,45,45,.3);border-radius:50%;background:transparent;color:#352D2D;cursor:pointer" style-hover="background-color:#352D2D;color:#FAF6F3"><svg aria-hidden="true" width="18" height="10" viewBox="0 0 18 10" fill="none"><path d="M0 5h16.5M12.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"></path></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+</section>
+
+<section id="clinica" data-screen-label="08 Estrutura" aria-labelledby="clinica-title" style="position:relative;background:#FAF6F3">
+  <div style="max-width:1320px;margin:0 auto;padding:{{ s2Pad }}">
+    <div style="border-top:1px solid rgba(106,91,88,.2);padding-top:{{ galTopPad }};display:grid;grid-template-columns:{{ s3HeadCols }};gap:{{ s3HeadGap }};align-items:end">
+      <div>
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(24px,3vw,40px);animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+          <span aria-hidden="true" style="display:block;width:28px;height:1px;background:rgba(162,100,106,.6)"></span>
+          <span style="font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.28em;color:#6A5B58">A CLÍNICA</span>
+        </div>
+        <h2 id="clinica-title" style="margin:0;font-family:'Dancing Script',cursive;font-weight:400;font-size:clamp(38px,4.3vw,64px);line-height:1;letter-spacing:0;color:#352D2D">
+          <span style="display:block;overflow:hidden;padding-bottom:.06em"><span style="display:block;animation:amLine linear both;animation-timeline:view();animation-range:entry 5% entry 55%">Um espaço pensado</span></span>
+          <span style="display:block;overflow:hidden;padding-bottom:.08em"><span style="display:block;animation:amLine linear both;animation-timeline:view();animation-range:entry 5% entry 55%">para <em style="font-style:italic;color:#A2646A">acolher.</em></span></span>
+        </h2>
+      </div>
+      <div style="max-width:440px;padding-bottom:8px;animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+        <p style="margin:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(21px,1.8vw,26px);line-height:1.3;color:#352D2D">Conforto, cuidado e tecnologia em cada ambiente.</p>
+        <p style="margin:14px 0 0;font-family:Manrope,sans-serif;font-size:15px;line-height:1.75;color:#5E5350;text-wrap:pretty">Conheça um pouco da estrutura do Ateliê Moema, preparada para receber os pacientes com atenção e oferecer uma experiência de atendimento tranquila e acolhedora.</p>
+      </div>
+    </div>
+
+    <div role="region" aria-roledescription="galeria" aria-label="Ambientes do Ateliê Moema" tabindex="0" onKeyDown="{{ galKey }}" style="margin-top:clamp(48px,5.4vw,80px);display:flex;flex-direction:{{ galDir }};gap:{{ galGap }};height:{{ galH }};animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 40%">
+      <sc-for list="{{ galPanels }}" as="p" hint-placeholder-count="5">
+        <button type="button" onClick="{{ p.go }}" onMouseEnter="{{ p.go }}" aria-label="{{ p.aria }}" aria-current="{{ p.current }}" style="position:relative;display:block;min-width:0;min-height:0;padding:0;border:0;overflow:hidden;cursor:pointer;text-align:left;background:#EAE0DA;flex:{{ p.flex }};transition:flex .9s cubic-bezier(.2,.7,.1,1)">
+          <img src="{{ p.src }}" alt="{{ p.alt }}" loading="lazy" draggable="false" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{{ p.pos }};transform:{{ p.scale }};filter:{{ p.filter }};transition:transform 1.4s cubic-bezier(.2,.7,.1,1),filter .9s ease">
+          <span aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(53,45,45,0) 55%,rgba(53,45,45,.55) 100%);opacity:{{ p.shade }};transition:opacity .9s ease"></span>
+          <span aria-hidden="true" style="position:absolute;left:clamp(14px,1.6vw,24px);right:clamp(14px,1.6vw,24px);bottom:clamp(14px,1.6vw,24px);display:flex;align-items:center;gap:12px;color:#FAF6F3;font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.22em;white-space:nowrap;opacity:{{ p.capO }};transform:{{ p.capT }};transition:opacity .6s ease .25s,transform .8s cubic-bezier(.2,.7,.1,1) .25s">
+            <span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;letter-spacing:0;color:#EBC9C6">{{ p.num }}</span>
+            <span style="display:block;width:28px;height:1px;background:rgba(250,246,243,.6)"></span>{{ p.name }}
+          </span>
+        </button>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="depoimentos" data-screen-label="09 Depoimentos" aria-labelledby="dep-title" style="position:relative;background:#F1E8E3;overflow:hidden">
+  <div aria-hidden="true" style="position:absolute;top:-40px;right:4%;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(280px,34vw,520px);line-height:1;color:#D99B9D;opacity:.13;pointer-events:none;user-select:none">&ldquo;</div>
+  <div style="position:relative;max-width:1320px;margin:0 auto;padding:{{ s2Pad }};padding-bottom:0;display:grid;grid-template-columns:{{ depCols }};gap:{{ depGap }};align-items:end">
+    <div>
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(24px,3vw,40px);animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+        <span aria-hidden="true" style="display:block;width:28px;height:1px;background:rgba(162,100,106,.6)"></span>
+        <span style="font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.28em;color:#6A5B58">DEPOIMENTOS</span>
+      </div>
+      <h2 id="dep-title" style="margin:0;font-family:'Dancing Script',cursive;font-weight:400;font-size:clamp(38px,4.3vw,64px);line-height:1;letter-spacing:0;color:#352D2D">
+        <span style="display:block;overflow:hidden;padding-bottom:.06em"><span style="display:block;animation:amLine linear both;animation-timeline:view();animation-range:entry 5% entry 55%">A confiança de quem</span></span>
+        <span style="display:block;overflow:hidden;padding-bottom:.08em"><span style="display:block;animation:amLine linear both;animation-timeline:view();animation-range:entry 5% entry 55%">já esteve <em style="font-style:italic;color:#A2646A">aqui.</em></span></span>
+      </h2>
+      <p style="margin:24px 0 0;max-width:420px;font-family:Manrope,sans-serif;font-size:15px;line-height:1.75;color:#5E5350;text-wrap:pretty;animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">Experiências que refletem o cuidado e a atenção presentes em cada atendimento.</p>
+    </div>
+
+    <a href="{{ mapsUrl }}" target="_blank" rel="noopener noreferrer" aria-label="Ver todas as avaliações no Google" class="dep-badge" style="justify-self:{{ depBadgeJustify }};display:flex;align-items:center;gap:20px;padding:22px 28px;background:#FAF6F3;border:1px solid rgba(106,91,88,.18);color:#352D2D;animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+      <svg aria-hidden="true" width="44" height="44" viewBox="0 0 48 48" style="flex-shrink:0"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path></svg>
+      <span style="display:block">
+        <span style="display:flex;align-items:center;gap:12px">
+          <span style="font-family:Manrope,sans-serif;font-size:19px;font-weight:600;letter-spacing:-.01em;line-height:1"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span></span>
+          <span role="img" aria-label="5 estrelas" style="display:flex;gap:2px;color:#E8A93A">
+            <sc-for list="{{ depStars }}" as="s" hint-placeholder-count="5"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.8l3 6.9 7.5.7-5.7 5 1.7 7.4L12 17.8l-6.5 4 1.7-7.4-5.7-5 7.5-.7z"></path></svg></sc-for>
+          </span>
+        </span>
+        <span style="display:block;margin-top:9px;font-family:Manrope,sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:#6A5B58">AVALIAÇÕES REAIS DE PACIENTES</span>
+      </span>
+    </a>
+  </div>
+
+  <div style="position:relative;padding:clamp(40px,4.4vw,64px) 0 clamp(56px,5vw,88px);display:grid;gap:24px" role="region" aria-label="Avaliações de pacientes no Google">
+    <div class="dep-row">
+      <div class="dep-track" style="--d:{{ depDurA }}">
+        <sc-for list="{{ depRowA }}" as="r" hint-placeholder-count="10">
+          <figure aria-hidden="{{ r.dup }}" class="dep-card" style="width:{{ depCardW }}">
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <span role="img" aria-label="5 estrelas" style="display:flex;gap:3px;color:#E8A93A">
+                <sc-for list="{{ depStars }}" as="s" hint-placeholder-count="5"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.8l3 6.9 7.5.7-5.7 5 1.7 7.4L12 17.8l-6.5 4 1.7-7.4-5.7-5 7.5-.7z"></path></svg></sc-for>
+              </span>
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path></svg>
+            </div>
+            <blockquote class="dep-quote">{{ r.text }}</blockquote>
+            <figcaption class="dep-cap">
+              <span aria-hidden="true" class="dep-avatar">{{ r.initial }}</span>
+              <span style="display:block;min-width:0">
+                <span style="display:block;font-family:Manrope,sans-serif;font-size:12px;font-weight:600;letter-spacing:.16em;color:#352D2D">{{ r.nameUpper }}</span>
+                <span style="display:block;margin-top:4px;font-family:Manrope,sans-serif;font-size:11px;letter-spacing:.04em;color:#6A5B58">Avaliação publicada no Google</span>
+              </span>
+            </figcaption>
+          </figure>
+        </sc-for>
+      </div>
+    </div>
+    <div class="dep-row">
+      <div class="dep-track dep-rev" style="--d:{{ depDurB }}">
+        <sc-for list="{{ depRowB }}" as="r" hint-placeholder-count="10">
+          <figure aria-hidden="{{ r.dup }}" class="dep-card" style="width:{{ depCardW }}">
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <span role="img" aria-label="5 estrelas" style="display:flex;gap:3px;color:#E8A93A">
+                <sc-for list="{{ depStars }}" as="s" hint-placeholder-count="5"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.8l3 6.9 7.5.7-5.7 5 1.7 7.4L12 17.8l-6.5 4 1.7-7.4-5.7-5 7.5-.7z"></path></svg></sc-for>
+              </span>
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path></svg>
+            </div>
+            <blockquote class="dep-quote">{{ r.text }}</blockquote>
+            <figcaption class="dep-cap">
+              <span aria-hidden="true" class="dep-avatar">{{ r.initial }}</span>
+              <span style="display:block;min-width:0">
+                <span style="display:block;font-family:Manrope,sans-serif;font-size:12px;font-weight:600;letter-spacing:.16em;color:#352D2D">{{ r.nameUpper }}</span>
+                <span style="display:block;margin-top:4px;font-family:Manrope,sans-serif;font-size:11px;letter-spacing:.04em;color:#6A5B58">Avaliação publicada no Google</span>
+              </span>
+            </figcaption>
+          </figure>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="duvidas" data-screen-label="10 FAQ" aria-labelledby="faq-title" style="position:relative;background:#FAF6F3">
+  <div style="max-width:1320px;margin:0 auto;padding:{{ s2Pad }};display:grid;grid-template-columns:{{ faqCols }};gap:{{ depGap }};align-items:start">
+    <div style="position:{{ faqHeadPos }};top:{{ faqHeadTop }}">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(24px,3vw,40px);animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+        <span aria-hidden="true" style="display:block;width:28px;height:1px;background:rgba(162,100,106,.6)"></span>
+        <span style="font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.28em;color:#6A5B58">PERGUNTAS FREQUENTES</span>
+      </div>
+      <h2 id="faq-title" style="margin:0;font-family:'Dancing Script',cursive;font-weight:400;font-size:clamp(38px,4.3vw,64px);line-height:1;letter-spacing:0;color:#352D2D">
+        <span style="display:block;overflow:hidden;padding-bottom:.06em"><span style="display:block;animation:amLine linear both;animation-timeline:view();animation-range:entry 5% entry 55%">Suas dúvidas,</span></span>
+        <span style="display:block;overflow:hidden;padding-bottom:.06em"><span style="display:block;animation:amLine linear both;animation-timeline:view();animation-range:entry 5% entry 55%">com atenção</span></span>
+        <span style="display:block;overflow:hidden;padding-bottom:.08em"><span style="display:block;animation:amLine linear both;animation-timeline:view();animation-range:entry 5% entry 55%">e <em style="font-style:italic;color:#A2646A">clareza.</em></span></span>
+      </h2>
+      <a href="{{ waHero }}" target="_blank" rel="noopener noreferrer" style="margin-top:clamp(28px,3vw,40px);display:inline-flex;align-items:center;gap:14px;padding-bottom:8px;border-bottom:1px solid #352D2D;font-family:Manrope,sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.2em;color:#352D2D;transition:color .35s ease,border-color .35s ease" style-hover="color:#A2646A;border-color:#A2646A">FALE COM NOSSA EQUIPE<svg aria-hidden="true" width="18" height="10" viewBox="0 0 18 10" fill="none"><path d="M0 5h16.5M12.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"></path></svg></a>
+    </div>
+
+    <div style="border-top:1px solid rgba(106,91,88,.22)">
+      <sc-for list="{{ faqs }}" as="q" hint-placeholder-count="5">
+        <div style="border-bottom:1px solid rgba(106,91,88,.22);animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 60%">
+          <h3 style="margin:0">
+            <button type="button" id="{{ q.btnId }}" aria-expanded="{{ q.expanded }}" aria-controls="{{ q.panelId }}" onClick="{{ q.toggle }}" style="width:100%;display:grid;grid-template-columns:{{ faqRowCols }};align-items:center;gap:16px;padding:clamp(14px,1.4vw,18px) 0;background:none;border:0;cursor:pointer;text-align:left" style-hover="color:#A2646A">
+              <span style="font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.16em;color:#A2646A">{{ q.num }}</span>
+              <span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(23px,2.1vw,30px);line-height:1.2;color:{{ q.color }};transition:color .35s ease">{{ q.q }}</span>
+              <span aria-hidden="true" style="position:relative;width:40px;height:40px;border:1px solid {{ q.iconBorder }};border-radius:50%;background:{{ q.iconBg }};transition:background-color .4s ease,border-color .4s ease">
+                <span style="position:absolute;left:50%;top:50%;width:12px;height:1px;margin:-0.5px 0 0 -6px;background:{{ q.iconColor }};transition:background-color .4s ease"></span>
+                <span style="position:absolute;left:50%;top:50%;width:12px;height:1px;margin:-0.5px 0 0 -6px;background:{{ q.iconColor }};transform:{{ q.vT }};transition:transform .5s cubic-bezier(.2,.7,.1,1),background-color .4s ease"></span>
+              </span>
+            </button>
+          </h3>
+          <div id="{{ q.panelId }}" role="region" aria-labelledby="{{ q.btnId }}" style="display:grid;grid-template-rows:{{ q.rows }};transition:grid-template-rows .6s cubic-bezier(.2,.7,.1,1)">
+            <div style="overflow:hidden;min-height:0">
+              <p style="margin:0;padding:0 56px clamp(24px,2.4vw,32px) {{ faqIndent }};max-width:640px;font-family:Manrope,sans-serif;font-size:15.5px;line-height:1.75;color:#5E5350;text-wrap:pretty;opacity:{{ q.aO }};transform:{{ q.aT }};transition:opacity .5s ease,transform .6s cubic-bezier(.2,.7,.1,1)">{{ q.a }}</p>
+            </div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="agendar" data-screen-label="11 Convite final" aria-labelledby="final-title" style="position:relative;background:#D99B9D;overflow:hidden">
+  <svg aria-hidden="true" viewBox="0 0 1000 600" preserveAspectRatio="none" style="position:absolute;left:50%;top:50%;width:min(1180px,140vw);height:min(760px,120%);transform:translate(-50%,-50%);pointer-events:none">
+    <ellipse cx="500" cy="300" rx="496" ry="296" fill="none" stroke="#352D2D" stroke-opacity=".22" stroke-width="1" vector-effect="non-scaling-stroke" pathLength="1" stroke-dasharray="1" style="animation:amRing linear both;animation-timeline:view();animation-range:entry 10% cover 55%"></ellipse>
+  </svg>
+  <div aria-hidden="true" style="position:absolute;right:clamp(-120px,-4vw,-40px);bottom:clamp(-140px,-8vw,-60px);width:clamp(260px,30vw,440px);height:clamp(277px,32vw,468px);overflow:hidden;opacity:.28;mix-blend-mode:multiply;pointer-events:none">
+    <img src="assets/logo/logo-horizontal.webp" alt="" style="height:100%;width:auto;display:block;max-width:none;filter:saturate(.6)">
+  </div>
+
+  <div style="position:relative;max-width:1120px;margin:0 auto;padding:{{ finalPad }};display:flex;flex-direction:column;align-items:center;text-align:center">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(28px,3.4vw,48px);animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+      <span aria-hidden="true" style="display:block;width:28px;height:1px;background:#352D2D"></span>
+      <span style="font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.28em;color:#352D2D">AVALIAÇÃO INDIVIDUALIZADA</span>
+      <span aria-hidden="true" style="display:block;width:28px;height:1px;background:#352D2D"></span>
+    </div>
+    <h2 id="final-title" style="margin:0;font-family:'Dancing Script',cursive;font-weight:400;font-size:clamp(38px,4.3vw,64px);line-height:1;letter-spacing:0;color:#352D2D">
+      <span style="display:block;overflow:hidden;padding-bottom:.06em"><span style="display:block;animation:amLine linear both;animation-timeline:view();animation-range:entry 5% entry 50%">Seu cuidado começa</span></span>
+      <span style="display:block;overflow:hidden;padding-bottom:.06em"><span style="display:block;animation:amLine linear both;animation-timeline:view();animation-range:entry 5% entry 50%">por uma avaliação</span></span>
+      <span style="display:block;overflow:hidden;padding-bottom:.08em"><span style="display:block;animation:amLine linear both;animation-timeline:view();animation-range:entry 5% entry 50%"><em style="font-style:italic;color:#6E363D">individualizada.</em></span></span>
+    </h2>
+    <p style="margin:clamp(28px,3vw,44px) 0 0;max-width:520px;font-family:Manrope,sans-serif;font-size:16px;line-height:1.75;color:#352D2D;text-wrap:pretty;animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">Cada sorriso possui necessidades diferentes. Converse com a equipe do Ateliê Moema para entender as possibilidades de tratamento para o seu caso.</p>
+    <a href="{{ waHero }}" target="_blank" rel="noopener noreferrer" onMouseEnter="{{ cta11In }}" onMouseLeave="{{ cta11Out }}" onFocus="{{ cta11In }}" onBlur="{{ cta11Out }}" style="margin-top:clamp(36px,4vw,56px);display:inline-flex;align-items:center;justify-content:space-between;gap:26px;height:64px;padding:0 12px 0 34px;width:{{ ctaW }};background:#352D2D;color:#FAF6F3;border-radius:2px;font-family:Manrope,sans-serif;font-size:12.5px;font-weight:600;letter-spacing:.2em;transition:background-color .45s ease,color .45s ease;animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%" style-hover="background-color:#FAF6F3;color:#352D2D">
+      AGENDAR MINHA AVALIAÇÃO
+      <span aria-hidden="true" style="position:relative;width:42px;height:42px;overflow:hidden;background:#D99B9D;border-radius:1px;flex-shrink:0">
+        <span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transform:{{ arrow11A }};transition:transform .55s cubic-bezier(.7,0,.2,1)"><svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="#352D2D" stroke-width="1.2"></path></svg></span>
+        <span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transform:{{ arrow11B }};transition:transform .55s cubic-bezier(.7,0,.2,1)"><svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="#352D2D" stroke-width="1.2"></path></svg></span>
+      </span>
+    </a>
+    <p style="margin:28px 0 0;font-family:Manrope,sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.24em;line-height:1.8;color:#352D2D">ATENDIMENTO PARTICULAR EM MOEMA — SÃO PAULO</p>
+  </div>
+</section>
+
+<section id="pagamento" data-screen-label="11a Pagamento" aria-labelledby="pay-title" style="position:relative;background:#FAF6F3;overflow:hidden">
+  <div style="max-width:1320px;margin:0 auto;padding:{{ s2Pad }}">
+    <div style="display:grid;grid-template-columns:{{ payHeadCols }};gap:{{ payHeadGap }};align-items:end">
+      <div>
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(24px,3vw,40px);animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+          <span aria-hidden="true" style="display:block;width:28px;height:1px;background:rgba(162,100,106,.6)"></span>
+          <span style="font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.28em;color:#6A5B58">FORMAS DE PAGAMENTO</span>
+        </div>
+        <h2 id="pay-title" style="margin:0;font-family:'Dancing Script',cursive;font-weight:400;font-size:clamp(38px,4.3vw,64px);line-height:1;letter-spacing:0;color:#352D2D">
+          <span style="display:block;overflow:hidden;padding-bottom:.06em"><span style="display:block;animation:amLine linear both;animation-timeline:view();animation-range:entry 5% entry 55%">Agora ficou mais fácil</span></span>
+          <span style="display:block;overflow:hidden;padding-bottom:.08em"><span style="display:block;animation:amLine linear both;animation-timeline:view();animation-range:entry 5% entry 55%">realizar <em style="font-style:italic;color:#A2646A">o seu tratamento</em></span></span>
+        </h2>
+      </div>
+      <p style="margin:0;max-width:460px;padding-bottom:8px;font-family:Manrope,sans-serif;font-size:15px;line-height:1.75;color:#5E5350;text-wrap:pretty;animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">Para tornar seu tratamento ainda mais acessível e tranquilo, oferecemos opções de pagamento no cartão, via Pix e parcelamento por boleto através de financeira parceira.</p>
+    </div>
+
+    <ul style="list-style:none;margin:clamp(48px,5.4vw,80px) 0 0;padding:0;display:grid;grid-template-columns:{{ payCols }};border-top:1px solid rgba(106,91,88,.22);border-bottom:1px solid rgba(106,91,88,.22);animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 40%">
+        <li class="pay-item" style="padding:{{ payItemPad }};text-align:center;display:flex;flex-direction:column;align-items:center;gap:26px">
+          <span aria-hidden="true" class="pay-ico" style="display:flex;align-items:center;justify-content:center;width:88px;height:88px;border-radius:50%;transition:background-color .5s ease,color .5s ease,border-color .5s ease,transform .6s cubic-bezier(.2,.7,.1,1)"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2"></rect><path d="M2.5 9.500h19M6 15h4"></path></svg></span>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:clamp(24px,2vw,30px);line-height:1.2;color:#352D2D;max-width:300px;text-wrap:balance">Cartão de crédito</span>
+        </li>
+        <li class="pay-item" style="border-left:{{ payBL }};border-top:{{ payBT }};padding:{{ payItemPad }};text-align:center;display:flex;flex-direction:column;align-items:center;gap:26px">
+          <span aria-hidden="true" class="pay-ico" style="display:flex;align-items:center;justify-content:center;width:88px;height:88px;border-radius:50%;transition:background-color .5s ease,color .5s ease,border-color .5s ease,transform .6s cubic-bezier(.2,.7,.1,1)"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5.5" y="5.5" width="13" height="13" rx="3" transform="rotate(45 12 12)"></rect><path d="M8.2 8.2l2.7 2.7a1.5 1.5 0 0 0 2.2 0l2.7-2.7M8.2 15.8l2.7-2.7a1.5 1.5 0 0 1 2.2 0l2.7 2.7"></path></svg></span>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:clamp(24px,2vw,30px);line-height:1.2;color:#352D2D;max-width:300px;text-wrap:balance">PIX</span>
+        </li>
+        <li class="pay-item" style="border-left:{{ payBL }};border-top:{{ payBT }};padding:{{ payItemPad }};text-align:center;display:flex;flex-direction:column;align-items:center;gap:26px">
+          <span aria-hidden="true" class="pay-ico" style="display:flex;align-items:center;justify-content:center;width:88px;height:88px;border-radius:50%;transition:background-color .5s ease,color .5s ease,border-color .5s ease,transform .6s cubic-bezier(.2,.7,.1,1)"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.500" y="4.500" width="19" height="15" rx="2"></rect><path d="M6 8.500v7M9 8.500v7M12 8.500v7M15 8.500v7M18 8.500v7" stroke-width="1.400"></path></svg></span>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:clamp(24px,2vw,30px);line-height:1.2;color:#352D2D;max-width:300px;text-wrap:balance">Parcelamento via boleto através de financeira parceira</span>
+        </li>
+      </ul>
+    <div style="margin-top:clamp(40px,4.4vw,64px);display:flex;justify-content:center">
+      <a href="{{ waHero }}" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;justify-content:space-between;gap:26px;height:62px;padding:0 10px 0 32px;background:#A2646A;color:#fff;border-radius:2px;font-family:Manrope,sans-serif;font-size:12px;font-weight:600;letter-spacing:.2em;transition:background-color .45s ease" style-hover="background-color:#352D2D;color:#fff">AGENDE SUA CONSULTA<span aria-hidden="true" style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;background:rgba(255,255,255,.16);border-radius:1px"><svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"></path></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<section id="aniversario" data-screen-label="11b 5 anos" aria-labelledby="an-title" style="position:relative;background:#2E2626;overflow:hidden">
+  <div aria-hidden="true" style="position:absolute;left:50%;top:{{ anNumTop }};transform:translateX(-50%);font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:clamp(360px,52vw,820px);line-height:1;color:#FAF6F3;opacity:.045;pointer-events:none;user-select:none">5</div>
+  <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 62%,rgba(217,155,157,.16),transparent 70%);pointer-events:none"></div>
+  <div style="position:relative;max-width:1320px;margin:0 auto;padding:clamp(72px,8vw,128px) clamp(20px,4vw,56px) clamp(64px,7vw,112px)">
+    <div style="text-align:center">
+      <div style="display:inline-flex;align-items:center;gap:16px;margin-bottom:clamp(24px,3vw,36px);animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+        <span aria-hidden="true" style="display:block;width:36px;height:1px;background:rgba(227,174,176,.6)"></span>
+        <span style="font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.32em;color:#E3AEB0">ATELIÊ MOEMA · 5 ANOS</span>
+        <span aria-hidden="true" style="display:block;width:36px;height:1px;background:rgba(227,174,176,.6)"></span>
+      </div>
+      <h2 id="an-title" style="margin:0 auto;max-width:900px;font-family:'Dancing Script',cursive;font-weight:400;font-size:clamp(36px,4.6vw,68px);line-height:1.12;letter-spacing:0;color:#FAF6F3;text-wrap:balance;animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 50%">Comemoramos <em style="font-style:italic;color:#E3AEB0">5 anos</em> de história, dedicação e transformação de sorrisos.</h2>
+    </div>
+
+    <div role="region" aria-roledescription="carrossel" aria-label="Fotos dos 5 anos do Ateliê Moema" tabindex="0" onKeyDown="{{ anKey }}" onMouseEnter="{{ anHold }}" onMouseLeave="{{ anRelease }}" onFocus="{{ anHold }}" onBlur="{{ anRelease }}" onPointerDown="{{ anDown }}" onPointerUp="{{ anUp }}" onPointerCancel="{{ anUp }}" style="position:relative;margin-top:clamp(40px,5vw,72px);height:calc({{ anW }} * 1.3334 + 36px);touch-action:pan-y;user-select:none;outline-offset:8px;--w:{{ anW }}">
+      <sc-for list="{{ anSlides }}" as="p" hint-placeholder-count="7">
+        <figure aria-hidden="{{ p.hidden }}" onClick="{{ p.go }}" style="position:absolute;top:18px;left:50%;width:var(--w);margin:0 0 0 calc(var(--w) / -2);padding:clamp(6px,.7vw,10px);background:#FAF6F3;box-shadow:0 40px 80px -30px rgba(0,0,0,.65);opacity:{{ p.o }};transform:translateX(calc(var(--w) * {{ p.x }})) scale({{ p.s }});z-index:{{ p.z }};cursor:{{ p.cursor }};transition:transform 1.1s cubic-bezier(.2,.7,.1,1),opacity .9s ease;will-change:transform">
+          <img src="{{ p.src }}" alt="{{ p.alt }}" loading="lazy" draggable="false" style="display:block;width:100%;aspect-ratio:3/4;object-fit:cover;filter:{{ p.filter }};transition:filter 1.1s ease">
+        </figure>
+      </sc-for>
+    </div>
+
+    <div style="margin-top:clamp(28px,3.4vw,48px);display:flex;align-items:center;justify-content:center;gap:clamp(16px,2.4vw,32px)">
+      <button type="button" onClick="{{ anPrev }}" aria-label="Foto anterior" style="width:52px;height:52px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border:1px solid rgba(250,246,243,.35);border-radius:50%;background:transparent;color:#FAF6F3;cursor:pointer;transition:background-color .35s ease,color .35s ease" style-hover="background-color:#FAF6F3;color:#2E2626"><svg aria-hidden="true" width="18" height="10" viewBox="0 0 18 10" fill="none" style="transform:rotate(180deg)"><path d="M0 5h16.5M12.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"></path></svg></button>
+      <div role="tablist" aria-label="Escolher foto" style="display:flex;align-items:center;gap:2px">
+        <sc-for list="{{ anDots }}" as="d" hint-placeholder-count="7">
+          <button type="button" role="tab" aria-selected="{{ d.sel }}" aria-label="{{ d.aria }}" onClick="{{ d.go }}" style="width:28px;height:44px;display:flex;align-items:center;justify-content:center;background:none;border:0;cursor:pointer;padding:0">
+            <span aria-hidden="true" style="display:block;height:2px;width:{{ d.w }};background:{{ d.bg }};transition:width .6s cubic-bezier(.2,.7,.1,1),background-color .4s ease"></span>
+          </button>
+        </sc-for>
+      </div>
+      <button type="button" onClick="{{ anNext }}" aria-label="Próxima foto" style="width:52px;height:52px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border:1px solid rgba(250,246,243,.35);border-radius:50%;background:transparent;color:#FAF6F3;cursor:pointer;transition:background-color .35s ease,color .35s ease" style-hover="background-color:#FAF6F3;color:#2E2626"><svg aria-hidden="true" width="18" height="10" viewBox="0 0 18 10" fill="none"><path d="M0 5h16.5M12.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"></path></svg></button>
+    </div>
+  </div>
+</section>
+
+<section id="contato" data-screen-label="12 Contato" aria-labelledby="contato-title" style="position:relative;background:#FAF6F3">
+  <div style="max-width:1320px;margin:0 auto;padding:{{ s2Pad }};display:grid;grid-template-columns:{{ ctCols }};gap:{{ depGap }};align-items:stretch">
+    <div>
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(24px,3vw,40px);animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">
+        <span aria-hidden="true" style="display:block;width:28px;height:1px;background:rgba(162,100,106,.6)"></span>
+        <span style="font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.28em;color:#6A5B58">CONTATO</span>
+      </div>
+      <h2 id="contato-title" style="margin:0;font-family:'Dancing Script',cursive;font-weight:400;font-size:clamp(38px,4.3vw,64px);line-height:1;letter-spacing:0;color:#352D2D;animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">Ateliê Moema <em style="font-style:italic;color:#A2646A">Odontologia</em></h2>
+
+      <div style="margin-top:clamp(40px,4.4vw,64px);display:grid;grid-template-columns:{{ ctInfoCols }};gap:0 40px">
+        <div style="padding:24px 0;border-top:1px solid rgba(106,91,88,.22)">
+          <p style="margin:0 0 12px;font-family:Manrope,sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.22em;color:#A2646A">ENDEREÇO</p>
+          <address style="font-style:normal;font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.35;color:#352D2D">Alameda dos Maracatins, 508<br>Conjunto 24 — 2º andar<br>Moema — São Paulo/SP</address>
+          <div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:6px 20px">
+            <a href="{{ mapsUrl }}" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;min-height:36px;font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.18em;color:#352D2D;border-bottom:1px solid rgba(53,45,45,.4)" style-hover="color:#A2646A;border-color:#A2646A">GOOGLE MAPS</a>
+            <a href="https://www.waze.com/pt-BR/live-map/directions/br/sp/alameda-dos-maracatins,-508?to=place.ChIJMVhIaxBazpQRogo9cCYW36U" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;min-height:36px;font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.18em;color:#352D2D;border-bottom:1px solid rgba(53,45,45,.4)" style-hover="color:#A2646A;border-color:#A2646A">WAZE</a>
+          </div>
+        </div>
+        <div style="padding:24px 0;border-top:1px solid rgba(106,91,88,.22)">
+          <p style="margin:0 0 12px;font-family:Manrope,sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.22em;color:#A2646A">TRABALHE CONOSCO</p>
+          <a href="mailto:contato@ateliemoemaodontologia.com.br" style="font-family:'Cormorant Garamond',serif;font-size:20px;line-height:1.35;color:#352D2D;overflow-wrap:anywhere;border-bottom:1px solid rgba(53,45,45,.3)" style-hover="color:#A2646A">contato@ateliemoemaodontologia.com.br</a>
+          <p style="margin:10px 0 0;font-family:Manrope,sans-serif;font-size:13px;line-height:1.6;color:#6A5B58">Currículos recebidos exclusivamente por e-mail.</p>
+        </div>
+      </div>
+      <a href="{{ waHero }}" target="_blank" rel="noopener noreferrer" style="margin-top:clamp(24px,2.6vw,36px);display:inline-flex;align-items:center;gap:14px;height:58px;padding:0 30px;background:#A2646A;color:#fff;border-radius:2px;font-family:Manrope,sans-serif;font-size:12px;font-weight:600;letter-spacing:.2em;transition:background-color .45s ease" style-hover="background-color:#352D2D;color:#fff"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.300.5 1.700.6.7.2 1.400.2 1.900.1.600-.1 1.700-.7 2-1.400.2-.7.2-1.300.2-1.400-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2zm0 18.200c-1.500 0-3-.4-4.200-1.200l-.3-.2-3 .8.8-2.900-.2-.3A8.200 8.200 0 1 1 12 20.200z"/></svg>CHAMAR NO WHATSAPP</a>
+    </div>
+
+    <div style="position:relative;min-height:{{ ctMapMinH }};background:#EAE0DA;overflow:hidden;animation:amFade linear both;animation-timeline:view();animation-range:entry 0% entry 40%">
+      <iframe title="Mapa: Ateliê Moema Odontologia, Alameda dos Maracatins, 508 — Moema, São Paulo" src="https://maps.google.com/maps?cid=3063994899347616185&amp;hl=pt-BR&amp;z=17&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(1) sepia(.18) contrast(.92) brightness(1.04)"></iframe>
+      <a href="{{ mapsUrl }}" target="_blank" rel="noopener noreferrer" style="position:absolute;left:16px;bottom:16px;display:inline-flex;align-items:center;gap:12px;padding:14px 18px;background:#FAF6F3;font-family:Manrope,sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.2em;color:#352D2D;box-shadow:0 1px 0 rgba(106,91,88,.12)" style-hover="color:#A2646A">ABRIR NO MAPA<svg aria-hidden="true" width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"></path></svg></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer style="background:#3A3130;color:#D9CCC6">
+  <div style="max-width:1320px;margin:0 auto;padding:{{ ftPad }}">
+    <div style="display:grid;grid-template-columns:{{ ftCols }};gap:40px;align-items:start">
+      <div style="display:flex;flex-direction:column;gap:20px;align-items:{{ ftAlign }};text-align:{{ ftText }}">
+        <a href="#inicio" onClick="{{ goHome }}" aria-label="Ateliê Moema Odontologia — voltar ao início" style="display:inline-flex"><img src="assets/logo/logo-horizontal.webp" alt="Ateliê Moema Odontologia" width="1024" height="239" loading="lazy" style="height:48px;width:auto;display:block"></a>
+        <p style="margin:0;max-width:300px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;line-height:1.35;color:#E6DAD4">Odontologia de precisão com a delicadeza de um ateliê.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px;align-items:{{ ftAlign }};text-align:{{ ftText }};font-family:Manrope,sans-serif;font-size:14px;line-height:1.7;color:#D9CCC6">
+        <p style="margin:0 0 6px;font-family:'Dancing Script',cursive;font-weight:400;font-size:30px;line-height:1.1;color:#FAF6F3">Resp. Técnico</p>
+        <p style="margin:0">Dra.: Elis Debora Rocha</p>
+        <p style="margin:0">CROSP 127.773</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px;align-items:{{ ftAlign }};text-align:{{ ftText }};font-family:Manrope,sans-serif;font-size:14px;line-height:1.7;color:#D9CCC6">
+        <p style="margin:0 0 6px;font-family:'Dancing Script',cursive;font-weight:400;font-size:30px;line-height:1.1;color:#FAF6F3">Atendimento</p>
+        <a href="{{ mapsUrl }}" target="_blank" rel="noopener noreferrer" style="color:#D9CCC6" style-hover="color:#FAF6F3"><address style="font-style:normal">Alameda dos Maracatins, 508<br>Conjunto 24, 2º andar, Moema - SP</address></a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;align-items:{{ ftAlign }};text-align:{{ ftText }};font-family:Manrope,sans-serif;font-size:13px;line-height:1.7;color:#D9CCC6">
+        <p style="margin:0 0 6px;font-family:'Dancing Script',cursive;font-weight:400;font-size:30px;line-height:1.1;color:#FAF6F3">Acompanhe</p>
+        <a href="https://www.instagram.com/dra.elisdrocha/" target="_blank" rel="noopener noreferrer" style="color:#D9CCC6;display:inline-flex;align-items:center;min-height:36px" style-hover="color:#FAF6F3">Instagram — @dra.elisdrocha</a>
+        <a href="{{ waHero }}" target="_blank" rel="noopener noreferrer" style="color:#D9CCC6;display:inline-flex;align-items:center;min-height:36px" style-hover="color:#FAF6F3">WhatsApp — {{ waDisplay }}</a>
+      </div>
+    </div>
+    <div style="margin-top:clamp(48px,5vw,72px);padding-top:24px;border-top:1px solid rgba(250,246,243,.14);display:flex;flex-wrap:wrap;justify-content:{{ ftJustify }};text-align:{{ ftText }};gap:12px 32px;font-family:Manrope,sans-serif;font-size:11.5px;line-height:1.7;color:#B9ACA7">
+      <span>© {{ year }} Ateliê Moema Odontologia. Todos os direitos reservados. Desenvolvido por SuperDental®.</span>
+    </div>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;heroImage&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;assets/hero-principal.webp.jpg&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Fotografia&quot;},&quot;heroImagePosition&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;50% 30%&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Fotografia&quot;},&quot;showBadge&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Composição&quot;},&quot;whatsappNumber&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;5511944872022&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Conversão&quot;}}">
+const NAV = [['inicio','Início'],['atelie','O Ateliê'],['tratamentos','Tratamentos'],['tecnologia','Tecnologia'],['invisalign','Invisalign®'],['resultados','Resultados'],['contato','Contato'],['blog','Blog',null]];
+const PILLARS = [
+  ['Cuidado individualizado', 'Cada paciente é recebido com atenção às suas necessidades, expectativas e características.'],
+  ['Tecnologia e planejamento', 'Ferramentas digitais auxiliam na avaliação e na definição das possibilidades de tratamento.'],
+  ['Experiência acolhedora', 'Uma estrutura pensada para proporcionar conforto, proximidade e confiança durante o atendimento.']
+];
+const TREATMENTS = [
+  { id: 'implantes', img: 'assets/implantes_dentarios.webp', name: 'Implantes Dentários', desc: 'Reposição de dentes perdidos com implantes, a partir de avaliação e planejamento individualizados.', file: 'implantes' },
+  { id: 'invisalign', img: 'assets/invisalign.webp', name: 'Invisalign®', desc: 'Alinhadores transparentes e removíveis, com planejamento digital do tratamento ortodôntico.', file: 'invisalign', anchor: 'invisalign' },
+  { id: 'estetica', img: 'assets/estetica_dental_atualizado.webp', name: 'Estética Dental', desc: 'Procedimentos como clareamento e facetas, planejados de acordo com as características de cada sorriso.', file: 'estetica-dental' },
+  { id: 'harmonizacao', img: 'assets/harmonizacao.webp', name: 'Harmonização Orofacial', desc: 'Procedimentos voltados ao equilíbrio entre face e sorriso, indicados após avaliação individual.', file: 'harmonizacao-orofacial' },
+  { id: 'clinica', img: 'assets/clinica-geral.webp', name: 'Clínica Geral', desc: 'Prevenção, limpeza profissional e acompanhamento contínuo da saúde bucal.', file: 'clinica-geral' },
+  { id: 'ortodontia', img: 'assets/ortodontia.webp', name: 'Ortodontia', desc: 'Correção do posicionamento dos dentes e da mordida, com acompanhamento em cada etapa.', file: 'ortodontia' },
+  { id: 'proteses', img: 'assets/proteses.webp', name: 'Próteses Dentárias', desc: 'Reabilitação da função e da estética com próteses planejadas para cada caso.', file: 'proteses' },
+  { id: 'demais', img: 'assets/demais.webp', name: 'Demais tratamentos', desc: 'Tratamento de canal, cirurgias e ortopedia dos maxilares, entre outras áreas de atendimento.', file: 'demais-tratamentos' }
+];
+const CASE_CATS = [['todos', 'TODOS'], ['implantes', 'IMPLANTES'], ['estetica', 'ESTÉTICA DENTAL'], ['harmonizacao', 'HARMONIZAÇÃO OROFACIAL'], ['ortodontia', 'ORTODONTIA/ORTOPEDIA INFANTIL']];
+const CASES = [
+  { cat: 'implantes', title: 'Implantes dentários', ratio: '1 / 1', img: 'assets/implantes_1.jpg', alt: 'Caso de implantes dentários: antes e depois' },
+  { cat: 'estetica', title: 'Facetas', ratio: '1 / 1', img: 'assets/facetas_1.jpg', alt: 'Caso de facetas: antes e depois do sorriso' },
+  { cat: 'harmonizacao', title: 'Harmonização orofacial', ratio: '1 / 1', img: 'assets/h_1.jpg', alt: 'Caso de harmonização orofacial 1: antes e depois' },
+  { cat: 'ortodontia', title: 'Ortodontia infantil', ratio: '2 / 3', imgA: 'assets/antes-1-1.webp', imgB: 'assets/antes-1-2.webp', alt: 'Caso de ortodontia infantil 1' },
+  { cat: 'ortodontia', title: 'Ortodontia infantil', ratio: '2 / 3', imgA: 'assets/caso2-1.webp', imgB: 'assets/caso2-2.webp', alt: 'Caso de ortodontia infantil 2' },
+  { cat: 'ortodontia', title: 'Ortodontia infantil', ratio: '2 / 3', imgA: 'assets/caso3-1.webp', imgB: 'assets/caso3-2.webp', alt: 'Caso de ortodontia infantil 3' },
+  { cat: 'ortodontia', title: 'Ortodontia infantil', ratio: '2 / 3', imgA: 'assets/caso4-1.webp', imgB: 'assets/caso4-2.webp', alt: 'Caso de ortodontia infantil 4' },
+  { cat: 'ortodontia', title: 'Ortodontia infantil', ratio: '2 / 3', imgA: 'assets/caso5-1.webp', imgB: 'assets/caso5-2.webp', alt: 'Caso de ortodontia infantil 5' },
+  { cat: 'estetica', title: 'Clareamento', ratio: '1 / 1', noTags: true, img: 'assets/clareamento1.png', alt: 'Caso de clareamento dental: evolução do sorriso' },
+  { cat: 'harmonizacao', title: 'Harmonização orofacial', ratio: '1 / 1', img: 'assets/h_2.jpg', alt: 'Caso de harmonização orofacial 2: antes e depois' },
+  { cat: 'estetica', title: 'Facetas', ratio: '1 / 1', img: 'assets/facetas_2.jpg', alt: 'Caso de facetas: antes e depois do sorriso' },
+  { cat: 'harmonizacao', title: 'Harmonização orofacial', ratio: '1 / 1', img: 'assets/h_3.jpg', alt: 'Caso de harmonização orofacial 3: antes e depois', onlyTab: true },
+  { cat: 'harmonizacao', title: 'Harmonização orofacial', ratio: '1 / 1', img: 'assets/h_4.jpg', alt: 'Caso de harmonização orofacial 4: antes e depois', onlyTab: true },
+  { cat: 'harmonizacao', title: 'Harmonização orofacial', ratio: '1 / 1', img: 'assets/h_5.jpg', alt: 'Caso de harmonização orofacial 5: antes e depois', onlyTab: true },
+  { cat: 'harmonizacao', title: 'Harmonização orofacial', ratio: '1 / 1', img: 'assets/h_6.jpg', alt: 'Caso de harmonização orofacial 6: antes e depois', onlyTab: true },
+  { cat: 'harmonizacao', title: 'Harmonização orofacial', ratio: '1 / 1', img: 'assets/h_7.jpg', alt: 'Caso de harmonização orofacial 7: antes e depois', onlyTab: true },
+  { cat: 'harmonizacao', title: 'Harmonização orofacial', ratio: '1 / 1', img: 'assets/h_8.jpg', alt: 'Caso de harmonização orofacial 8: antes e depois', onlyTab: true },
+  { cat: 'harmonizacao', title: 'Harmonização orofacial', ratio: '1 / 1', img: 'assets/h_9.jpg', alt: 'Caso de harmonização orofacial 9: antes e depois', onlyTab: true },
+  { cat: 'harmonizacao', title: 'Harmonização orofacial', ratio: '1 / 1', img: 'assets/h_10.jpg', alt: 'Caso de harmonização orofacial 10: antes e depois', onlyTab: true },
+  { cat: 'harmonizacao', title: 'Harmonização orofacial', ratio: '1 / 1', img: 'assets/h_11.jpg', alt: 'Caso de harmonização orofacial 11: antes e depois', onlyTab: true, noTags: true },
+  { cat: 'harmonizacao', title: 'Harmonização orofacial', ratio: '1 / 1', img: 'assets/h_12.jpg', alt: 'Caso de harmonização orofacial 12: antes e depois', onlyTab: true },
+  { cat: 'harmonizacao', title: 'Harmonização orofacial', ratio: '1 / 1', img: 'assets/h_13.jpg', alt: 'Caso de harmonização orofacial 13: antes e depois', onlyTab: true },
+  { cat: 'harmonizacao', title: 'Harmonização orofacial', ratio: '1 / 1', img: 'assets/h_14.jpg', alt: 'Caso de harmonização orofacial 14: antes e depois', onlyTab: true },
+  { cat: 'harmonizacao', title: 'Harmonização orofacial', ratio: '1 / 1', img: 'assets/h_15.jpg', alt: 'Caso de harmonização orofacial 15: antes e depois', onlyTab: true },
+  { cat: 'harmonizacao', title: 'Harmonização orofacial', ratio: '1 / 1', img: 'assets/h_16.jpg', alt: 'Caso de harmonização orofacial 16: antes e depois', onlyTab: true },
+  { cat: 'harmonizacao', title: 'Harmonização orofacial', ratio: '1 / 1', img: 'assets/h_17.jpg', alt: 'Caso de harmonização orofacial 17: antes e depois', onlyTab: true },
+  { cat: 'harmonizacao', title: 'Harmonização orofacial', ratio: '1 / 1', img: 'assets/h_18.jpg', alt: 'Caso de harmonização orofacial 18: antes e depois', onlyTab: true },
+  { cat: 'harmonizacao', title: 'Harmonização orofacial', ratio: '1 / 1', img: 'assets/h_19.jpg', alt: 'Caso de harmonização orofacial 19: antes e depois', onlyTab: true },
+  { cat: 'estetica', title: 'Limpeza dental', ratio: '1 / 1', noTags: true, img: 'assets/limpeza_1.jpg', alt: 'Caso de limpeza dental: antes e depois' }
+];
+const GALLERY = [['RECEPÇÃO','f5.jpg','center 55%'],['DETALHES','f6.jpg','center 50%'],['CONSULTÓRIOS','f2.jpg','center 45%'],['EQUIPAMENTOS','f3.jpg','center 55%'],['AMBIENTES','f4.jpg','center 50%']];
+// Public Google reviews from the clinic's profile — confirm authorization before publishing
+const TESTIMONIALS = [
+  { name: 'Amanda Tavares', text: 'Dra Elis profissional muito atenciosa, explica cada procedimento com detalhes, sempre muito gentil com o paciente. Seu trabalho é impecável e de altíssima qualidade.' },
+  { name: 'Luzia Poli', text: 'Um atendimento humanizado, consultório impecável e uma profissional fora de série. Nota mil.' },
+  { name: 'Rodrigo Medici', text: 'O lugar super agradável e bem localizado, como atendimento diferente gostei demais, fui bem atendido com muita atenção e excelência.' },
+  { name: 'Bianca Cerqueira', text: 'Excelente atendimento! A dentista foi super atenciosa, cuidadosa e deixou a limpeza impecável.' },
+  { name: 'Silvia Oliveira', text: 'Eu amo essas meninas! Simplesmente apaixonada. Dra Elis cuida de mim a anos, não deixo mais.' },
+  { name: 'Concetta Marcelina De Prizio', text: 'A Dra Elis é muito atenciosa, delicada e dedicada ao paciente! Fui recomendada e recomendarei com certeza! Muito satisfeita!' },
+  { name: 'Alan Rodrigues', text: 'Atendimento impecável, excelentes!!!' },
+  { name: 'Marlon MBS', text: 'Excelente atendimento. Elis sempre MT gentil e estendo o Elogio a todas doutoras e assistentes da clínica.' },
+  { name: 'Fausta Pereira Araujo', text: 'Estamos sendo muito bem atendida, uma profissional excelente Dra Elis, um ambiente acolhedor e humano.' },
+  { name: 'Marcela Valente', text: 'Atendimento impecável da Dra Elis e sua equipe, super recomendo! Nota 1000' },
+  { name: 'Ellen Mayara', text: 'As meninas são maravilhosas! Um lugar acolhedor 🥰' },
+  { name: 'Hugo Camilo', text: 'Ótima profissional, super atenciosa e muito competente. Meu tratamento ficou sensacional.' },
+  { name: 'Vanessa Targino', text: 'Minha experiência foi ótima, além das dicas e indicações para o meu tratamento.' },
+  { name: 'Nathany Andrade', text: 'Sem palavras para o atendimento da Dra. Elis, que pessoa maravilhosa, atendimento impecável, explica tudo com muita clareza, com certeza ganhou uma paciente pra vida.' },
+  { name: 'Kely Belfort', text: 'Atendimento personalizado, humano, profissional e com muito carinho e respeito.' },
+  { name: 'Amanda Alves', text: 'Ótimo atendimento. Dra Elis muito gentil e competente, indico de olhos fechados.' }
+];
+const ANNIV = ['foto1.jpg','foto2.jpg','foto3.jpg','foto4.jpg','foto5.webp','foto6.webp','foto7.webp'];
+const FAQS = [
+  ['O Ateliê Moema atende convênios?', 'O atendimento é particular. Consulte a equipe sobre as condições vigentes.'],
+  ['Como funciona a primeira avaliação?', 'A avaliação é individualizada e considera as necessidades do paciente, suas expectativas e as possibilidades de tratamento.'],
+  ['A clínica utiliza escaneamento intraoral?', 'Sim. O escaneamento digital pode auxiliar na avaliação e no planejamento de determinados tratamentos.'],
+  ['Quais tratamentos são realizados?', 'O Ateliê Moema oferece diferentes possibilidades de atendimento odontológico, incluindo implantes, ortodontia, estética dental, clínica geral e reabilitação.'],
+  ['Como posso agendar uma avaliação?', 'Entre em contato com a equipe pelo WhatsApp para receber orientações sobre o agendamento.']
+];
+// Central WhatsApp messages — one place for every CTA on the page
+const WA_MESSAGES = {
+  hero: 'Olá, vim do site e gostaria de agendar uma avaliação.',
+  header: 'Olá, vim do site e gostaria de agendar uma avaliação.',
+  implantes: 'Olá, vim do site e gostaria de saber mais sobre a avaliação para implantes dentários.',
+  invisalign: 'Olá, vim do site e tenho interesse no tratamento com Invisalign® e gostaria de agendar uma avaliação.',
+  casos: 'Olá, vim do site, vi os casos e gostaria de conversar com a equipe sobre o meu caso.',
+  tecnologia: 'Olá, vim do site e gostaria de entender como funciona a avaliação e o planejamento digital no Ateliê Moema.',
+  estetica: 'Olá, vim do site e gostaria de saber mais sobre os tratamentos de estética dental.',
+  harmonizacao: 'Olá, vim do site e gostaria de saber mais sobre a harmonização orofacial.',
+  clinica: 'Olá, vim do site e gostaria de agendar uma consulta de clínica geral.',
+  ortodontia: 'Olá, vim do site e gostaria de saber mais sobre o tratamento ortodôntico.',
+  proteses: 'Olá, vim do site e gostaria de saber mais sobre próteses dentárias.',
+  demais: 'Olá, vim do site e gostaria de saber mais sobre os tratamentos realizados no Ateliê Moema.'
+};
+
+class Component extends DCLogic {
+  state = { w: typeof window !== 'undefined' ? window.innerWidth : 1440, scrolled: false, menu: false, hoverNav: -1, cta: false, active: 'inicio', rvReady: false, seen: {}, hoverP: -1 };
+
+  componentDidMount() {
+    this.onScroll = () => {
+      const s = window.scrollY > 24;
+      if (s !== this.state.scrolled) this.setState({ scrolled: s });
+      this.spy();
+    };
+    this.onResize = () => {
+      const w = window.innerWidth;
+      this.setState(st => ({ w, menu: w >= 1080 ? false : st.menu }));
+      if (w >= 1080) document.body.style.overflow = '';
+    };
+    this.onKey = e => { if (e.key === 'Escape' && this.state.menu) this.setMenu(false); };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    window.addEventListener('resize', this.onResize);
+    window.addEventListener('keydown', this.onKey);
+    this.onScroll();
+    // Auto-rotate the 5-year gallery; paused on hover/focus, hidden tabs and reduced motion
+    const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this.anTimer = setInterval(() => {
+      if (still || this.anPause || document.hidden) return;
+      this.setState(st => ({ anI: ((st.anI || 0) + 1) % ANNIV.length }));
+    }, 4200);
+  }
+  initReveal() {
+    if (!('IntersectionObserver' in window)) return;
+    this.observed = new WeakSet();
+    this.io = new IntersectionObserver(entries => {
+      const add = entries.filter(e => e.isIntersecting).map(e => { this.io.unobserve(e.target); return e.target.getAttribute('data-rv'); });
+      if (add.length) this.markSeen(add);
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.08 });
+    this.scanReveal();
+    this.mo = new MutationObserver(() => this.scanReveal());
+    this.mo.observe(document.body, { childList: true, subtree: true });
+    this.setState({ rvReady: true }, () => this.checkInView());
+  }
+  scanReveal() {
+    if (!this.io) return;
+    const now = [];
+    document.querySelectorAll('[data-rv]').forEach(el => {
+      if (this.observed.has(el)) return;
+      this.observed.add(el);
+      const k = el.getAttribute('data-rv');
+      if (!k || k.indexOf('{{') > -1) return;
+      if (el.getBoundingClientRect().top < window.innerHeight * 0.9) now.push(k); else this.io.observe(el);
+    });
+    if (now.length) this.markSeen(now);
+  }
+  checkInView() {
+    if (!this.state.rvReady) return;
+    const seen = this.state.seen, now = [];
+    document.querySelectorAll('[data-rv]').forEach(el => {
+      const k = el.getAttribute('data-rv');
+      if (k && !seen[k] && el.getBoundingClientRect().top < window.innerHeight * 0.9) now.push(k);
+    });
+    if (now.length) this.markSeen(now);
+  }
+  markSeen(keys) {
+    this.setState(s => ({ seen: { ...s.seen, ...Object.fromEntries(keys.map(k => [k, true])) } }));
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.anTimer);
+    window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('resize', this.onResize);
+    window.removeEventListener('keydown', this.onKey);
+    if (this.io) this.io.disconnect();
+    if (this.mo) this.mo.disconnect();
+    document.body.style.overflow = '';
+  }
+  spy() {
+    let cur = 'inicio';
+    for (const [id] of NAV) {
+      const el = document.getElementById(id);
+      if (el && el.getBoundingClientRect().top <= window.innerHeight * 0.35) cur = id;
+    }
+    if (cur !== this.state.active) this.setState({ active: cur });
+  }
+  wa(key) {
+    const phone = String(this.props.whatsappNumber ?? '5511944872022').replace(/\D/g, '');
+    return `https://wa.me/${phone}?text=${encodeURIComponent(WA_MESSAGES[key] || WA_MESSAGES.hero)}`;
+  }
+  setMenu(open) {
+    this.setState({ menu: open });
+    document.body.style.overflow = open ? 'hidden' : '';
+    if (open) setTimeout(() => { const a = document.querySelector('#menu-mobile nav a'); a && a.focus({ preventScroll: true }); }, 350);
+  }
+  go(id, e) {
+    const el = document.getElementById(id);
+    if (e) e.preventDefault();
+    if (this.state.menu) this.setMenu(false);
+    if (!el) return;
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const y = id === 'inicio' ? 0 : el.getBoundingClientRect().top + window.scrollY - 72;
+    window.scrollTo({ top: y, behavior: reduce ? 'auto' : 'smooth' });
+    try { history.replaceState(null, '', '#' + id); } catch (_) {}
+  }
+
+  casesVals(stack, small) {
+    const f = this.state.caseFilter || 'todos', hc = this.state.hoverCase, mi = this.state.caseModal;
+    const list = CASES.map((c, i) => ({ ...c, i })).filter(c => f === 'todos' ? !c.onlyTab : c.cat === f).map((c, n) => ({ ...c, n: n + 1 }));
+    const label = k => (CASE_CATS.find(x => x[0] === k) || [])[1];
+    const n = small ? 1 : stack ? 2 : 3;
+    const mk = c => ({
+      title: c.title, ratio: c.ratio, catLabel: label(c.cat), num: String(c.n).padStart(2, '0'),
+      aria: `Ampliar caso ${c.n}: ${c.title}`,
+      img: c.img || '', imgA: c.imgA || '', imgB: c.imgB || '', alt: c.alt || '', imgDisp: c.img ? 'block' : 'none', pairDisp: c.imgA ? 'block' : 'none', pairGrid: c.imgA ? 'grid' : 'none',
+      tagDisp: c.img && !c.noTags ? 'block' : 'none', phDisp: c.img || c.imgA ? 'none' : 'block', gridDisp: c.img || c.imgA ? 'none' : 'grid',
+      fileA: `assets/images/casos/caso-${String(c.i + 1).padStart(2, '0')}-antes.webp`,
+      fileB: `assets/images/casos/caso-${String(c.i + 1).padStart(2, '0')}-depois.webp`,
+      scale: hc === c.i ? 'scale(1.035)' : 'none', plusO: hc === c.i ? 1 : 0, plusT: hc === c.i ? 'none' : 'scale(.7)',
+      open: () => this.openCase(c.i), enter: () => this.setState({ hoverCase: c.i }), leave: () => this.setState({ hoverCase: -1 })
+    });
+    const cols = Array.from({ length: n }, (_, k) => ({ pt: n === 3 && k === 1 ? 'clamp(48px,6vw,104px)' : n === 2 && k === 1 ? '56px' : '0', items: [] }));
+    list.forEach((c, k) => cols[k % n].items.push(mk(c)));
+    const pos = list.findIndex(c => c.i === mi);
+    const step = d => { if (!list.length) return; const p = (pos + d + list.length) % list.length; this.setState({ caseModal: list[p].i }); };
+    return {
+      caseFilters: CASE_CATS.map(([k, l]) => ({ label: l, pressed: f === k ? 'true' : 'false', color: f === k ? '#352D2D' : '#7A6E6B', lineT: f === k ? 'scaleX(1)' : 'scaleX(0)', pick: () => this.pickFilter(k) })),
+      caseCols: cols, caseGridCols: `repeat(${n}, minmax(0,1fr))`, caseGap: stack ? '28px' : 'clamp(24px,2.6vw,40px)',
+      caseGridO: this.state.caseFading ? 0 : 1, caseGridT: this.state.caseFading ? 'translateY(12px)' : 'none',
+      modalOpen: mi != null && mi >= 0, mCase: mi != null && mi >= 0 ? mk({ ...CASES[mi], i: mi, n: pos >= 0 ? pos + 1 : mi + 1 }) : {},
+      mPos: pos >= 0 ? `${String(pos + 1).padStart(2, '0')} / ${String(list.length).padStart(2, '0')}` : '',
+      mPrev: () => step(-1), mNext: () => step(1),
+      closeCase: () => this.closeCase(), modalBackdrop: () => this.closeCase(), stop: e => e.stopPropagation(),
+      modalKey: e => {
+        if (e.key === 'Escape') { e.preventDefault(); this.closeCase(); }
+        else if (e.key === 'ArrowRight') step(1); else if (e.key === 'ArrowLeft') step(-1);
+        else if (e.key === 'Tab') {
+          const els = e.currentTarget.querySelectorAll('button, a[href]');
+          if (!els.length) return;
+          const first = els[0], last = els[els.length - 1];
+          if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+          else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+        }
+      },
+      waCasos: this.wa('casos'),
+      cta7In: () => this.setState({ cta7: true }), cta7Out: () => this.setState({ cta7: false }),
+      arrow7A: this.state.cta7 ? 'translateX(140%)' : 'none', arrow7B: this.state.cta7 ? 'none' : 'translateX(-140%)'
+    };
+  }
+  pickFilter(k) {
+    if (k === (this.state.caseFilter || 'todos')) return;
+    this.setState({ caseFading: true });
+    clearTimeout(this.fadeT);
+    this.fadeT = setTimeout(() => this.setState({ caseFilter: k, caseFading: false }), 260);
+  }
+  openCase(i) {
+    this.lastFocus = document.activeElement;
+    this.setState({ caseModal: i, hoverCase: -1 });
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => { const b = document.getElementById('case-modal-close'); b && b.focus({ preventScroll: true }); }, 60);
+  }
+  closeCase() {
+    this.setState({ caseModal: -1 });
+    document.body.style.overflow = '';
+    const el = this.lastFocus; if (el && el.focus) setTimeout(() => el.focus({ preventScroll: true }), 30);
+  }
+  galVals(stack, small) {
+    const N = GALLERY.length, i = this.state.galI || 0;
+    const go = n => this.setState({ galI: ((n % N) + N) % N });
+    return {
+      galPanels: GALLERY.map(([name, file, pos], k) => {
+        const on = k === i;
+        return { name, src: 'assets/' + file, pos, num: String(k + 1).padStart(2, '0'),
+          alt: 'Ateliê Moema — ' + name.toLowerCase(), aria: 'Ver ambiente: ' + name.toLowerCase(), current: on ? 'true' : undefined,
+          flex: on ? (stack ? '2.4 1 0%' : '4.2 1 0%') : '1 1 0%', scale: on ? 'scale(1)' : 'scale(1.08)',
+          filter: on ? 'none' : 'saturate(.8) brightness(1.04)', shade: on ? 1 : 0,
+          capO: on ? 1 : 0, capT: on ? 'none' : 'translateY(10px)', go: () => { if (this.state.galI !== k) go(k); } };
+      }),
+      galKey: e => { if (e.key === 'ArrowRight') { e.preventDefault(); go(i + 1); } else if (e.key === 'ArrowLeft') { e.preventDefault(); go(i - 1); } },
+      galDir: stack ? 'column' : 'row',
+      galH: stack ? (small ? '560px' : '620px') : 'clamp(480px,42vw,600px)',
+      galGap: stack ? '8px' : 'clamp(8px,.9vw,14px)',
+      galTopPad: 'clamp(56px,6vw,96px)'
+    };
+  }
+  anVals(stack, small) {
+    const N = ANNIV.length, i = this.state.anI || 0;
+    const go = n => this.setState({ anI: ((n % N) + N) % N });
+    return {
+      anSlides: ANNIV.map((file, k) => {
+        let d = ((k - i) % N + N) % N; if (d > N / 2) d -= N;
+        const ad = Math.abs(d), reach = stack ? 1 : 2, on = ad === 0;
+        return { src: 'assets/' + file, alt: `Celebração dos 5 anos do Ateliê Moema, foto ${k + 1} de ${N}`,
+          x: (d * (stack ? 0.86 : 0.8)).toFixed(3), s: (1 - ad * 0.1).toFixed(3), z: 10 - ad,
+          o: ad <= reach ? (on ? 1 : 0.55) : 0, hidden: on ? 'false' : 'true', cursor: on ? 'default' : 'pointer',
+          filter: on ? 'none' : 'brightness(.8) saturate(.85)', go: () => { if (!on) go(k); } };
+      }),
+      anDots: ANNIV.map((_, k) => ({ sel: k === i ? 'true' : 'false', aria: `Ver foto ${k + 1}`, go: () => go(k),
+        w: k === i ? '26px' : '10px', bg: k === i ? '#E3AEB0' : 'rgba(250,246,243,.3)' })),
+      anPrev: () => go(i - 1), anNext: () => go(i + 1),
+      anKey: e => { if (e.key === 'ArrowRight') { e.preventDefault(); go(i + 1); } else if (e.key === 'ArrowLeft') { e.preventDefault(); go(i - 1); } },
+      anHold: () => { this.anPause = true; }, anRelease: () => { this.anPause = false; },
+      anDown: e => { this.ax = e.clientX; },
+      anUp: e => { if (this.ax == null) return; const dx = e.clientX - this.ax; this.ax = null; if (dx < -50) go(i + 1); else if (dx > 50) go(i - 1); },
+      anW: small ? 'min(64vw,260px)' : 'clamp(240px,24vw,340px)',
+      anNumTop: stack ? '40px' : '-60px'
+    };
+  }
+  carousel(stack, small) {
+    const N = 4, per = stack ? 1 : 2, gap = stack ? 16 : 32;
+    const slideW = stack ? (small ? '86%' : '72%') : `calc((100% - ${gap}px) / 2)`;
+    const step = stack ? `(${small ? '86%' : '72%'} + ${gap}px)` : `((100% + ${gap}px) / 2)`;
+    const maxI = N - per;
+    const i = Math.min(this.state.cIdx || 0, maxI), drag = this.state.cDrag || 0, dragging = !!this.state.cDragging;
+    const goTo = n => this.setState({ cIdx: Math.max(0, Math.min(maxI, n)) });
+    const finish = () => {
+      if (!this.state.cDragging) return;
+      const dx = this.state.cDrag || 0;
+      this.setState({ cDragging: false, cDrag: 0, cIdx: Math.max(0, Math.min(maxI, i + (dx < -50 ? 1 : dx > 50 ? -1 : 0))) });
+    };
+    return {
+      invCases: Array.from({ length: N }, (_, k) => ({
+        num: String(k + 1).padStart(2, '0'), aria: `Caso ${k + 1} de ${N}`,
+        srcA: `assets/caso${k + 1}_a.${k ? 'jpg' : 'png'}`, srcB: `assets/caso${k + 1}_b.${k ? 'jpg' : 'png'}`,
+        altA: `Invisalign, caso ${k + 1}: antes do tratamento`, altB: `Invisalign, caso ${k + 1}: depois do tratamento`
+      })),
+      cSlideW: slideW, cGapPx: gap + 'px', cPairCols: small ? 'minmax(0,1fr)' : 'minmax(0,1fr) minmax(0,1fr)',
+      cTrackT: `translateX(calc(-${i} * ${step} + ${drag}px))`,
+      cTrackTr: dragging ? 'none' : 'transform .8s cubic-bezier(.2,.7,.1,1)',
+      cPos: String(i + 1).padStart(2, '0'), cTotal: String(maxI + 1).padStart(2, '0'),
+      cPrev: () => goTo(i - 1), cNext: () => goTo(i + 1),
+      cPrevDis: i === 0, cNextDis: i === maxI, cPrevO: i === 0 ? 0.35 : 1, cNextO: i === maxI ? 0.35 : 1,
+      cKey: e => { if (e.key === 'ArrowRight') { e.preventDefault(); goTo(i + 1); } else if (e.key === 'ArrowLeft') { e.preventDefault(); goTo(i - 1); } },
+      cDown: e => { if (e.button !== undefined && e.button !== 0) return; this.cx = e.clientX; this.setState({ cDragging: true, cDrag: 0 }); },
+      cMove: e => { if (this.state.cDragging) this.setState({ cDrag: e.clientX - this.cx }); },
+      cUp: finish,
+      cDots: Array.from({ length: maxI + 1 }, (_, k) => ({
+        sel: k === i ? 'true' : 'false', aria: `Ir para a posição ${k + 1}`, go: () => goTo(k),
+        w: k === i ? '32px' : '14px', bg: k === i ? '#A2646A' : 'rgba(106,91,88,.3)'
+      }))
+    };
+  }
+  renderVals() {
+    const { scrolled, menu, hoverNav, active, cta } = this.state;
+    const w = typeof window !== 'undefined' ? window.innerWidth : this.state.w;
+    const mobile = w < 1080, stack = w < 900, small = w < 520;
+    const solid = scrolled || menu;
+    const nav = NAV.map(([id, label, url], i) => {
+      const on = active === id, hv = hoverNav === i;
+      return {
+        id, label, href: id === 'blog' ? '#' : url || '#' + id, target: url ? '_blank' : '_self', rel: url ? 'noopener noreferrer' : undefined, num: String(i + 1).padStart(2, '0'),
+        current: on ? 'location' : undefined,
+        color: on || hv ? '#352D2D' : '#675C59',
+        lineT: on || hv ? 'scaleX(1)' : 'scaleX(0)', lineO: hv || on ? 'left' : 'right',
+        onClick: id === 'blog' ? e => e.preventDefault() : url ? undefined : e => this.go(id, e),
+        onEnter: () => this.setState({ hoverNav: i }), onLeave: () => this.setState({ hoverNav: -1 }),
+        mOpacity: menu ? 1 : 0, mT: menu ? 'none' : 'translateY(18px)',
+        mDelay: menu ? (0.12 + i * 0.05).toFixed(2) + 's' : '0s',
+        mColor: on ? '#A2646A' : '#352D2D', mTab: menu ? 0 : -1
+      };
+    });
+    const img = (this.props.heroImage ?? '').trim();
+    const { rvReady, seen, hoverP } = this.state;
+    const vis = () => true;
+    const r = k => ({ o: vis(k) ? 1 : 0, t: vis(k) ? 'none' : 'translateY(28px)', line1: vis(k) ? 'none' : 'translateY(108%)', line2: vis(k) ? 'none' : 'translateY(108%)' });
+    const rv = { s2label: r('s2label'), s2title: r('s2title'), s2text: r('s2text'), s3label: r('s3label'), s3title: r('s3title'), s3sub: r('s3sub'), s3list: r('s3list') };
+    const at = this.state.activeT || 0;
+    const treatments = TREATMENTS.map((t, i) => {
+      const on = i === at, key = 't' + i, anchorEl = t.anchor && typeof document !== 'undefined' && document.getElementById(t.anchor);
+      const isInv = t.id === 'invisalign';
+      return {
+        key, name: t.name, desc: t.desc, num: String(i + 1).padStart(2, '0'),
+        img: t.img || '', imgAlt: t.name, imgDisp: t.img ? 'block' : 'none', phDisp: t.img ? 'none' : 'block', phFlex: t.img ? 'none' : 'flex',
+        photoLabel: 'FOTO TRATAMENTO — ' + t.name.replace('®', '').toUpperCase(),
+        photoFile: `assets/images/tratamentos/${t.file}.webp · 4:5`,
+        current: on ? 'true' : undefined, hidden: on ? 'false' : 'true',
+        numColor: on ? '#A2646A' : '#8A7E7B', nameColor: on ? '#352D2D' : '#8A7E7B',
+        nameStyle: on ? 'italic' : 'normal', nameT: on ? 'translateX(14px)' : 'none',
+        arrowO: on ? 1 : 0, arrowT: on ? 'none' : 'translateX(-12px)', lineT: on ? 'scaleX(1)' : 'scaleX(0)',
+        layerO: on ? 1 : 0, layerT: on ? 'scale(1)' : 'scale(1.05)',
+        mO: vis(key) ? 1 : 0, mT: vis(key) ? 'none' : 'translateY(24px)',
+        select: () => { if (this.state.activeT !== i) this.setState({ activeT: i }); },
+        cta: isInv ? 'CONHEÇA O TRATAMENTO COM INVISALIGN®' : 'SAIBA MAIS SOBRE O TRATAMENTO',
+        ctaShort: isInv ? 'CONHEÇA O TRATAMENTO' : 'SAIBA MAIS',
+        href: anchorEl ? '#' + t.anchor : this.wa(t.id), target: anchorEl ? '_self' : '_blank',
+        onCta: anchorEl ? e => this.go(t.anchor, e) : undefined
+      };
+    });
+    const pillars = PILLARS.map(([title, text], i) => {
+      const key = 'p' + i, on = vis(key), hv = hoverP === i;
+      return {
+        key, title, text, num: String(i + 1).padStart(2, '0'),
+        icon: ['data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjQTI2NDZBIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzI4LjQwNiwxMDMuNDk5Yy0zMy44OTksMC01MC40ODMsMjAuNTItNjEuNDU4LDM0LjA5OGMtMy4zMTgsNC4xMDUtOC44NzEsMTAuOTc2LTEwLjk1LDEwLjk3NiAgICBjLTIuMDc5LDAtNy42MzItNi44NzEtMTAuOTUtMTAuOTc2Yy0xMC45NzUtMTMuNTc4LTI3LjU1OS0zNC4wOTgtNjEuNDU4LTM0LjA5OGMtNDQuMTYzLDAtODAuMDkyLDMzLjYxMi04MC4wOTIsNzQuOTI3ICAgIGMwLDIwLjA2OSwyLjQxNywzNy4wOTQsMzMuNjg4LDczLjU4MWMxMi4wNjQsMTQuMDc3LDE4LjI2Niw0Mi4xNjksMjMuNzM4LDY2Ljk1NWMzLjYzMiwxNi40NSw3LjA2MiwzMS45ODgsMTIuMDY4LDQzLjk5NyAgICBjNi43ODcsMTYuMjg1LDE2LjQyMywyNC41NDEsMjguNjQsMjQuNTQxYzI0LjgwOCwwLDMzLjc0OC0yOS43OTQsNDEuNjM3LTU2LjA4YzIuNTU0LTguNTA5LDQuOTY2LTE2LjU0NSw3LjY0LTIyLjc0NyAgICBjMi41MjktNS44NjYsNC4zNTEtNy44NDEsNS4wOS04LjQ1NmMwLjczOSwwLjYxNSwyLjU2MSwyLjU5LDUuMDksOC40NTZjMi42NzQsNi4yMDIsNS4wODYsMTQuMjM5LDcuNjQsMjIuNzQ3ICAgIGM3Ljg4OSwyNi4yODcsMTYuODI5LDU2LjA4LDQxLjYzNyw1Ni4wOGMxMi4yMTcsMCwyMS44NTQtOC4yNTcsMjguNjM5LTI0LjU0MWM1LjAwNC0xMi4wMDksOC40MzUtMjcuNTQ3LDEyLjA2Ny00My45OTggICAgYzUuNDcxLTI0Ljc4NSwxMS42NzQtNTIuODc3LDIzLjczOC02Ni45NTRjMzEuMjcyLTM2LjQ4NywzMy42ODgtNTMuNTEyLDMzLjY4OC03My41ODEgICAgQzQwOC40OTgsMTM3LjExMSwzNzIuNTY5LDEwMy40OTksMzI4LjQwNiwxMDMuNDk5eiBNMzU5LjYyNywyMzguOTkzYy0xNS4zMjcsMTcuODgzLTIxLjgxMSw0Ny4yNTQtMjguMDgyLDc1LjY1NyAgICBjLTQuOTI1LDIyLjMwNC0xMS42NjksNTIuODUtMjEuMTc5LDUyLjg1Yy05LjkyNywwLTE3LjE4My0yNC4xNzYtMjIuNDgxLTQxLjgyOGMtNy4wNDMtMjMuNDY4LTEzLjY5Ni00NS42MzUtMzEuODg1LTQ1LjYzNSAgICBjLTE4LjE4OSwwLTI0Ljg0MiwyMi4xNjctMzEuODg1LDQ1LjYzNmMtNS4yOTcsMTcuNjUyLTEyLjU1Myw0MS44MjgtMjIuNDgxLDQxLjgyOGMtOS41MSwwLTE2LjI1NC0zMC41NDYtMjEuMTc4LTUyLjg1ICAgIGMtNi4yNzEtMjguNDA0LTEyLjc1Ni01Ny43NzUtMjguMDgzLTc1LjY1OGMtMjguODczLTMzLjY5LTI4Ljg3My00Ni4xNDUtMjguODczLTYwLjU2NmMwLTMwLjI4NywyNi45NTctNTQuOTI3LDYwLjA5Mi01NC45MjcgICAgYzI0LjM0OCwwLDM1Ljc5OSwxNC4xNjksNDUuOTAzLDI2LjY2OWM3LjY1LDkuNDY1LDE0Ljg3NSwxOC40MDQsMjYuNTA1LDE4LjQwNHMxOC44NTYtOC45NCwyNi41MDUtMTguNDA0ICAgIGMxMC4xMDMtMTIuNSwyMS41NTQtMjYuNjY5LDQ1LjkwMy0yNi42NjljMzMuMTM1LDAsNjAuMDkyLDI0LjY0LDYwLjA5Miw1NC45MjdDMzg4LjUsMTkyLjg0OCwzODguNSwyMDUuMzA0LDM1OS42MjcsMjM4Ljk5M3oiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNTEuOTAyLDE4Mi41OTVjLTUuNTIyLDAtMTAsNC40NzctMTAsMTBjMCw4LjQ2NiwwLDE1Ljc3OC0xNy41MTksMzYuMjE4Yy02LjEwNyw3LjEyNC0xMC42NDYsMTcuMjYzLTE0LjcyLDMyLjg3MyAgICBjLTEuMzk1LDUuMzQ0LDEuODA2LDEwLjgwNiw3LjE1LDEyLjIwMWMwLjg0NiwwLjIyMiwxLjY5NiwwLjMyNywyLjUzMiwwLjMyN2M0LjQ0LDAsOC40OTUtMi45OCw5LjY3LTcuNDc3ICAgIGMyLjAzLTcuNzc1LDUuMzMtMTguODE1LDEwLjU1NC0yNC45MDljMjAuNzMxLTI0LjE4OCwyMi4zMzMtMzUuNjYzLDIyLjMzMy00OS4yMzMgICAgQzM2MS45MDIsMTg3LjA3MiwzNTcuNDI0LDE4Mi41OTUsMzUxLjkwMiwxODIuNTk1eiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTMxNS40MjcsMjgxLjYwMWMtNS4zNjgtMS4zMDEtMTAuNzc0LDEuOTk1LTEyLjA3NSw3LjM2M2MtMC4wMDIsMC4wMDctMC4wNCwwLjE2OC0wLjA0MywwLjE4MiAgICBjLTEuMzA2LDUuMzYzLDEuOTgxLDEwLjc3MSw3LjM0MywxMi4wODFjMC43OTgsMC4xOTUsMS41OTUsMC4yODgsMi4zODEsMC4yODhjNC41MDIsMCw4LjU5MS0zLjA2MSw5LjcwNi03LjYzbDAuMDUtMC4yMDkgICAgQzMyNC4wOSwyODguMzA5LDMyMC43OTQsMjgyLjkwMiwzMTUuNDI3LDI4MS42MDF6Ii8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzU5LjUxMSwzMC42OTRjLTM4LjkxOCwwLTc1LjI4NiwxNS4yMzItMTAzLjUxMSw0My4xMjFjLTI4LjIyNS0yNy44OS02NC41OTMtNDMuMTIxLTEwMy41MTEtNDMuMTIxICAgIEM2OC40MDYsMzAuNjk0LDAsMTAzLjUyOSwwLDE5My4wNTVjMCwyOS4wODMsMTMuMTI0LDYyLjM4NCwzOS4wMDcsOTguOTc3YzIwLjQyNSwyOC44NzYsNDguNjUxLDU5Ljc0Niw4My44OTUsOTEuNzUyICAgIGMzNS4wNTYsMzEuODM2LDY4LjMxOSw1Ni43MzMsODUuMDI3LDY4Ljc0MWMxMy45NjMsMTAuMDM1LDIzLjgsMTYuNDgzLDI5LjU5NCwyMC4xMjVjMTIuODEsOC4wNTMsMTUuNjMyLDguNjU2LDE4LjQ3Nyw4LjY1NiAgICBjMi44NDUsMCw1LjY2Ny0wLjYwMiwxOC40NzYtOC42NTZjNS43OTQtMy42NDIsMTUuNjMxLTEwLjA5LDI5LjU5NC0yMC4xMjVjMTYuNzA4LTEyLjAwOCw0OS45Ny0zNi45MDUsODUuMDI3LTY4Ljc0MSAgICBjMzUuMjQ1LTMyLjAwNiw2My40Ny02Mi44NzYsODMuODk1LTkxLjc1MkM0OTguODc2LDI1NS40MzksNTEyLDIyMi4xMzgsNTEyLDE5My4wNTVDNTEyLDEwMy41MjksNDQzLjU5NCwzMC42OTQsMzU5LjUxMSwzMC42OTR6ICAgICBNMzc5Ljk2MSwzNjUuMDM3QzMyNC45NjMsNDE1LjY5LDI2OS43NjYsNDUyLjg0MiwyNTYsNDYwLjQyN2MtMTMuNzY2LTcuNTg1LTY4Ljk2My00NC43MzctMTIzLjk2MS05NS4zOSAgICBDODAuOTI3LDMxNy45NjQsMjAsMjQ5LjkxNSwyMCwxOTMuMDU1YzAtNzguNDk4LDU5LjQzNS0xNDIuMzYxLDEzMi40ODktMTQyLjM2MWMzNi42NDYsMCw3MC43NDcsMTUuNzI5LDk2LjAyNCw0NC4yOSAgICBjMS44OTcsMi4xNDUsNC42MjQsMy4zNzMsNy40ODgsMy4zNzNzNS41OTEtMS4yMjgsNy40ODgtMy4zNzNjMjUuMjc1LTI4LjU2MSw1OS4zNzYtNDQuMjksOTYuMDIyLTQ0LjI5ICAgIEM0MzIuNTY1LDUwLjY5NCw0OTIsMTE0LjU1Nyw0OTIsMTkzLjA1NUM0OTIsMjQ5LjkxNSw0MzEuMDczLDMxNy45NjQsMzc5Ljk2MSwzNjUuMDM3eiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTUxLDE5My41MDdjLTUuNTIyLDAtMTAsNC41MTYtMTAsMTAuMDM5YzAsNS41MjMsNC40NzgsMTAsMTAsMTBzMTAtNC40NzcsMTAtMTB2LTAuMDc4ICAgIEM2MSwxOTcuOTQ1LDU2LjUyMiwxOTMuNTA3LDUxLDE5My41MDd6Ii8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMTY5Ljc0Miw2Ni41NzhjLTU4LjcyNCwwLTEwOS45ODQsNDIuMTkyLTEyNC42NTUsMTAyLjYwNWMtMS4zMDMsNS4zNjcsMS45OTEsMTAuNzc0LDcuMzU3LDEyLjA3OCAgICBjMC43OTQsMC4xOTMsMS41ODcsMC4yODUsMi4zNjgsMC4yODVjNC41MDYsMCw4LjU5OC0zLjA2OSw5LjcxLTcuNjQzYzEyLjQ4Ny01MS40MTYsNTUuNzU0LTg3LjMyNSwxMDUuMjItODcuMzI1ICAgIGM1LjUyMiwwLDEwLTQuNDc3LDEwLTEwUzE3NS4yNjQsNjYuNTc4LDE2OS43NDIsNjYuNTc4eiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPg==', 'data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjQTI2NDZBIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0MjMuMjUzIDQyMy4yNTMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQyMy4yNTMgNDIzLjI1MzsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zOTUuOTc0LDE3LjA2N0gyNy4yNzlDMTIuMjQsMTcuMDY3LDAsMjkuMzMxLDAsNDQuNDA3djI2Ni4xNzJjMCwxNS4wNzcsMTIuMjQsMjcuMzQxLDI3LjI3OSwyNy4zNDFoMzY4LjY5NQoJCQljMTUuMDM5LDAsMjcuMjc5LTEyLjI2NCwyNy4yNzktMjcuMzQxVjQ0LjQwN0M0MjMuMjUzLDI5LjMzMSw0MTEuMDEzLDE3LjA2NywzOTUuOTc0LDE3LjA2N3ogTTQwOS42LDMxMC41NzkKCQkJYzAsNy41NDctNi4xMTMsMTMuNjg3LTEzLjYyNiwxMy42ODdIMjcuMjc5Yy03LjUxMywwLTEzLjYyNi02LjE0MS0xMy42MjYtMTMuNjg3VjQ0LjQwN2MwLTcuNTQ3LDYuMTEzLTEzLjY4OCwxMy42MjYtMTMuNjg4CgkJCWgzNjguNjk1YzcuNTEzLDAsMTMuNjI2LDYuMTQxLDEzLjYyNiwxMy42ODhWMzEwLjU3OXoiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yNTkuNTA2LDM3Ny44OTRsLTYuODI3LTQ3Ljc4N2MtMC40OTItMy40NDQtMy40MzctNi4wMDEtNi45MTktNi4wMDFoLTY4LjI2N2MtMy40NzgsMC02LjQyNCwyLjU1Ny02LjkxOSw2LjAwMQoJCQlsLTYuODI3LDQ3Ljc4N2MtMC4yODcsMi4wMDQsMC4zMTEsNC4wMzUsMS42MzgsNS41NjRjMS4zMjgsMS41MjksMy4yNTMsMi40MSw1LjI4LDIuNDFoODEuOTJjMi4wMjgsMCwzLjk1Ni0wLjg4MSw1LjI4LTIuNDEKCQkJQzI1OS4xOTEsMzgxLjkyOCwyNTkuNzkyLDM3OS44OTcsMjU5LjUwNiwzNzcuODk0eiBNMTc4LjcxOSwzNzEuODkzbDQuODMzLTMzLjgxMmg1Ni4xNDZsNC44MzMsMzMuODEySDE3OC43MTl6Ii8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzk1Ljk0NywzNy41NDdIMjcuMzA3Yy0zLjc3MiwwLTYuODI3LDMuMDU4LTYuODI3LDYuODI3djI2Ni4yNGMwLDMuNzY4LDMuMDU1LDYuODI3LDYuODI3LDYuODI3aDM2OC42NAoJCQljMy43NzIsMCw2LjgyNy0zLjA1OCw2LjgyNy02LjgyN1Y0NC4zNzNDNDAyLjc3Myw0MC42MDUsMzk5LjcxOCwzNy41NDcsMzk1Ljk0NywzNy41NDd6IE0zODkuMTIsMzAzLjc4N0gzNC4xMzNWNTEuMkgzODkuMTIKCQkJVjMwMy43ODd6Ii8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjQwLjEwMSw5OC45ODdjLTYuMTM0LDAtMTEuODU0LDIuNDI3LTE2Ljg5OSw0LjU2NGMtNC4yMjksMS43OTUtOC4yMTIsMy40ODUtMTEuNTc1LDMuNDg1CgkJCWMtMy4zNjIsMC03LjM0OS0xLjY5My0xMS41NzUtMy40ODVjLTUuMDQ1LTIuMTM3LTEwLjc2Ni00LjU2NC0xNi44OTktNC41NjRjLTIzLjA2LDAtMzkuNzkzLDIyLjA0Ny0zOS43OTMsNTIuNDE5CgkJCWMwLDEwLjg0OCw5LjE4NSwxMTEuNDIxLDM5Ljc5MywxMTEuNDIxYzEwLjg0MSwwLDE0LjA4Ny0xNC41NTEsMTguNTk2LTM0LjY5YzIuMjgtMTAuMTk2LDYuNTE5LTI5LjE2Nyw5Ljg2MS0zMS4zMjEKCQkJYzQuNzcyLDAuMDE3LDkuNzA0LDI1LjA2NCwxMS4zMjUsMzMuMjk0YzMuNzM4LDE4Ljk5Miw2LjQzOCwzMi43MTcsMTcuMTY2LDMyLjcxN2MzMC42MDcsMCwzOS43OTMtMTAwLjU3NCwzOS43OTMtMTExLjQyMQoJCQlDMjc5Ljg5MywxMjEuMDMzLDI2My4xNjEsOTguOTg3LDI0MC4xMDEsOTguOTg3eiBNMjQxLjU4OSwyNDguNjQ0Yy0xLjg4MS00LjAyMS0zLjg4MS0xNC4xNTktNS4yNi0yMS4xNzYKCQkJYy00LjI4LTIxLjc1Ny04LjcxNC00NC4yNS0yNC43MjYtNDQuMzA1Yy0xMy44LDAuMDU4LTE4LjM2LDIwLjQyOS0yMy4xOCw0MS45OTRjLTEuNzc1LDcuOTIyLTQuMzU1LDE5LjQ2Ni02LjYwOCwyMy41ODMKCQkJYy04LjY2LTUuMjctMjQuODAxLTU3LjUxNS0yNC44MDEtOTcuMzM1YzAtMTkuMjYxLDguOTgtMzguNzY1LDI2LjEzOS0zOC43NjVjMy4zNjIsMCw3LjM0OSwxLjY5LDExLjU3NSwzLjQ4NQoJCQljNS4wNDUsMi4xMzcsMTAuNzY2LDQuNTY0LDE2Ljg5OSw0LjU2NHMxMS44NTEtMi40MjcsMTYuODk5LTQuNTY0YzQuMjI5LTEuNzk1LDguMjE2LTMuNDg1LDExLjU3NS0zLjQ4NQoJCQljMTcuMTU5LDAsMjYuMTM5LDE5LjUwNCwyNi4xMzksMzguNzY1QzI2Ni4yNCwxOTEuMDA3LDI1MC4yNzksMjQyLjg4OSwyNDEuNTg5LDI0OC42NDR6Ii8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjczLjA2NywzNzIuMDUzSDE0My4zNmMtMy43NzIsMC02LjgyNywzLjA1OC02LjgyNyw2LjgyN3YyMC40OGMwLDMuNzY4LDMuMDU1LDYuODI3LDYuODI3LDYuODI3aDEyOS43MDcKCQkJYzMuNzcyLDAsNi44MjctMy4wNTgsNi44MjctNi44Mjd2LTIwLjQ4QzI3OS44OTMsMzc1LjExMiwyNzYuODM4LDM3Mi4wNTMsMjczLjA2NywzNzIuMDUzeiBNMjY2LjI0LDM5Mi41MzNIMTUwLjE4N3YtNi44MjcKCQkJSDI2Ni4yNFYzOTIuNTMzeiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPg==', 'data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjQTI2NDZBIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMS45OTkgNTExLjk5OSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTExLjk5OSA1MTEuOTk5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ3NC40ODcsMTU5LjM5OWMtMjAuNjg0LDAtMzcuNTEzLDE2LjgyOC0zNy41MTMsMzcuNTEzdjQ1Ljk1OGMtNS4xMTYtMi41NDItMTAuNzg0LTMuODk1LTE2LjY2NC0zLjg5NSAgICBjLTEwLjAyLDAtMTkuNDQsMy45MDItMjYuNTI1LDEwLjk4OGwtOTYuNDkzLDk2LjQ5M2MtMTcuNTA4LDE3LjUwOC0yNy4xNSw0MC43ODUtMjcuMTUsNjUuNTQ2djg5Ljk1ICAgIGMwLDUuNTIyLDQuNDc3LDkuOTk4LDkuOTk4LDkuOTk4aDM0LjE1MWM1LjUyMSwwLDkuOTk4LTQuNDc2LDkuOTk4LTkuOTk4YzAtNS41MjItNC40NzctOS45OTgtOS45OTgtOS45OThoLTI0LjE1M3YtNzkuOTUyICAgIGMwLTE5LjQxOSw3LjU2Mi0zNy42NzYsMjEuMjk0LTUxLjQwNmw5Ni40OTMtOTYuNDk0YzMuMzA4LTMuMzA4LDcuNzA2LTUuMTMsMTIuMzg2LTUuMTNzOS4wNzcsMS44MjIsMTIuMzg2LDUuMTMxICAgIGMyLjA0MSwyLjA0MSwzLjY4NSw0LjQwNCw0LjI3OCw3LjA0MmMwLjUzNywyLjM4NiwwLjg2NCw2LjQwNywwLjI1OSw5Ljc3NmMtMC43NTgsMi45MTQtMi4yNTksNS42NzQtNC41MzgsNy45NTJsLTk2LjQ5Myw5Ni40OTMgICAgYy03LjExNCw3LjExNS0xMS4wMzIsMTYuNTc0LTExLjAzMiwyNi42MzVjMCw1LjUyMiw0LjQ3Nyw5Ljk5OCw5Ljk5OCw5Ljk5OHM5Ljk5OC00LjQ3Niw5Ljk5OC05Ljk5OCAgICBjMC00LjcyLDEuODM5LTkuMTU4LDUuMTc2LTEyLjQ5Nmw5Ni40OTMtOTYuNDkzYzkuMzE2LTkuMzE3LDEyLjY4OS0yMi4zNTUsMTAuMTM1LTM0LjM3NHYtNzEuNzI3ICAgIGMwLTkuNjU4LDcuODU3LTE3LjUxNywxNy41MTctMTcuNTE3YzkuNjU5LDAsMTcuNTE3LDcuODU3LDE3LjUxNywxNy41MTd2ODEuNzc2YzAsMjEuNzI4LTUuNDg3LDQzLjMwNC0xNS44NjksNjIuMzk0ICAgIGwtODIuMDUxLDE1MC44NzJoLTIyLjAxM2MtNS41MjEsMC05Ljk5OCw0LjQ3Ni05Ljk5OCw5Ljk5OGMwLDUuNTIyLDQuNDc3LDkuOTk4LDkuOTk4LDkuOTk4aDI3Ljk1NyAgICBjMy42NjMsMCw3LjAzMy0yLjAwNCw4Ljc4My01LjIyMmw4NC44ODgtMTU2LjA5NWMxMS45NzEtMjIuMDE0LDE4LjI5OC00Ni44OTIsMTguMjk4LTcxLjk0NnYtODEuNzc2ICAgIEM1MTIsMTc2LjIyNyw0OTUuMTcyLDE1OS4zOTksNDc0LjQ4NywxNTkuMzk5eiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTM0Mi42OTYsNDkxLjk1M2gtMC4xNDRjLTUuNTIxLDAtOS45OTgsNC40NzYtOS45OTgsOS45OThjMCw1LjUyMiw0LjQ3Nyw5Ljk5OCw5Ljk5OCw5Ljk5OGgwLjE0NCAgICBjNS41MjEsMCw5Ljk5OC00LjQ3Niw5Ljk5OC05Ljk5OEMzNTIuNjk0LDQ5Ni40MjksMzQ4LjIxNyw0OTEuOTUzLDM0Mi42OTYsNDkxLjk1M3oiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yMTQuNzA2LDM0Ni40NTRsLTk2LjQ5My05Ni40OTJjLTcuMDg1LTcuMDg2LTE2LjUwNS0xMC45ODktMjYuNTI1LTEwLjk4OWMtNS44OCwwLTExLjU0OCwxLjM1NC0xNi42NjQsMy44OTV2LTQ1Ljk1OCAgICBjMC0yMC42ODQtMTYuODI4LTM3LjUxMy0zNy41MTMtMzcuNTEzQzE2LjgyNywxNTkuMzk4LDAsMTc2LjIyNywwLDE5Ni45MTF2ODEuNzc2YzAsMjUuMDU1LDYuMzI4LDQ5LjkzMywxOC4yOTgsNzEuOTQ2ICAgIGw4NC44ODgsMTU2LjA5NWMxLjc1MSwzLjIxOCw1LjEyLDUuMjIyLDguNzgzLDUuMjIyaDI3Ljk1N2M1LjUyMSwwLDkuOTk4LTQuNDc2LDkuOTk4LTkuOTk4YzAtNS41MjItNC40NzctOS45OTgtOS45OTgtOS45OTggICAgaC0yMi4wMTNMMzUuODY1LDM0MS4wNzljLTEwLjM4Mi0xOS4wOS0xNS44NjktNDAuNjY1LTE1Ljg2OS02Mi4zOTN2LTgxLjc3NmMwLTkuNjU4LDcuODU3LTE3LjUxNywxNy41MTctMTcuNTE3ICAgIHMxNy41MTcsNy44NTcsMTcuNTE3LDE3LjUxN3Y3MS43MjdjLTIuNTUzLDEyLjAyLDAuODE4LDI1LjA1NywxMC4xMzUsMzQuMzc0bDk2LjQ5NCw5Ni40OTJjMy4zMzcsMy4zMzcsNS4xNzUsNy43NzQsNS4xNzUsMTIuNDk2ICAgIGMwLDUuNTIyLDQuNDc3LDkuOTk4LDkuOTk4LDkuOTk4czkuOTk4LTQuNDc2LDkuOTk4LTkuOTk4YzAtMTAuMDYyLTMuOTE4LTE5LjUyMS0xMS4wMzItMjYuNjM2bC05Ni40OTUtOTYuNDkxICAgIGMtNi44My02LjgzLTYuODMtMTcuOTQzLDAtMjQuNzcyYzMuMzA4LTMuMzA4LDcuNzA3LTUuMTMsMTIuMzg2LTUuMTNzOS4wNzcsMS44MjIsMTIuMzg2LDUuMTMxbDk2LjQ5Myw5Ni40OTMgICAgYzEzLjczMSwxMy43MywyMS4yOTQsMzEuOTg3LDIxLjI5NCw1MS40MDZ2NzkuOTUyaC0yNC4xNTJjLTUuNTIxLDAtOS45OTgsNC40NzYtOS45OTgsOS45OThjMCw1LjUyMiw0LjQ3Nyw5Ljk5OCw5Ljk5OCw5Ljk5OCAgICBoMzQuMTVjNS41MjEsMCw5Ljk5OC00LjQ3Niw5Ljk5OC05Ljk5OHYtODkuOTVDMjQxLjg1NiwzODcuMjM5LDIzMi4yMTQsMzYzLjk2MiwyMTQuNzA2LDM0Ni40NTR6Ii8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMTY5LjQ0Nyw0OTEuOTUzaC0wLjE0NGMtNS41MjEsMC05Ljk5OCw0LjQ3Ni05Ljk5OCw5Ljk5OGMwLDUuNTIyLDQuNDc3LDkuOTk4LDkuOTk4LDkuOTk4aDAuMTQ0ICAgIGM1LjUyMiwwLDkuOTk4LTQuNDc2LDkuOTk4LTkuOTk4QzE3OS40NDUsNDk2LjQyOSwxNzQuOTY4LDQ5MS45NTMsMTY5LjQ0Nyw0OTEuOTUzeiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTMxOC40NjksMC4wNDljLTMwLjE1MSwwLTQ0LjcxNSwxOS40NTQtNTQuMzUzLDMyLjMyN2MtMi41MTMsMy4zNTUtNi4yMTksOC4zMDYtOC4xNjYsOS41MzUgICAgYy0xLjk0OC0xLjIyOS01LjY1NC02LjE4LTguMTY2LTkuNTM1Yy05LjYzNy0xMi44NzItMjQuMjAyLTMyLjMyNy01NC4zNTMtMzIuMzI3Yy0zOC44ODIsMC03MC41MTcsMzEuNjM0LTcwLjUxNyw3MC41MTcgICAgYzAsMTguNzI4LDIuMDkzLDM0LjYyMSwyOS4xNzYsNjguNzM3YzEwLjM0LDEzLjAyMywxNS42ODgsMzkuMTc3LDIwLjQwNyw2Mi4yNTNjMy4xMzcsMTUuMzM4LDYuMSwyOS44MjUsMTAuNDI3LDQxLjAzMiAgICBjNi4wMywxNS42MTgsMTQuODA3LDIzLjUzNiwyNi4wODYsMjMuNTM2YzIyLjU5MywwLDMwLjQxNC0yOC4xMzIsMzcuMzE0LTUyLjk1MmMyLjQyNS04LjcxOSw2LjI5Mi0yMi42MzEsOS42MjgtMjcuNDkyICAgIGMzLjMzNiw0Ljg2MSw3LjIwNCwxOC43NzIsOS42MjgsMjcuNDkyYzYuOSwyNC44MiwxNC43Miw1Mi45NTIsMzcuMzE0LDUyLjk1MmMxMS4yNzksMCwyMC4wNTYtNy45MTksMjYuMDg0LTIzLjUzNiAgICBjNC4zMjctMTEuMjA3LDcuMjktMjUuNjk0LDEwLjQyNy00MS4wMzJjNC43MTktMjMuMDc2LDEwLjA2Ny00OS4yMjksMjAuNDA3LTYyLjI1M2MyNy4wODQtMzQuMTE1LDI5LjE3Ni01MC4wMDgsMjkuMTc2LTY4LjczNyAgICBDMzg4Ljk4NiwzMS42ODMsMzU3LjM1MiwwLjA0OSwzMTguNDY5LDAuMDQ5eiBNMzQ0LjE1MSwxMjYuODY5Yy0xMy4zMTEsMTYuNzY4LTE4LjkxNiw0NC4xNzQtMjQuMzM3LDcwLjY3OSAgICBjLTIuOTY0LDE0LjQ5Ni01Ljc2NCwyOC4xODgtOS40ODksMzcuODM3Yy0zLjA1OCw3LjkyLTUuODQ1LDEwLjc0My03LjQzMiwxMC43NDNjLTcuMzk5LDAtMTQuMDY2LTIzLjk4MS0xOC4wNDktMzguMzExICAgIGMtNi4xNzctMjIuMjI1LTEyLjAxMy00My4yMTYtMjguODkyLTQzLjIxNnMtMjIuNzE2LDIwLjk5MS0yOC44OSw0My4yMTZjLTMuOTg0LDE0LjMyOC0xMC42NTIsMzguMzExLTE4LjA0OSwzOC4zMTEgICAgYy0xLjU4OCwwLTQuMzc0LTIuODIyLTcuNDMzLTEwLjc0M2MtMy43MjQtOS42NDgtNi41MjUtMjMuMzQtOS40ODktMzcuODM3Yy01LjQyMS0yNi41MDUtMTEuMDI3LTUzLjkxMS0yNC4zMzctNzAuNjc5ICAgIGMtMjQuODQxLTMxLjI5LTI0Ljg0MS00Mi44ODItMjQuODQxLTU2LjMwM2MwLTI3Ljg1OCwyMi42NjQtNTAuNTIxLDUwLjUyMS01MC41MjFjMjAuMTQyLDAsMjkuMzk2LDEyLjM2MSwzOC4zNDcsMjQuMzE1ICAgIGM2LjUxNSw4LjcwMSwxMy4yNSwxNy42OTksMjQuMTczLDE3LjY5OWMxMC45MjMsMCwxNy42NTktOC45OTcsMjQuMTczLTE3LjY5OWM4Ljk1LTExLjk1NSwxOC4yMDQtMjQuMzE1LDM4LjM0Ni0yNC4zMTUgICAgYzI3Ljg1OCwwLDUwLjUyMSwyMi42NjQsNTAuNTIxLDUwLjUyMUMzNjguOTkyLDgzLjk4NywzNjguOTkyLDk1LjU3OCwzNDQuMTUxLDEyNi44Njl6Ii8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDYyLjQxLDY4LjUyNGgtNC40OTl2LTQuNDk5YzAtNS41MjItNC40NzctOS45OTgtOS45OTgtOS45OThzLTkuOTk4LDQuNDc2LTkuOTk4LDkuOTk4djQuNDk5aC00LjQ5OSAgICBjLTUuNTIxLDAtOS45OTgsNC40NzYtOS45OTgsOS45OThjMCw1LjUyMiw0LjQ3Nyw5Ljk5OCw5Ljk5OCw5Ljk5OGg0LjQ5OXY0LjQ5OWMwLDUuNTIyLDQuNDc3LDkuOTk4LDkuOTk4LDkuOTk4ICAgIHM5Ljk5OC00LjQ3Niw5Ljk5OC05Ljk5OFY4OC41Mmg0LjQ5OWM1LjUyMSwwLDkuOTk4LTQuNDc2LDkuOTk4LTkuOTk4QzQ3Mi40MDgsNzMsNDY3LjkzMSw2OC41MjQsNDYyLjQxLDY4LjUyNHoiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0xMjcuOTc1LDE2Mi45MTloLTQuNDk5di00LjQ5OWMwLTUuNTIyLTQuNDc3LTkuOTk4LTkuOTk4LTkuOTk4cy05Ljk5OCw0LjQ3Ni05Ljk5OCw5Ljk5OHY0LjQ5OWgtNC40OTkgICAgYy01LjUyMSwwLTkuOTk4LDQuNDc2LTkuOTk4LDkuOTk4czQuNDc3LDkuOTk4LDkuOTk4LDkuOTk4aDQuNDk5djQuNDk5YzAsNS41MjIsNC40NzcsOS45OTgsOS45OTgsOS45OThzOS45OTgtNC40NzYsOS45OTgtOS45OTggICAgdi00LjQ5OWg0LjQ5OWM1LjUyMSwwLDkuOTk4LTQuNDc2LDkuOTk4LTkuOTk4UzEzMy40OTYsMTYyLjkxOSwxMjcuOTc1LDE2Mi45MTl6Ii8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+'][i],
+        o: on ? 1 : 0, t: on ? 'none' : 'translateY(32px)', d: (i * 0.12).toFixed(2) + 's',
+        lineT: on && (hv || stack) ? 'scaleX(1)' : 'scaleX(0)', bgO: hv && !stack ? 1 : 0,
+        numT: hv && !stack ? 'translateX(8px)' : 'none',
+        liftT: hv && !stack ? 'translateY(-6px)' : 'none',
+        shadow: hv && !stack ? '0 18px 40px -18px rgba(53,45,45,.28)' : '0 0 0 rgba(53,45,45,0)',
+        onEnter: () => this.setState({ hoverP: i }), onLeave: () => this.setState({ hoverP: -1 })
+      };
+    });
+    return {
+      ...this.carousel(stack, small),
+      ...this.casesVals(stack, small),
+      ...this.galVals(stack, small),
+      ...this.anVals(stack, small),
+      mapsUrl: 'https://www.google.com/maps?cid=3063994899347616185',
+      waDisplay: (() => { const d = String(this.props.whatsappNumber ?? '5511944872022').replace(/\D/g, '').replace(/^55/, ''); return d.length === 11 ? `(${d.slice(0, 2)}) ${d.slice(2, 7)}-${d.slice(7)}` : d; })(),
+      year: new Date().getFullYear(),
+      ctCols: stack ? 'minmax(0,1fr)' : 'minmax(0,7fr) minmax(0,5fr)',
+      ctInfoCols: small ? 'minmax(0,1fr)' : 'minmax(0,1fr) minmax(0,1fr)',
+      ctMapMinH: stack ? '360px' : '480px',
+      ftPad: stack ? '64px clamp(20px,6vw,48px) calc(32px + env(safe-area-inset-bottom))' : '88px clamp(20px,4vw,56px) 36px',
+      payCols: stack ? 'minmax(0,1fr)' : 'repeat(3,minmax(0,1fr))',
+      payHeadCols: stack ? 'minmax(0,1fr)' : 'minmax(0,7fr) minmax(0,5fr)', payHeadGap: stack ? '28px' : 'clamp(40px,6vw,96px)',
+      payBL: stack ? '0' : '1px solid rgba(106,91,88,.22)', payBT: stack ? '1px solid rgba(106,91,88,.22)' : '0',
+      payItemPad: stack ? '40px 0' : 'clamp(48px,5vw,72px) clamp(24px,3vw,48px)',
+      ftAlign: stack ? 'center' : 'flex-start', ftText: stack ? 'center' : 'left', ftJustify: stack ? 'center' : 'space-between',
+      ftCols: stack ? 'minmax(0,1fr)' : mobile ? 'repeat(2,minmax(0,1fr))' : 'minmax(0,4fr) minmax(0,3fr) minmax(0,3fr) minmax(0,3fr)',
+      cta11In: () => this.setState({ cta11: true }), cta11Out: () => this.setState({ cta11: false }),
+      arrow11A: this.state.cta11 ? 'translateX(140%)' : 'none', arrow11B: this.state.cta11 ? 'none' : 'translateX(-140%)',
+      finalPad: stack ? 'clamp(48px,11vw,64px) clamp(20px,6vw,48px)' : 'clamp(56px,5vw,80px) clamp(20px,4vw,56px)',
+      faqs: FAQS.map(([q, a], k) => {
+        const open = (this.state.faqOpen ?? 0) === k;
+        return { q, a, num: String(k + 1).padStart(2, '0'), btnId: 'faq-q-' + k, panelId: 'faq-a-' + k,
+          expanded: open ? 'true' : 'false', toggle: () => this.setState({ faqOpen: open ? -1 : k }),
+          rows: open ? '1fr' : '0fr', aO: open ? 1 : 0, aT: open ? 'none' : 'translateY(-8px)',
+          color: open ? '#352D2D' : '#4F4543', vT: open ? 'rotate(90deg) scaleX(0)' : 'rotate(90deg)',
+          iconBg: open ? '#352D2D' : 'transparent', iconBorder: open ? '#352D2D' : 'rgba(53,45,45,.3)', iconColor: open ? '#FAF6F3' : '#352D2D' };
+      }),
+      faqCols: stack ? 'minmax(0,1fr)' : 'minmax(0,4fr) minmax(0,7fr)',
+      faqHeadPos: stack ? 'relative' : 'sticky', faqHeadTop: stack ? 'auto' : '120px',
+      faqRowCols: small ? '28px minmax(0,1fr) 40px' : '48px minmax(0,1fr) 40px',
+      faqIndent: small ? '44px' : '64px',
+      ...(() => {
+        const half = TESTIMONIALS.length / 2;
+        // Each row is rendered twice so the CSS marquee (translateX -50%) loops seamlessly
+        const row = list => [...list, ...list].map((t, k) => ({
+          nameUpper: t.name.toUpperCase(), initial: t.name[0], text: t.text, dup: k >= list.length ? 'true' : 'false'
+        }));
+        return {
+          depRowA: row(TESTIMONIALS.slice(0, half)), depRowB: row(TESTIMONIALS.slice(half)),
+          depStars: [1, 2, 3, 4, 5],
+          depDurA: small ? '88s' : '112s', depDurB: small ? '100s' : '128s',
+          depCardW: small ? '300px' : 'clamp(340px,28vw,400px)',
+          depCols: stack ? 'minmax(0,1fr)' : 'minmax(0,1fr) auto',
+          depGap: stack ? '36px' : 'clamp(40px,6vw,96px)',
+          depBadgeJustify: stack ? 'start' : 'end'
+        };
+      })(),
+      invBenefits: ['Escaneamento intraoral com iTero.', 'Planejamento individualizado.', 'Alinhadores transparentes e removíveis.', 'Acompanhamento durante o tratamento.'],
+      waInv: this.wa('invisalign'),
+      cta5In: () => this.setState({ cta5: true }), cta5Out: () => this.setState({ cta5: false }),
+      arrow5A: this.state.cta5 ? 'translateX(140%)' : 'none', arrow5B: this.state.cta5 ? 'none' : 'translateX(-140%)',
+      s5Cols: stack ? 'minmax(0,1fr)' : 'minmax(0,6fr) minmax(0,5fr)',
+      s5Gap: stack ? '64px' : 'clamp(48px,7vw,128px)',
+      s5BenCols: small ? 'minmax(0,1fr)' : 'minmax(0,1fr) minmax(0,1fr)',
+      s5CollagePb: stack ? '18%' : '14%',
+      elisEdu: [
+        { k: 'FORMAÇÃO', v: 'Formação em Odontologia pela Uninove.' },
+        { k: 'ESPECIALIZAÇÃO', v: 'Especialização em Implantes Dentários pela USP.' },
+        { k: 'COMPLEMENTAR', v: 'Formação complementar em alinhadores.' },
+        { k: 'COMPLEMENTAR', v: 'Formação complementar em harmonização facial.' }
+      ],
+      cta6In: () => this.setState({ cta6: true }), cta6Out: () => this.setState({ cta6: false }),
+      arrow6A: this.state.cta6 ? 'translateX(140%)' : 'none', arrow6B: this.state.cta6 ? 'none' : 'translateX(-140%)',
+      s6Cols: stack ? 'minmax(0,1fr)' : 'minmax(0,5fr) minmax(0,6fr)',
+      s6Areas: stack ? '"head" "portrait" "body"' : '"portrait head" "portrait body"',
+      s6RowGap: stack ? '16px' : '12px',
+      s6Rows: stack ? 'auto' : 'auto 1fr',
+      s6FigW: stack ? (small ? '82%' : '64%') : 'calc(100% - 34px)',
+      s6FigJustify: 'end', s6FigAlign: w < 1100 ? 'start' : 'stretch', s6ImgH: w < 1100 ? 'auto' : '100%', s6ImgRatio: w < 1100 ? '3 / 4' : 'auto',
+      s6FigPos: !stack && w < 1100 ? 'sticky' : 'relative', s6FigTop: !stack && w < 1100 ? '112px' : 'auto',
+      s6EduCols: small ? 'minmax(0,1fr)' : '120px minmax(0,1fr)',
+      techItems: ['Escaneamento intraoral.', 'Avaliação digital.', 'Planejamento individualizado.'].map((label, i) => ({ label, num: String(i + 1).padStart(2, '0') })),
+      waTech: this.wa('tecnologia'),
+      cta4In: () => this.setState({ cta4: true }), cta4Out: () => this.setState({ cta4: false }),
+      arrow4A: this.state.cta4 ? 'translateX(140%)' : 'none', arrow4B: this.state.cta4 ? 'none' : 'translateX(-140%)',
+      s4Pad: stack ? '0 clamp(20px,6vw,48px) clamp(48px,11vw,64px)' : 'clamp(56px,5vw,80px) clamp(20px,4vw,56px)',
+      s4Cols: stack ? 'minmax(0,1fr)' : 'minmax(0,7fr) minmax(0,5fr)',
+      s4Gap: stack ? '56px' : 'clamp(48px,6vw,112px)',
+      s4Bleed: stack ? 'calc(-1 * clamp(20px,6vw,48px))' : 'calc(-1 * (max(0px, (100vw - 1320px) / 2) + clamp(20px,4vw,56px)))',
+      s4BleedR: stack ? 'calc(-1 * clamp(20px,6vw,48px))' : '0',
+      s4Ratio: stack ? '4 / 5' : '5 / 4', s4RatioLabel: stack ? '4:5' : '5:4',
+      rv, pillars, treatments, activeT: treatments[at], tTotal: String(TREATMENTS.length).padStart(2, '0'),
+      s3Desktop: !stack, s3Mobile: stack,
+      s3HeadCols: stack || w < 1100 ? 'minmax(0,1fr)' : 'minmax(0,7fr) minmax(0,5fr)',
+      s3HeadGap: stack || w < 1100 ? '28px' : 'clamp(48px,6vw,112px)',
+      s2Pad: stack ? 'clamp(48px,11vw,64px) clamp(20px,6vw,48px)' : 'clamp(56px,5vw,80px) clamp(20px,4vw,56px)',
+      s2HeadCols: stack ? 'minmax(0,1fr)' : 'minmax(0,7fr) minmax(0,5fr)',
+      s2TextPb: stack ? '0' : '14px',
+      s2CardCols: stack ? 'minmax(0,1fr)' : 'repeat(3,minmax(0,1fr))',
+      s2HeadGap: stack ? '28px' : 'clamp(24px,3vw,48px)',
+      s2LabelPt: stack ? '0' : '18px',
+      s2Indent: small ? '0' : 'clamp(24px,7vw,128px)',
+      s2TextJustify: stack ? 'flex-start' : 'flex-end',
+      s2RowCols: stack ? '48px minmax(0,1fr)' : 'minmax(0,2fr) minmax(0,4fr) minmax(0,6fr)',
+      s2RowGap: stack ? '14px 16px' : 'clamp(24px,3vw,48px)',
+      s2RowPad: stack ? '30px 0 34px' : 'clamp(40px,4vw,56px) 0',
+      s2NumSize: stack ? '26px' : 'clamp(44px,4vw,60px)',
+      s2TitleCol: stack ? '2' : 'auto', s2BodyCol: stack ? '2' : 'auto',
+      nav,
+      desktopNav: !mobile, mobileNav: mobile,
+      hdrH: scrolled ? (mobile ? '64px' : '72px') : (mobile ? '76px' : '96px'),
+      logoH: scrolled ? (mobile ? '32px' : '38px') : (mobile ? '36px' : '46px'),
+      hdrBg: menu ? 'rgba(250,246,243,0)' : solid ? 'rgba(250,246,243,.86)' : 'rgba(250,246,243,0)',
+      hdrShadow: scrolled && !menu ? '0 1px 0 rgba(106,91,88,.12)' : '0 1px 0 rgba(106,91,88,0)',
+      hdrBlur: scrolled && !menu ? 'blur(14px) saturate(1.2)' : 'none',
+      goHome: e => this.go('inicio', e),
+      toggleMenu: () => this.setMenu(!menu),
+      menuExpanded: menu ? 'true' : 'false', menuHidden: menu ? 'false' : 'true',
+      menuLabel: menu ? 'Fechar menu' : 'Abrir menu',
+      bar1: menu ? 'translateY(4px) rotate(45deg)' : 'none',
+      bar2: menu ? 'translateY(-4px) rotate(-45deg)' : 'none',
+      menuOpacity: menu ? 1 : 0, menuVis: menu ? 'visible' : 'hidden', menuFootOpacity: menu ? 1 : 0,
+      waHeader: this.wa('header'), waHero: this.wa('hero'),
+      ctaIn: () => this.setState({ cta: true }), ctaOut: () => this.setState({ cta: false }),
+      arrowA: cta ? 'translateX(140%)' : 'none', arrowB: cta ? 'none' : 'translateX(-140%)',
+      ctaW: small ? '100%' : 'auto',
+      heroMinH: stack ? 'auto' : 'max(720px, 100svh)',
+      heroPad: stack ? `${small ? 112 : 128}px clamp(20px,6vw,48px) 72px` : '88px clamp(20px,4vw,56px) 56px',
+      heroCols: stack ? 'minmax(0,1fr)' : 'minmax(0,7fr) minmax(0,5fr)',
+      heroGap: stack ? '64px' : 'clamp(40px,6vw,104px)',
+      copyCols: stack || w < 1200 ? 'minmax(0,1fr)' : 'minmax(0,1fr) minmax(0,1fr)',
+      figW: stack ? (small ? '84%' : '70%') : '100%',
+      blockTop: stack ? 'auto' : '0', blockBottom: stack ? '0' : '16%',
+      blockW: stack ? '62%' : 'max(36vw, calc(50% - 660px + 30vw))',
+      badgeL: stack ? '-14%' : (w < 1240 ? '-36px' : '-68px'), badgeB: stack ? '18%' : (w < 1240 ? '72px' : '96px'), badgeS: small ? '104px' : (w < 1240 && !stack ? '112px' : '136px'),
+      showBadge: this.props.showBadge ?? true,
+      hasImage: !!img, noImage: !img, heroImg: img ? React.createElement('img', { src: img, alt: 'Dra. Elis Rocha no Ateliê Moema Odontologia', fetchpriority: 'high', style: { width: '100%', height: '100%', objectFit: 'cover', objectPosition: this.props.heroImagePosition ?? '50% 30%', display: 'block' } }) : null, heroPos: this.props.heroImagePosition ?? '50% 30%',
+      showScroll: !stack,
+      scrollNext: () => { const n = document.getElementById('atelie'); if (n) this.go('atelie'); else window.scrollBy({ top: window.innerHeight * 0.9, behavior: 'smooth' }); }
+    };
+  }
+}
+</script>
+</body>
+</html>
