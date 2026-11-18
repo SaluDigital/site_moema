@@ -399,8 +399,6 @@ a:hover{color:#352D2D}
             <div role="slider" tabindex="0" aria-label="{{ c.sliderAria }}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{ c.pct }}" onPointerDown="{{ c.down }}" onPointerMove="{{ c.move }}" onPointerUp="{{ c.up }}" onPointerCancel="{{ c.up }}" onKeyDown="{{ c.key }}" style="position:relative;aspect-ratio:4/3;background:#F1E8E3;overflow:hidden;cursor:ew-resize;touch-action:pan-y;user-select:none;outline-offset:4px">
               <img src="{{ c.srcB }}" alt="{{ c.altB }}" loading="lazy" draggable="false" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;pointer-events:none">
               <img src="{{ c.srcA }}" alt="{{ c.altA }}" loading="lazy" draggable="false" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;pointer-events:none;clip-path:inset(0 {{ c.rest }}% 0 0)">
-              <span style="position:absolute;top:14px;left:14px;z-index:1;padding:6px 10px;background:#FFFFFF;font-family:Manrope,sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:#352D2D;pointer-events:none">ANTES</span>
-              <span style="position:absolute;top:14px;right:14px;z-index:1;padding:6px 10px;background:#352D2D;font-family:Manrope,sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:#FFFFFF;pointer-events:none">DEPOIS</span>
               <div aria-hidden="true" style="position:absolute;top:0;bottom:0;left:{{ c.pct }}%;width:2px;margin-left:-1px;background:#FFFFFF;z-index:2;pointer-events:none;box-shadow:0 0 8px rgba(0,0,0,.25)">
                 <span style="position:absolute;top:50%;left:50%;width:40px;height:40px;margin:-20px 0 0 -20px;border-radius:50%;background:#FFFFFF;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 10px rgba(0,0,0,.3);color:#352D2D"><svg width="20" height="10" viewBox="0 0 20 10" fill="none"><path d="M6 1L2 5l4 4M14 1l4 4-4 4" stroke="currentColor" stroke-width="1.3"></path></svg></span>
               </div>
@@ -1203,7 +1201,7 @@ class Component extends DCLogic {
           key: e => { if (e.key === 'ArrowRight') { e.preventDefault(); setP(k, p + 5); } else if (e.key === 'ArrowLeft') { e.preventDefault(); setP(k, p - 5); } }
         };
       }),
-      cGridCols: `repeat(${small ? 1 : stack ? 2 : 3}, minmax(0,1fr))`,
+      cGridCols: `repeat(${small ? 1 : 2}, minmax(0,1fr))`,
       cGapPx: stack ? '16px' : 'clamp(16px,2vw,28px)'
     };
   }
