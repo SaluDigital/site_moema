@@ -391,40 +391,22 @@ a:hover{color:#352D2D}
     <div style="margin-top:clamp(96px,11vw,168px);padding-top:clamp(48px,5vw,72px);border-top:1px solid rgba(106,91,88,.2)">
       <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:28px 48px">
         <h3 style="margin:0;max-width:640px;font-family:'Dancing Script',cursive;font-weight:400;font-size:clamp(32px,3.4vw,52px);line-height:1.05;letter-spacing:-.015em;color:#352D2D;text-wrap:balance;animation:amRise linear both;animation-timeline:view();animation-range:entry 0% entry 45%">Conheça alguns casos de tratamento com <em style="font-style:italic;color:#A2646A">Invisalign®.</em></h3>
-        <div style="display:flex;align-items:center;gap:20px">
-          <span aria-live="polite" style="font-family:Manrope,sans-serif;font-size:11px;font-weight:600;letter-spacing:.2em;color:#352D2D;min-width:64px">{{ cPos }} <span style="color:#8A7E7B">/ {{ cTotal }}</span></span>
-          <button type="button" onClick="{{ cPrev }}" disabled="{{ cPrevDis }}" aria-label="Caso anterior" aria-controls="inv-track" style="width:52px;height:52px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(53,45,45,.35);border-radius:50%;background:transparent;color:#352D2D;cursor:pointer;opacity:{{ cPrevO }};transition:background-color .35s ease,border-color .35s ease,opacity .35s ease" style-hover="background-color:#352D2D;border-color:#352D2D;color:#fff"><svg aria-hidden="true" width="18" height="10" viewBox="0 0 18 10" fill="none" style="transform:rotate(180deg)"><path d="M0 5h16.5M12.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"></path></svg></button>
-          <button type="button" onClick="{{ cNext }}" disabled="{{ cNextDis }}" aria-label="Próximo caso" aria-controls="inv-track" style="width:52px;height:52px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(53,45,45,.35);border-radius:50%;background:transparent;color:#352D2D;cursor:pointer;opacity:{{ cNextO }};transition:background-color .35s ease,border-color .35s ease,opacity .35s ease" style-hover="background-color:#352D2D;border-color:#352D2D;color:#fff"><svg aria-hidden="true" width="18" height="10" viewBox="0 0 18 10" fill="none"><path d="M0 5h16.5M12.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"></path></svg></button>
-        </div>
       </div>
 
-      <div role="region" aria-roledescription="carrossel" aria-label="Casos de tratamento com Invisalign®" tabindex="0" onKeyDown="{{ cKey }}" style="margin-top:clamp(36px,4vw,56px);overflow:hidden;outline-offset:6px">
-        <div id="inv-track" onPointerDown="{{ cDown }}" onPointerMove="{{ cMove }}" onPointerUp="{{ cUp }}" onPointerCancel="{{ cUp }}" onPointerLeave="{{ cUp }}" style="display:flex;gap:{{ cGapPx }};touch-action:pan-y;user-select:none;cursor:grab;transform:{{ cTrackT }};transition:{{ cTrackTr }}">
-          <sc-for list="{{ invCases }}" as="c" hint-placeholder-count="2">
-            <article role="group" aria-roledescription="slide" aria-label="{{ c.aria }}" style="flex:0 0 {{ cSlideW }};min-width:0">
-              <div style="display:grid;grid-template-columns:{{ cPairCols }};gap:8px">
-                <div style="position:relative;aspect-ratio:4/3;background:#F1E8E3;overflow:hidden">
-                  <span style="position:absolute;top:14px;left:14px;z-index:1;padding:6px 10px;background:#FFFFFF;font-family:Manrope,sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:#352D2D">ANTES</span>
-                  <img src="{{ c.srcA }}" alt="{{ c.altA }}" loading="lazy" draggable="false" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
-                </div>
-                <div style="position:relative;aspect-ratio:4/3;background:#EAE0DA;overflow:hidden">
-                  <span style="position:absolute;top:14px;left:14px;z-index:1;padding:6px 10px;background:#352D2D;font-family:Manrope,sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:#FFFFFF">DEPOIS</span>
-                  <img src="{{ c.srcB }}" alt="{{ c.altB }}" loading="lazy" draggable="false" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
-                </div>
+      <div style="margin-top:clamp(36px,4vw,56px);display:grid;grid-template-columns:{{ cGridCols }};gap:{{ cGapPx }}">
+        <sc-for list="{{ invCases }}" as="c" hint-placeholder-count="3">
+          <article aria-label="{{ c.aria }}" style="min-width:0">
+            <div role="slider" tabindex="0" aria-label="{{ c.sliderAria }}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{ c.pct }}" onPointerDown="{{ c.down }}" onPointerMove="{{ c.move }}" onPointerUp="{{ c.up }}" onPointerCancel="{{ c.up }}" onKeyDown="{{ c.key }}" style="position:relative;aspect-ratio:4/3;background:#F1E8E3;overflow:hidden;cursor:ew-resize;touch-action:pan-y;user-select:none;outline-offset:4px">
+              <img src="{{ c.srcB }}" alt="{{ c.altB }}" loading="lazy" draggable="false" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;pointer-events:none">
+              <img src="{{ c.srcA }}" alt="{{ c.altA }}" loading="lazy" draggable="false" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;pointer-events:none;clip-path:inset(0 {{ c.rest }}% 0 0)">
+              <span style="position:absolute;top:14px;left:14px;z-index:1;padding:6px 10px;background:#FFFFFF;font-family:Manrope,sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:#352D2D;pointer-events:none">ANTES</span>
+              <span style="position:absolute;top:14px;right:14px;z-index:1;padding:6px 10px;background:#352D2D;font-family:Manrope,sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:#FFFFFF;pointer-events:none">DEPOIS</span>
+              <div aria-hidden="true" style="position:absolute;top:0;bottom:0;left:{{ c.pct }}%;width:2px;margin-left:-1px;background:#FFFFFF;z-index:2;pointer-events:none;box-shadow:0 0 8px rgba(0,0,0,.25)">
+                <span style="position:absolute;top:50%;left:50%;width:40px;height:40px;margin:-20px 0 0 -20px;border-radius:50%;background:#FFFFFF;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 10px rgba(0,0,0,.3);color:#352D2D"><svg width="20" height="10" viewBox="0 0 20 10" fill="none"><path d="M6 1L2 5l4 4M14 1l4 4-4 4" stroke="currentColor" stroke-width="1.3"></path></svg></span>
               </div>
-            </article>
-          </sc-for>
-        </div>
-      </div>
-
-      <div style="margin-top:32px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px">
-        <div role="tablist" aria-label="Selecionar posição" style="display:flex;gap:6px">
-          <sc-for list="{{ cDots }}" as="d" hint-placeholder-count="3">
-            <button type="button" role="tab" aria-selected="{{ d.sel }}" aria-label="{{ d.aria }}" onClick="{{ d.go }}" style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:none;border:0;cursor:pointer;padding:0">
-              <span aria-hidden="true" style="display:block;height:2px;width:{{ d.w }};background:{{ d.bg }};transition:width .5s cubic-bezier(.2,.7,.1,1),background-color .4s ease"></span>
-            </button>
-          </sc-for>
-        </div>
+            </div>
+          </article>
+        </sc-for>
       </div>
     </div>
   </div>
@@ -1204,37 +1186,25 @@ class Component extends DCLogic {
     };
   }
   carousel(stack, small) {
-    const N = 4, per = stack ? 1 : 2, gap = stack ? 16 : 32;
-    const slideW = stack ? (small ? '86%' : '72%') : `calc((100% - ${gap}px) / 2)`;
-    const step = stack ? `(${small ? '86%' : '72%'} + ${gap}px)` : `((100% + ${gap}px) / 2)`;
-    const maxI = N - per;
-    const i = Math.min(this.state.cIdx || 0, maxI), drag = this.state.cDrag || 0, dragging = !!this.state.cDragging;
-    const goTo = n => this.setState({ cIdx: Math.max(0, Math.min(maxI, n)) });
-    const finish = () => {
-      if (!this.state.cDragging) return;
-      const dx = this.state.cDrag || 0;
-      this.setState({ cDragging: false, cDrag: 0, cIdx: Math.max(0, Math.min(maxI, i + (dx < -50 ? 1 : dx > 50 ? -1 : 0))) });
-    };
+    const N = 4, cmp = this.state.cmp || {};
+    const setP = (k, v) => this.setState(s => ({ cmp: { ...(s.cmp || {}), [k]: Math.max(0, Math.min(100, v)) } }));
+    const fromEvt = (e, k) => { const r = e.currentTarget.getBoundingClientRect(); setP(k, ((e.clientX - r.left) / r.width) * 100); };
     return {
-      invCases: Array.from({ length: N }, (_, k) => ({
-        num: String(k + 1).padStart(2, '0'), aria: `Caso ${k + 1} de ${N}`,
-        srcA: `assets/caso${k + 1}_a.${k ? 'jpg' : 'png'}`, srcB: `assets/caso${k + 1}_b.${k ? 'jpg' : 'png'}`,
-        altA: `Invisalign, caso ${k + 1}: antes do tratamento`, altB: `Invisalign, caso ${k + 1}: depois do tratamento`
-      })),
-      cSlideW: slideW, cGapPx: gap + 'px', cPairCols: small ? 'minmax(0,1fr)' : 'minmax(0,1fr) minmax(0,1fr)',
-      cTrackT: `translateX(calc(-${i} * ${step} + ${drag}px))`,
-      cTrackTr: dragging ? 'none' : 'transform .8s cubic-bezier(.2,.7,.1,1)',
-      cPos: String(i + 1).padStart(2, '0'), cTotal: String(maxI + 1).padStart(2, '0'),
-      cPrev: () => goTo(i - 1), cNext: () => goTo(i + 1),
-      cPrevDis: i === 0, cNextDis: i === maxI, cPrevO: i === 0 ? 0.35 : 1, cNextO: i === maxI ? 0.35 : 1,
-      cKey: e => { if (e.key === 'ArrowRight') { e.preventDefault(); goTo(i + 1); } else if (e.key === 'ArrowLeft') { e.preventDefault(); goTo(i - 1); } },
-      cDown: e => { if (e.button !== undefined && e.button !== 0) return; this.cx = e.clientX; this.setState({ cDragging: true, cDrag: 0 }); },
-      cMove: e => { if (this.state.cDragging) this.setState({ cDrag: e.clientX - this.cx }); },
-      cUp: finish,
-      cDots: Array.from({ length: maxI + 1 }, (_, k) => ({
-        sel: k === i ? 'true' : 'false', aria: `Ir para a posição ${k + 1}`, go: () => goTo(k),
-        w: k === i ? '32px' : '14px', bg: k === i ? '#A2646A' : 'rgba(106,91,88,.3)'
-      }))
+      invCases: Array.from({ length: N }, (_, k) => {
+        const p = cmp[k] ?? 50;
+        return {
+          aria: `Caso ${k + 1} de ${N}`, sliderAria: `Comparar antes e depois, caso ${k + 1}`,
+          srcA: `assets/caso${k + 1}_a.${k ? 'jpg' : 'png'}`, srcB: `assets/caso${k + 1}_b.${k ? 'jpg' : 'png'}`,
+          altA: `Invisalign, caso ${k + 1}: antes do tratamento`, altB: `Invisalign, caso ${k + 1}: depois do tratamento`,
+          pct: Math.round(p), rest: (100 - p).toFixed(1),
+          down: e => { if (e.button !== undefined && e.button !== 0) return; this.cmpDrag = k; try { e.currentTarget.setPointerCapture(e.pointerId); } catch (_) {} fromEvt(e, k); },
+          move: e => { if (this.cmpDrag === k) fromEvt(e, k); },
+          up: () => { this.cmpDrag = null; },
+          key: e => { if (e.key === 'ArrowRight') { e.preventDefault(); setP(k, p + 5); } else if (e.key === 'ArrowLeft') { e.preventDefault(); setP(k, p - 5); } }
+        };
+      }),
+      cGridCols: `repeat(${small ? 1 : stack ? 2 : 3}, minmax(0,1fr))`,
+      cGapPx: stack ? '16px' : 'clamp(16px,2vw,28px)'
     };
   }
   renderVals() {
