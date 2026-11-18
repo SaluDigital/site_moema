@@ -1201,7 +1201,7 @@ class Component extends DCLogic {
           key: e => { if (e.key === 'ArrowRight') { e.preventDefault(); setP(k, p + 5); } else if (e.key === 'ArrowLeft') { e.preventDefault(); setP(k, p - 5); } }
         };
       }),
-      cGridCols: `repeat(${small ? 1 : stack ? 2 : 4}, minmax(0,1fr))`,
+      cGridCols: `repeat(${small ? 2 : 4}, minmax(0,1fr))`,
       cGapPx: stack ? '16px' : 'clamp(16px,2vw,28px)'
     };
   }
