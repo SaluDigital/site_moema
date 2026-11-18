@@ -970,6 +970,12 @@ const FAQS = [
   ['Como posso agendar uma avaliação?', 'Entre em contato com a equipe pelo WhatsApp para receber orientações sobre o agendamento.']
 ];
 // Central WhatsApp messages — one place for every CTA on the page
+const INV_IMGS = [
+  ['assets/a_1.webp', 'assets/a_2.webp'],
+  ['assets/b_1.webp', 'assets/b_2.webp'],
+  ['assets/caso3_a.jpg', 'assets/caso3_b.jpg'], // TODO: trocar por c_1/c_2 (c_1.webp não foi enviado)
+  ['assets/d_1.webp', 'assets/d_2.webp']
+];
 const WA_MESSAGES = {
   hero: 'Olá, vim do site e gostaria de agendar uma avaliação.',
   header: 'Olá, vim do site e gostaria de agendar uma avaliação.',
@@ -1196,7 +1202,7 @@ class Component extends DCLogic {
         const p = cmp[k] ?? 50;
         return {
           aria: `Caso ${k + 1} de ${N}`, sliderAria: `Comparar antes e depois, caso ${k + 1}`,
-          srcA: `assets/caso${k + 1}_a.${k ? 'jpg' : 'png'}`, srcB: `assets/caso${k + 1}_b.${k ? 'jpg' : 'png'}`,
+          srcA: INV_IMGS[k][0], srcB: INV_IMGS[k][1],
           altA: `Invisalign, caso ${k + 1}: antes do tratamento`, altB: `Invisalign, caso ${k + 1}: depois do tratamento`,
           pct: Math.round(p), rest: (100 - p).toFixed(1),
           down: e => { if (e.button !== undefined && e.button !== 0) return; this.cmpDrag = k; try { e.currentTarget.setPointerCapture(e.pointerId); } catch (_) {} fromEvt(e, k); },
